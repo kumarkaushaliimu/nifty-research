@@ -25,11 +25,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch stock data (NIFTY 200)
-        run: node fetch-all.js --index=200
-
-      - name: Fetch macro headlines
+      - name: Fetch macro + company news (uses committed data200.json for stock list)
         run: node fetch-news.js
+
+      - name: Fetch stock data + run decision engine (uses fresh news.json)
+        run: node fetch-all.js --index=200
 
       - name: Build dashboard
         run: node build-dashboard.js data200.json dashboard.html

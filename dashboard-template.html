@@ -164,6 +164,45 @@
   .news a .src{color:var(--dim);font-size:10px}
   .tone-pos{--ac:rgba(47,209,140,.12)}.tone-neg{--ac:rgba(255,107,107,.12)}.tone-neu{--ac:rgba(167,139,250,.12)}
 
+  /* Investment Decision */
+  .dchead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .dchead h2{font-size:17px;font-weight:650}
+  .dcsummary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+  .dcbox{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:11px;padding:12px 14px;position:relative;overflow:hidden}
+  .dcbox::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--dc,var(--green))}
+  .dcbox .l{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+  .dcbox .v{font-size:20px;font-weight:650;margin-top:4px;font-variant-numeric:tabular-nums}
+  .dcbox .n{font-size:10.5px;color:var(--dim)}
+  .strategybar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .strat{flex:1;min-width:200px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px;cursor:pointer;transition:.15s}
+  .strat:hover{border-color:var(--line2);background:var(--panel2)}
+  .strat .st{font-size:12px;font-weight:650;color:var(--txt)}
+  .strat .sn{font-size:10.5px;color:var(--dim);margin-top:2px}
+  .strat .sc{font-size:18px;font-weight:650;color:var(--green);float:right;margin-top:-2px}
+  .flag{display:inline-block;font-size:9.5px;padding:2px 6px;border-radius:4px;margin:1px 2px 1px 0;white-space:nowrap}
+  .flag.REJECT{background:var(--red-dim);color:var(--red)}
+  .flag.INVESTIGATE,.flag.RESTRICT{background:rgba(245,181,68,.14);color:var(--amber)}
+  .flag.UNKNOWN{background:var(--line2);color:var(--muted)}
+  .flag.ELIGIBLE{background:var(--green-dim);color:var(--green)}
+  .class-badge{font-size:10px;padding:3px 8px;border-radius:5px;font-weight:600;white-space:nowrap}
+  .class-Strong{background:var(--green-dim);color:var(--green)}
+  .class-Buy{background:rgba(47,209,140,.09);color:#7ee0b4}
+  .class-Watch{background:rgba(245,181,68,.13);color:var(--amber)}
+  .class-Neutral{background:var(--line2);color:var(--muted)}
+  .class-Avoid{background:var(--red-dim);color:var(--red)}
+  .rcard{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:18px}
+  .rcard h4{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:9px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .rline{padding:5px 0;font-size:12px;color:#c3d2e5;line-height:1.45;border-bottom:1px dashed rgba(36,52,74,.5)}
+  .rline:last-child{border:none}
+  .rline b{color:var(--txt)}
+  .rscore-row{display:flex;align-items:center;gap:8px;font-size:11.5px;padding:4px 0}
+  .rscore-row .n{width:110px;color:var(--muted)}
+  .rscore-row .bar{flex:1;height:7px;background:var(--line2);border-radius:4px;overflow:hidden}
+  .rscore-row .bar i{display:block;height:100%;border-radius:4px}
+  .rscore-row .v{width:34px;text-align:right;font-variant-numeric:tabular-nums}
+  .factors{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;margin-top:16px}
+  @media(max-width:1100px){.rcard{grid-template-columns:1fr}}
+
   .notes{margin-top:18px;font-size:11px;color:var(--dim);line-height:1.6}
   .notes b{color:var(--muted)}
   .disc{margin-top:10px;padding:11px 14px;border:1px solid var(--line);border-radius:9px;background:rgba(255,107,107,.04);font-size:10.8px;color:#a98b8b}
@@ -193,7 +232,8 @@
   <div class="tabs">
     <button class="tab active" data-sec="fund" style="--tc:var(--fund)"><span class="ic">📊</span> Fundamentals <span class="badge" id="badgeFund">0</span></button>
     <button class="tab" data-sec="tech" style="--tc:var(--tech)"><span class="ic">📈</span> Technicals <span class="badge" id="badgeTech">0</span></button>
-    <button class="tab" data-sec="macro" style="--tc:var(--macro)"><span class="ic">🌐</span> Macro &amp; News <span class="badge" id="badgeMacro">0</span></button>
+    <button class="tab" data-sec="decision" style="--tc:var(--green)"><span class="ic">🎯</span> Investment Decision <span class="badge" id="badgeDecision">0</span></button>
+    <button class="tab" data-sec="macro" style="--tc:var(--violet)"><span class="ic">🌐</span> News, Events &amp; Intelligence <span class="badge" id="badgeMacro">0</span></button>
   </div>
 
   <!-- FUNDMENTALS -->
@@ -227,6 +267,10 @@
           <th class="f" data-key="roe">ROE <span class="ar">▼</span></th>
           <th class="f" data-key="de">D/E <span class="ar">▼</span></th>
           <th class="f" data-key="ocfNp">OCF/PAT <span class="ar">▼</span></th>
+          <th class="f" data-key="qAccel" title="Change in quarterly YoY profit growth over last 4 quarters (pp)">Qtr Accel <span class="ar">▼</span></th>
+          <th class="f" data-key="incRoce" title="Incremental return on invested capital">Inc ROCE <span class="ar">▼</span></th>
+          <th class="f" data-key="peg">PEG <span class="ar">▼</span></th>
+          <th class="f" data-key="evEbitda">EV/EBITDA <span class="ar">▼</span></th>
           <th class="f" data-key="pe">P/E <span class="ar">▼</span></th>
           <th class="f" data-key="sectorPe">Sector P/E <span class="ar">▼</span></th>
           <th class="f" data-key="marketCap">Mkt Cap <span class="ar">▼</span></th>
@@ -270,6 +314,9 @@
           <th class="t" data-key="adx">ADX <span class="ar">▼</span></th>
           <th class="t" data-key="ret3m">3M <span class="ar">▼</span></th>
           <th class="t" data-key="rel3m">vs Index <span class="ar">▼</span></th>
+          <th class="t" data-key="rsRating" title="Percentile rank of 3M relative return vs NIFTY 200 universe">RS Rating <span class="ar">▼</span></th>
+          <th class="t" data-key="updownVol" title="Up-day vs down-day volume (last 20 sessions)">Up/Dn Vol <span class="ar">▼</span></th>
+          <th class="t" data-key="atrPct">ATR% <span class="ar">▼</span></th>
           <th class="t" data-key="distHigh">52W High <span class="ar">▼</span></th>
           <th data-key="price">Price <span class="ar">▼</span></th>
           <th data-key="trend">60D trend <span class="ar">▼</span></th>
@@ -280,16 +327,67 @@
     <div class="method" id="tmethod"></div>
   </section>
 
+  <!-- INVESTMENT DECISION -->
+  <section class="section" id="sec-decision">
+    <div class="dchead">
+      <div>
+        <h2>Investment Decision Engine</h2>
+        <div class="sub">Two-stage: eligibility hard checks → attractiveness composite. This is research prioritisation, not trading advice.</div>
+      </div>
+    </div>
+    <div class="dcsummary" id="dcSummary"></div>
+    <div class="strategybar" id="strategyBar"></div>
+    <div class="toolbar">
+      <div class="search"><input id="dsearch" placeholder="Search company or symbol…"></div>
+      <select id="dsector"><option value="">All sectors</option></select>
+      <div class="pill" id="dfilter">
+        <button class="on" data-f="all">All</button>
+        <button data-f="buy">Buy Candidates</button>
+        <button data-f="watch">Watchlist</button>
+        <button data-f="avoid">Avoid / Reject</button>
+        <button data-f="strategies">Strategy matches</button>
+      </div>
+      <button class="btn" id="dexport">⬇ Export CSV</button>
+      <span class="count" id="dcount"></span>
+    </div>
+    <div class="tablecard">
+      <div class="legend">
+        <span><i style="background:var(--green)"></i> Composite score (0–100) — higher is better</span>
+        <span>Click a row to open the full research card (thesis, risks, eligibility, scores)</span>
+        <span class="chip">Eligibility is a hard gate — a REJECT cannot be a Buy regardless of score</span>
+      </div>
+      <div class="scroll"><table id="dtbl">
+        <thead><tr>
+          <th class="l" data-key="name" style="width:190px">Company <span class="ar">▼</span></th>
+          <th class="l" data-key="sector" style="width:120px">Sector <span class="ar">▼</span></th>
+          <th data-key="composite">Composite <span class="ar">▼</span></th>
+          <th class="l" data-key="classification">Classification <span class="ar">▼</span></th>
+          <th class="l" data-key="eligibility">Eligibility <span class="ar">▼</span></th>
+          <th data-key="fScore">Fund <span class="ar">▼</span></th>
+          <th data-key="tScore">Tech <span class="ar">▼</span></th>
+          <th data-key="newsScore">News <span class="ar">▼</span></th>
+          <th data-key="riskScore">Risk <span class="ar">▼</span></th>
+          <th data-key="rsRating">RS Rating <span class="ar">▼</span></th>
+          <th class="l" data-key="strategies">Strategies <span class="ar">▼</span></th>
+          <th data-key="price">Price <span class="ar">▼</span></th>
+        </tr></thead>
+        <tbody id="dbody"></tbody>
+      </table></div>
+    </div>
+    <div class="method" id="dmethod"></div>
+  </section>
+
   <!-- MACRO -->
   <section class="section" id="sec-macro">
     <div class="macrohead">
-      <div><h2>Macro events &amp; sector impact</h2><div class="sub" id="newsStamp"></div></div>
+      <div><h2>News, Events &amp; Market Intelligence</h2><div class="sub" id="newsStamp"></div></div>
       <button class="btn" id="newsRefresh">↻ Refresh headlines</button>
     </div>
     <div class="mcards" id="mcards"></div>
+    <div class="factors" id="factors"></div>
     <div class="notes">
-      <b>How to use:</b> Each card links a live macro event to the sectors most affected. Headlines are pulled from Google News RSS at refresh time.
-      Use the <b>Fundamentals</b> and <b>Technicals</b> tabs to screen NIFTY 500 stocks, then cross-check the relevant sector exposure here.
+      <b>How to use:</b> Each card links a live event to the sectors most affected. Company-specific headlines with sentiment scoring appear in the Investment Decision research cards.
+      Use the other tabs to screen stocks, then cross-check exposure here.
     </div>
   </section>
 
@@ -427,6 +525,10 @@ function renderF(){
       <td class="${f.roe>15?'pass':(f.roe!=null?'fail':'neutral')}">${pct(f.roe,0)}</td>
       <td class="${f.de<.5?'pass':(f.de!=null?'fail':'neutral')}">${fmt(f.de,2)}</td>
       <td class="${f.ocfNp>.8?'pass':(f.ocfNp!=null?'fail':'neutral')}">${fmt(f.ocfNp,2)}</td>
+      <td class="${f.qAccel>0?'pass':(f.qAccel!=null?'fail':'neutral')}">${f.qAccel!=null?(f.qAccel>0?'+':'')+fmt(f.qAccel,0):'—'}</td>
+      <td class="${f.incRoce>15?'pass':(f.incRoce!=null?'fail':'neutral')}">${fmt(f.incRoce,0)}</td>
+      <td class="${f.peg!=null&&f.peg<1?'pass':(f.peg!=null?'fail':'neutral')}">${fmt(f.peg,2)}</td>
+      <td class="chip">${fmt(f.evEbitda,1)}</td>
       <td class="${f.pe!=null&&f.sectorPe!=null&&f.pe<f.sectorPe?'pass':''}">${fmt(f.pe,1)}</td>
       <td class="chip">${fmt(f.sectorPe,1)}</td>
       <td>${abbr(s.marketCap)}</td>
@@ -454,6 +556,9 @@ function renderT(){
       <td class="${t.adx>20?'pass':(t.adx!=null?'fail':'neutral')}">${fmt(t.adx,1)}</td>
       <td class="${t.ret3m>0?'pass':(t.ret3m!=null?'fail':'neutral')}">${pct(t.ret3m,1)}</td>
       <td class="${t.rel3m>0?'pass':(t.rel3m!=null?'fail':'neutral')}">${pct(t.rel3m,1)}</td>
+      <td class="${t.rsRating>=70?'pass':(t.rsRating!=null?'fail':'neutral')}">${fmt(t.rsRating,0)}</td>
+      <td class="${t.updownVol>1?'pass':(t.updownVol!=null?'fail':'neutral')}">${fmt(t.updownVol,2)}</td>
+      <td class="chip">${fmt(t.atrPct,1)}%</td>
       <td class="${t.distHigh>=-10?'pass':(t.distHigh!=null?'fail':'neutral')}">${pct(t.distHigh,1)}</td>
       <td>${fmt(s.price,0)}</td>
       <td>${sparkline(s.spark,t.score>=60?'var(--green)':(t.score>=40?'var(--amber)':'var(--red)'))}</td>
@@ -607,8 +712,165 @@ $('#newsRefresh').addEventListener('click',async()=>{
   catch{ b.textContent='Run: node fetch-news.js'; }
 });
 
+/* ---------- Investment Decision render ---------- */
+const dStocks = stocks.filter(s => s.composite != null);
+$('#badgeDecision').textContent = dStocks.length;
+const dsectors = [...new Set(dStocks.map(s=>s.sector).filter(Boolean))].sort();
+$('#dsector').insertAdjacentHTML('beforeend', dsectors.map(s=>`<option>${s}</option>`).join(''));
+const dState = { q:'', sector:'', filter:'all', key:'composite', dir:-1 };
+$('#dsearch').addEventListener('input', e => { dState.q = e.target.value.toLowerCase(); renderD(); });
+$('#dsector').addEventListener('change', e => { dState.sector = e.target.value; renderD(); });
+$('#dfilter').addEventListener('click', e => {
+  const b = e.target.closest('button'); if(!b) return;
+  [...$('#dfilter').children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  dState.filter = b.dataset.f; renderD();
+});
+$$('#dtbl thead th[data-key]').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.key; if(dState.key===k)dState.dir*=-1; else {dState.key=k;dState.dir=-1;} renderD();
+}));
+
+function classKey(c){ return c.includes('Strong')?'Strong':c.includes('Buy')?'Buy':c.includes('Watch')?'Watch':c.includes('Avoid')?'Avoid':'Neutral'; }
+function renderD(){
+  let out = dStocks.filter(s => (!dState.q||s.name.toLowerCase().includes(dState.q)||s.symbol.toLowerCase().includes(dState.q)) && (!dState.sector||s.sector===dState.sector));
+  if(dState.filter==='buy') out=out.filter(s=>s.classification.includes('Buy'));
+  else if(dState.filter==='watch') out=out.filter(s=>s.classification==='Watchlist');
+  else if(dState.filter==='avoid') out=out.filter(s=>s.classification==='Avoid'||s.eligibility?.status==='REJECT');
+  else if(dState.filter==='strategies') out=out.filter(s=>s.strategies?.length);
+  out.sort((a,b)=>{ let av=a[dState.key],bv=b[dState.key];
+    if(dState.key==='name'||dState.key==='sector'||dState.key==='classification'||dState.key==='eligibility'){av=av||'';bv=bv||'';return av.localeCompare(bv)*dState.dir;}
+    if(dState.key==='fScore'){av=a.f?.score??-1;bv=b.f?.score??-1;}
+    if(dState.key==='tScore'){av=a.t?.score??-1;bv=b.t?.score??-1;}
+    if(dState.key==='newsScore'){av=a.news?.score??-1;bv=b.news?.score??-1;}
+    if(dState.key==='strategies'){av=(a.strategies||[]).length;bv=(b.strategies||[]).length;}
+    if(dState.key==='eligibility'){av=a.eligibility?.status||'';bv=b.eligibility?.status||'';}
+    return ((av??-1)-(bv??-1))*dState.dir;
+  });
+  $('#dcount').textContent=out.length+' of '+dStocks.length+' stocks';
+  $('#dbody').innerHTML=out.length?out.map((s,i)=>{
+    const ck=classKey(s.classification);
+    const el=s.eligibility?.status||'UNKNOWN';
+    const fl=(s.eligibility?.flags||[]).slice(0,3).map(f=>`<span class="flag ${f.level}" title="${f.detail||''}">${f.level}</span>`).join('');
+    return `<tr data-i="${i}" data-sym="${s.symbol}">
+      <td class="l"><div class="cname">${s.name}</div><div class="csym">${s.symbol}</div></td>
+      <td class="l"><div class="sect" title="${s.sector}">${s.sector}</div></td>
+      <td>${scoreCell(s.composite,'composite')}</td>
+      <td class="l"><span class="class-badge class-${ck}">${s.classification}</span></td>
+      <td class="l"><span class="flag ${el}">${el}</span> ${fl}</td>
+      <td class="${(s.f?.score||0)>=70?'pass':''}">${fmt(s.f?.score,0)}</td>
+      <td class="${(s.t?.score||0)>=65?'pass':''}">${fmt(s.t?.score,0)}</td>
+      <td>${fmt(s.news?.score,0)}</td>
+      <td>${fmt(s.riskScore,0)}</td>
+      <td>${fmt(s.rsRating,0)}</td>
+      <td class="l">${(s.strategies||[]).map(x=>`<span class="tag">${x}</span>`).join(' ')||'—'}</td>
+      <td>${fmt(s.price,0)}</td>
+    </tr>`;
+  }).join(''):'<tr><td colspan="12" class="empty">No stocks match the filters</td></tr>';
+  $$('#dbody tr[data-i]').forEach(tr=>tr.addEventListener('click',()=>{
+    const next=tr.nextElementSibling;
+    if(next&&next.classList.contains('detail')){next.remove();tr.classList.remove('open');return;}
+    $$('#dbody .detail').forEach(x=>x.remove()); $$('#dbody tr[data-i]').forEach(x=>x.classList.remove('open'));
+    const s=out[+tr.dataset.i]; tr.classList.add('open');
+    const d=document.createElement('tr'); d.className='detail';
+    d.innerHTML=`<td colspan="12">${researchCard(s)}</td>`; tr.after(d);
+  }));
+}
+
+function researchCard(s){
+  const parts=s.compositeParts||{};
+  const thesis=(s.thesis||[]).map(x=>`<div class="rline">✓ ${x}</div>`).join('')||'<div class="rline">No positive thesis signals detected.</div>';
+  const risks=(s.thesisRisks||[]).map(x=>`<div class="rline">⚠ ${x}</div>`).join('')||'<div class="rline">No critical risks flagged by the data.</div>';
+  const flags=(s.eligibility?.flags||[]).map(f=>`<div class="rline"><span class="flag ${f.level}">${f.level}</span> <b>${f.label}</b>${f.detail?' — '+f.detail:''}</div>`).join('');
+  const news=(s.news?.headlines||[]).map(h=>`<div class="rline"><a href="${h.link}" target="_blank" rel="noopener">${h.title}</a><br><span class="chip">Sentiment ${h.sentiment>0?'+':''}${h.sentiment} · Materiality ${h.materiality}/100 · ${h.horizon} · ${h.source}</span></div>`).join('')||'<div class="rline">No company-specific headlines found.</div>';
+  return `<div class="detail-inner rcard">
+    <div class="dcol"><h4>Investment thesis</h4>${thesis}
+      <h4 style="margin-top:16px">What could invalidate the thesis</h4>${risks}</div>
+    <div class="dcol"><h4>Composite score (100 pts)</h4>
+      <div style="margin-bottom:10px"><span class="dscore" style="color:${color(s.composite)}">${fmt(s.composite,0)}<span style="font-size:12px;color:var(--dim)">/100</span></span> <span class="class-badge class-${classKey(s.classification)}">${s.classification}</span></div>
+      ${Object.entries(parts).map(([k,v])=>`<div class="rscore-row"><span class="n">${k}</span><span class="bar"><i style="width:${(v/ (k==='fundamental'?35:k==='technical'?25:k==='news'?15:k==='risk'?15:10))*100}%;background:${color((v/(k==='fundamental'?35:k==='technical'?25:k==='news'?15:k==='risk'?15:10))*100)}"></i></span><span class="v">${v}</span></div>`).join('')}
+      <h4 style="margin-top:16px">Eligibility checks</h4>${flags}</div>
+    <div class="dcol"><h4>Key metrics</h4>
+      <div class="rline">Fundamental / Technical: <b>${fmt(s.f?.score,0)} / ${fmt(s.t?.score,0)}</b></div>
+      <div class="rline">RS Rating (percentile): <b>${fmt(s.rsRating,0)}</b></div>
+      <div class="rline">Sector 3M return: <b>${pct(s.sectorStrength?.ret3m)}</b></div>
+      <div class="rline">Sector breadth (>50DMA): <b>${fmt(s.sectorStrength?.breadth50,0)}%</b></div>
+      <div class="rline">Quarterly earnings accel: <b>${s.f?.qAccel!=null?(s.f.qAccel>0?'+':'')+fmt(s.f.qAccel,0)+' pp':'—'}</b></div>
+      <div class="rline">PEG / EV-EBITDA: <b>${fmt(s.f?.peg,2)} / ${fmt(s.f?.evEbitda,1)}</b></div>
+      <div class="rline">Volatility / Max DD: <b>${fmt(s.t?.volatility,0)}% / ${fmt(s.t?.maxDD,0)}%</b></div>
+      <div class="rline">ATR% / Avg traded value: <b>${fmt(s.t?.atrPct,1)}% / ${abbr(s.t?.avgTradedValue)}</b></div>
+      <h4 style="margin-top:16px">Company news &amp; catalysts</h4>${news}</div>
+  </div>`;
+}
+
+$('#dexport').addEventListener('click',()=>{
+  const cols=['name','symbol','sector','composite','classification','fScore','tScore','newsScore','riskScore','rsRating','price'];
+  const rows=[cols.join(',')];
+  for(const s of dStocks){rows.push(cols.map(c=>{
+    let v=c==='fScore'?s.f?.score:c==='tScore'?s.t?.score:c==='newsScore'?s.news?.score:(c==='name'||c==='symbol'||c==='sector'||c==='classification'?s[c]:s[c]);
+    if(v==null)return '';if(typeof v==='string')return '"'+v.replace(/"/g,'""')+'"';return v;
+  }).join(','));}
+  const b=new Blob([rows.join('\n')],{type:'text/csv'}),a=document.createElement('a');a.href=URL.createObjectURL(b);
+  a.download='nifty_investment_decision_'+new Date().toISOString().slice(0,10)+'.csv';a.click();
+});
+
+function buildDecisionUI(){
+  const buy=dStocks.filter(s=>s.classification.includes('Buy')).length;
+  const watch=dStocks.filter(s=>s.classification==='Watchlist').length;
+  const avoid=dStocks.filter(s=>s.classification==='Avoid').length;
+  const strat=dStocks.filter(s=>s.strategies?.length).length;
+  $('#dcSummary').innerHTML=[
+    {l:'Strong / Buy candidates',v:buy,n:'composite ≥75, eligible',k:'var(--green)'},
+    {l:'Watchlist',v:watch,n:'wait for confirmation',k:'var(--amber)'},
+    {l:'Avoid / Reject',v:avoid,n:'hard gate or low score',k:'var(--red)'},
+    {l:'Strategy matches',v:strat,n:'across 3 strategies',k:'var(--violet)'},
+  ].map(x=>`<div class="dcbox" style="--dc:${x.k}"><div class="l">${x.l}</div><div class="v">${x.v}</div><div class="n">${x.n}</div></div>`).join('');
+  const sc=n=>dStocks.filter(s=>s.strategies?.includes(n)).length;
+  $('#strategyBar').innerHTML=[
+    ['Quality Growth','F≥80 · T≥60 · PAT≥15% · ROCE≥18%','var(--cyan)'],
+    ['Growth Momentum','F≥70 · T≥80 · RS≥80 · accelerating earnings','var(--green)'],
+    ['Value + Turnaround','PEG<1 · earnings turnaround · trend reversal','var(--amber)'],
+  ].map(([n,d,c])=>`<div class="strat" data-s="${n}"><span class="sc" style="color:${c}">${sc(n)}</span><div class="st">${n}</div><div class="sn">${d}</div></div>`).join('');
+  $$('.strat').forEach(el=>el.addEventListener('click',()=>{
+    $$('.tab').forEach(x=>x.classList.remove('active')); $$('.section').forEach(x=>x.classList.remove('active'));
+    $$('.tab').find(x=>x.dataset.sec==='decision').classList.add('active'); $('#sec-decision').classList.add('active');
+    dState.filter='strategies'; [...$('#dfilter').children].forEach(x=>x.classList.toggle('on',x.dataset.f==='strategies'));
+    dState.q=''; $('#dsearch').value=''; dState.sector=''; $('#dsector').value='';
+    renderD(); $('#dbody tr')?.[0]?.scrollIntoView({block:'center'});
+  }));
+  $('#dmethod').innerHTML=`<h3>Two-stage decision engine</h3><div class="grid">
+    <div class="box"><h4>Stage 1 · Eligibility (hard checks)</h4><ul>
+      <li>Excessive leverage (D/E &gt;1.5)<b>REJECT</b></li><li>Earnings deterioration<b>REJECT</b></li>
+      <li>Insufficient liquidity<b>REJECT</b></li><li>Weak cash conversion<b>INVESTIGATE</b></li>
+      <li>Extreme valuation<b>RESTRICT</b></li><li>Governance / auditor checks<b>UNKNOWN</b></li>
+    </ul></div>
+    <div class="box"><h4>Stage 2 · Attractiveness (100 pts)</h4><ul>
+      <li>Fundamental quality &amp; growth<b>35</b></li><li>Technical &amp; entry timing<b>25</b></li>
+      <li>News &amp; catalysts<b>15</b></li><li>Risk suitability<b>15</b></li><li>Valuation attractiveness<b>10</b></li>
+    </ul></div>
+    <div class="box"><h4>Classification bands</h4><ul>
+      <li>85–100<b>Strong Buy</b></li><li>75–84<b>Buy Candidate</b></li><li>65–74<b>Watchlist</b></li>
+      <li>50–64<b>Neutral</b></li><li>&lt;50 / REJECT<b>Avoid</b></li>
+    </ul></div>
+    <div class="box"><h4>Minimum conditions</h4><ul>
+      <li>Fundamental ≥70<b>required</b></li><li>Technical ≥65 (momentum)<b>required</b></li>
+      <li>No critical governance flags<b>required</b></li><li>Acceptable valuation<b>required</b></li>
+    </ul></div>
+  </div><p>Scores are research-prioritisation bands, not trading instructions. Missing data is marked UNKNOWN, never treated as a pass. A stock failing any REJECT check cannot be classified as Buy regardless of its composite score.</p>`;
+}
+
+function buildFactors(){
+  const fs=NEWS.factors||[];
+  $('#factors').innerHTML=fs.length?fs.map(m=>`
+    <div class="mcard ${m.tone==='positive'?'tone-pos':m.tone==='negative'?'tone-neg':'tone-neu'}">
+      <div class="mtop"><span class="ic">${m.icon}</span><div><div class="tg">${m.tag}</div></div></div>
+      <h3>${m.title}</h3><div class="sum">${m.summary}</div>
+      <div class="imp"><b>Sector impact:</b> ${m.impact}</div>
+      <div class="secs">${(m.sectors||[]).map(s=>`<span>${s}</span>`).join('')}</div>
+      <div class="news"><div class="nh">Live headlines</div>${(m.headlines||[]).map(h=>`<a href="${h.link}" target="_blank" rel="noopener">${h.title} <span class="src">— ${h.source}</span></a>`).join('')}</div>
+    </div>`).join(''):'';
+}
+
 /* ---------- Init ---------- */
-renderF(); renderT(); buildMethod(); buildMacro();
+renderF(); renderT(); buildMethod(); buildMacro(); buildDecisionUI(); buildFactors(); renderD();
 </script>
 </body>
 </html>

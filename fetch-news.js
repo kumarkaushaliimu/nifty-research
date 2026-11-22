@@ -67,13 +67,13 @@ function decode(s) {
     .replace(/<[^>]+>/g, '');
 }
 
-async function fetchHeadlines(query) {
+async function fetchHeadlines(query, limit = 6) {
   const url = 'https://news.google.com/rss/search?q=' + encodeURIComponent(query) + '&hl=en-IN&gl=IN&ceid=IN:en';
   try {
     const r = await fetch(url, { headers: { 'User-Agent': UA } });
     if (!r.ok) return [];
     const xml = await r.text();
-    const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 6).map(m => {
+    const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, limit).map(m => {
       const b = m[1];
       const title = (b.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '';
       const link = (b.match(/<link>([\s\S]*?)<\/link>/) || [])[1] || '';
@@ -85,6 +85,42 @@ async function fetchHeadlines(query) {
   } catch { return []; }
 }
 
+// ---- News sentiment & materiality scoring (heuristic, from headline text) ----
+const POSITIVE = ['gain','rise','rises','jump','surge','soar','profit','growth','grow','win','wins','order','upgrade','beat','record','strong','high','surge','expansion','expands','bullish','outperform','buy','rally','boost','approval','launch','revenue','dividend','buyback'];
+const NEGATIVE = ['fall','falls','drop','decline','loss','losses','crash','downgrade','miss','probe','fraud','resign','warning','cut','cuts','weak','sell','underperform','investigation','regulatory','penalty','fine','default','debt','concern','delay','slowdown','layoff','fraud','sebi','scam'];
+const MATERIAL = { 'order':90,'acquisition':95,'merger':95,'result':90,'guidance':85,'regulatory':95,'sebi':95,'fraud':95,'resign':85,'downgrade':80,'upgrade':80,'buyback':70,'dividend':60,'expansion':70,'launch':60,'stake':70,'rating':65 };
+
+function scoreHeadline(title) {
+  const s = title.toLowerCase();
+  const pos = POSITIVE.filter(w => s.includes(w)).length;
+  const neg = NEGATIVE.filter(w => s.includes(w)).length;
+  let sentiment = (pos - neg) / Math.max(1, pos + neg) * 100;
+  // Negate when a negative context word dominates
+  if (neg > pos) sentiment = -Math.abs(sentiment);
+  let materiality = 45;
+  for (const [k, v] of Object.entries(MATERIAL)) if (s.includes(k)) materiality = Math.max(materiality, v);
+  let horizon = 'Medium term';
+  if (s.includes('order') || s.includes('result')) horizon = 'Short term';
+  if (s.includes('expansion') || s.includes('capex')) horizon = 'Long term';
+  return { sentiment: Math.round(sentiment), materiality, horizon };
+}
+
+// Global & domestic factor cards (ChatGPT review section 3A/3B)
+const FACTORS = [
+  { id:'dxy', icon:'💵', tag:'Global factor', title:'US Dollar & USD/INR', tone:'neutral',
+    summary:'A strong dollar and elevated USD/INR pressure import-dependent businesses and cap FII risk appetite, while a softer dollar helps IT/pharma exporters and emerging-market liquidity.',
+    impact:'Track DXY and USD/INR together with FII flows. Falling crude + stable rupee is the most favourable combination for Indian equities.',
+    sectors:['IT','Pharma','Oil & Gas','Airlines'] },
+  { id:'commodities', icon:'🛢️', tag:'Global factor', title:'Crude, Gold & Copper', tone:'neutral',
+    summary:'Crude affects airlines/paints/chemicals inversely to upstream oil; gold signals risk sentiment; copper is a bellwether for metals and industrial demand. China PMI influences metals and chemicals.',
+    impact:'Avoid simplistic one-to-one mappings — verify whether a company actually benefits from lower input costs and whether savings are retained in margins.',
+    sectors:['Oil & Gas','Airlines','Paints','Metals','Chemicals'] },
+  { id:'domestic', icon:'🇮🇳', tag:'Domestic indicators', title:'PMI, GST, Credit & Capex', tone:'positive',
+    summary:'Manufacturing/services PMI, GST collections, credit growth, government capex and IIP growth are leading indicators of sector earnings — often before quarterly results appear.',
+    impact:' Rising GST and capex favour infrastructure, cement and capital goods; credit growth supports banks. Weak PMI signals caution for cyclicals.',
+    sectors:['Infrastructure','Cement','Capital Goods','Banks'] },
+];
+
 (async () => {
   console.log('Fetching macro headlines...');
   for (const m of MACRO) {
@@ -92,7 +128,32 @@ async function fetchHeadlines(query) {
     console.log(' ', m.id, m.headlines.length, 'headlines');
     await sleep(300);
   }
-  const out = { generatedAt: new Date().toISOString(), macro: MACRO };
+  for (const f of FACTORS) {
+    f.headlines = await fetchHeadlines(f.title + ' India outlook', 4);
+    await sleep(300);
+  }
+
+  // Per-stock company news (ChatGPT review: biggest gap)
+  const stocks = [];
+  try {
+    const d = JSON.parse(fs.readFileSync('data200.json', 'utf8'));
+    // Prioritise top 60 by fundamental+technical score to keep runtime reasonable
+    stocks.push(...d.stocks.filter(s => s.f || s.t).sort((a,b) => ((b.f?.score||0)+(b.t?.score||0)) - ((a.f?.score||0)+(a.t?.score||0))).slice(0, 60));
+    if (!stocks.length && d.stocks.length) stocks.push(...d.stocks.slice(0, 40));
+  } catch {}
+
+  const bySymbol = {};
+  console.log('Fetching company-specific news for', stocks.length, 'stocks...');
+  for (let i = 0; i < stocks.length; i++) {
+    const s = stocks[i];
+    const q = '"' + s.name + '" (' + s.symbol + ') NSE results order guidance';
+    const headlines = await fetchHeadlines(q, 3).then(hs => hs.map(h => ({ ...h, ...scoreHeadline(h.title) })));
+    bySymbol[s.symbol] = { headlines };
+    if ((i + 1) % 10 === 0) console.log(' ', i + 1, '/', stocks.length);
+    await sleep(220);
+  }
+
+  const out = { generatedAt: new Date().toISOString(), macro: MACRO, factors: FACTORS, stocks: bySymbol };
   fs.writeFileSync('news.json', JSON.stringify(out, null, 2));
-  console.log('Wrote news.json');
+  console.log('Wrote news.json with', Object.keys(bySymbol).length, 'stock news sets');
 })().catch(e => { console.error('FATAL', e); process.exit(1); });

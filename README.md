@@ -6,6 +6,12 @@ Scored fundamental + technical screening with a macro-news section mapping event
 - `dashboard.html` — self-contained dashboard (open in any browser; data & news embedded, no server needed).
 
 ## Sections
+0. **Investment Decision** (new) — a two-stage engine built from the ChatGPT review:
+   - **Stage 1 – Eligibility** hard checks (excessive leverage, earnings deterioration, weak cash conversion, extreme valuation, illiquidity, governance UNKNOWN). A REJECT cannot be a Buy regardless of score.
+   - **Stage 2 – Attractiveness** composite /100 = Fundamental 35 + Technical 25 + News 15 + Risk 15 + Valuation 10.
+   - Classification: Strong Buy / Buy / Watchlist / Neutral / Avoid, with minimum conditions (Fundamental ≥70, Technical ≥65 for momentum).
+   - Three strategies: **Quality Growth**, **Growth Momentum**, **Value + Turnaround**.
+   - RS Rating (percentile vs universe), sector strength/breadth, per-stock news with sentiment/materiality scoring, and expandable research cards with thesis + invalidation risks.
 1. **Fundamentals** — score /100 from the master checklist:
    - Growth (revenue/PAT/EPS CAGRs, quarterly YoY)
    - Profitability (ROCE, ROE, ROA, margins, incremental ROCE)
@@ -42,7 +48,7 @@ node build-dashboard.js data200.json dashboard.html
 - **Constituents:** NSE official index CSV lists
 - **Prices / indicators / market cap:** Yahoo Finance (NSE, delayed)
 - **Fundamentals / CAGRs / ratios / cash flow:** Screener.in (consolidated)
-- **Macro headlines:** Google News RSS
+- **Macro headlines / company news:** Google News RSS (with heuristic sentiment & materiality scoring)
 
 ## Caching & rate limits
 - `cache-tech.jsonl`, `cache-fund.jsonl`, `cache-fin.jsonl` store per-symbol data (raw text kept for fundamentals so parser fixes need no re-fetch).

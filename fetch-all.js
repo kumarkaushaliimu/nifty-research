@@ -227,6 +227,47 @@ function buildTech(sym, chart, indexReturns) {
     if (closes[i] > priorHigh && vols[i] > priorVol * 1.5) { breakoutVol = true; break; }
   }
   const rel = (r, ir) => (r != null && ir != null) ? r - ir : null;
+
+  // ---- ChatGPT-review additions: risk & volume metrics ----
+  // ATR (14) and ATR%
+  let atr = null, atrPct = null;
+  if (n >= 15) {
+    let sum = 0;
+    for (let i = n - 14; i < n; i++) {
+      sum += Math.max(highs[i] - lows[i], Math.abs(highs[i] - closes[i - 1]), Math.abs(lows[i] - closes[i - 1]));
+    }
+    atr = sum / 14;
+    atrPct = price ? atr / price * 100 : null;
+  }
+  // Up-day vs down-day volume (last 20 sessions)
+  let upVol = 0, dnVol = 0;
+  for (let i = n - 20; i < n; i++) { if (closes[i] >= closes[i - 1]) upVol += vols[i]; else dnVol += vols[i]; }
+  const updownVol = dnVol > 0 ? upVol / dnVol : (upVol > 0 ? 5 : null);
+  // OBV slope (last 20 vs prior 20)
+  let obv = 0, obvRecent = 0, obvPrior = 0;
+  for (let i = 1; i < n; i++) {
+    obv += closes[i] > closes[i - 1] ? vols[i] : (closes[i] < closes[i - 1] ? -vols[i] : 0);
+    if (i >= n - 20) obvRecent = obv;
+    if (i === n - 21) obvPrior = obv;
+  }
+  const obvRising = obvPrior != null ? obvRecent > obvPrior : null;
+  // Volatility (annualised std of daily returns, 1Y) and max drawdown from 52W series
+  const rets = [];
+  for (let i = Math.max(1, n - 252); i < n; i++) rets.push(closes[i] / closes[i - 1] - 1);
+  let volatility = null;
+  if (rets.length > 20) {
+    const mu = rets.reduce((a, b) => a + b, 0) / rets.length;
+    const sd = Math.sqrt(rets.reduce((a, b) => a + (b - mu) ** 2, 0) / rets.length);
+    volatility = sd * Math.sqrt(252) * 100;
+  }
+  let maxDD = 0, peak = -Infinity;
+  for (const c of closes.slice(-252)) { if (c > peak) peak = c; maxDD = Math.min(maxDD, (c / peak - 1) * 100); }
+  const avgTradedValue = avgVol20 * price;
+  // Distance from moving averages
+  const distMA20 = ema20 ? (price / ema20 - 1) * 100 : null;
+  const distMA50 = ema50 ? (price / ema50 - 1) * 100 : null;
+  const distMA200 = ema200 ? (price / ema200 - 1) * 100 : null;
+
   return {
     price, ema20, ema50, ema200, ema200Prev, rsi, adx,
     ret1m, ret3m, ret6m, ret1y,
@@ -234,6 +275,8 @@ function buildTech(sym, chart, indexReturns) {
     rel3m: rel(ret3m, indexReturns.m3),
     rel6m: rel(ret6m, indexReturns.m6),
     high52, low52, distHigh, volAbove, breakoutVol, avgVol20,
+    atr, atrPct, updownVol, obvRising, volatility, maxDD, avgTradedValue,
+    distMA20, distMA50, distMA200,
     spark: closes.slice(-60).map(v => Math.round(v * 100) / 100),
   };
 }
@@ -425,6 +468,45 @@ function deriveFund(rawS, yFin) {
   const roceImproving = (roce != null && roce3 != null) ? roce > roce3 : null;
   const roe = top['ROE'] ?? pct(NP[n - 1], equity);
 
+  // ---- ChatGPT-review additions ----
+  // Quarterly earnings acceleration: YoY growth of the last 4 quarters, and the trend
+  let qGrowth = [], qAccel = null, qLatestYoY = null;
+  if (q?.dates?.length >= 5) {
+    const qnp = q.rows['Net Profit'] || [];
+    const L = qnp.length;
+    for (let i = 4; i < L; i++) {
+      const cur = qnp[i], prev = qnp[i - 4];
+      if (cur != null && prev != null && Math.abs(prev) > 0) qGrowth.push((cur - prev) / Math.abs(prev) * 100);
+    }
+    qLatestYoY = qGrowth.length ? qGrowth[qGrowth.length - 1] : null;
+    if (qGrowth.length >= 2) qAccel = qGrowth[qGrowth.length - 1] - qGrowth[0]; // >0 = accelerating
+  }
+  const avgROCE3 = (() => {
+    const v = roceSeries.slice(-3).filter(x => x != null);
+    return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+  })();
+  // Incremental ROCE: change in operating profit / change in capital employed (rough proxy)
+  let incRoce = null;
+  const opSeries = plA?.rows['Operating Profit'] || [];
+  if (opSeries.length >= 4 && equity != null) {
+    const curr = last(eqCap) ?? 0, currRes = last(reserves) ?? 0;
+    const eqSeries = bsA?.rows['Reserves'] || [];
+    const prevRes = eqSeries.length >= 4 ? eqSeries[eqSeries.length - 4] : null;
+    const dCap = (currRes - (prevRes ?? currRes)) + ((last(eqCap) ?? 0) - (eqCap ?? 0));
+    const dOp = opSeries[opSeries.length - 1] - opSeries[opSeries.length - 4];
+    if (dCap != null && dCap > 0 && dOp != null) incRoce = dOp / dCap * 100;
+  }
+  const currentAssets = last(bsA?.rows['Current Assets'] || []);
+  const currentLiab = last(bsA?.rows['Current Liabilities'] || []);
+  const currentRatio = (currentAssets != null && currentLiab != null && currentLiab > 0) ? currentAssets / currentLiab : null;
+  const totalDebt = debt;
+  const evEbitda = (top['Market Cap'] != null && ebitdaAbs != null && ebitdaAbs > 0)
+    ? ((top['Market Cap'] * 1e7) + (totalDebt || 0) - (cash || 0)) / ebitdaAbs : null;
+  const peg = (top['Stock P/E'] != null && np3 != null && np3 > 0) ? top['Stock P/E'] / np3 : null;
+  // Latest annual YoY growth
+  const revYoY = (S.length >= 2 && S[n - 2] > 0) ? (S[n - 1] - S[n - 2]) / S[n - 2] * 100 : null;
+  const npYoY = (NP.length >= 2 && NP[n - 2] > 0) ? (NP[n - 1] - NP[n - 2]) / NP[n - 2] * 100 : null;
+
   return {
     marketCap: top['Market Cap'] != null ? top['Market Cap'] * 1e7 : null,
     pe: top['Stock P/E'], bookValue: top['Book Value'], divYield: top['Dividend Yield'],
@@ -436,6 +518,9 @@ function deriveFund(rawS, yFin) {
     debtorDays: debtor, inventoryDays: inventory, wcDays,
     debtorTrend: stable(days('Debtor Days')), invTrend: stable(days('Inventory Days')), wcTrend: stable(days('Working Capital Days')),
     roceImproving,
+    // ChatGPT-review additions
+    qGrowth, qAccel, qLatestYoY, avgROCE3, incRoce, currentRatio, evEbitda, peg, revYoY, npYoY,
+    ebitdaAbs,
     latestQuarter: q?.dates?.[q.dates.length - 1] || null,
     latestAnnual: dates[dates.length - 1] || null,
     years: dates.length,
@@ -538,6 +623,131 @@ function techChecks(t, bench) {
   const volPass = c.find(x => x.id === 'vol').pass || c.find(x => x.id === 'breakout').pass;
   conds.push(!!volPass);
   return { checks: c, score: availW ? earned / availW * 100 : null, coverage: availW, cats, conditions: conds.filter(Boolean).length };
+}
+
+/* ---------------- investment decision engine (ChatGPT review) ---------------- */
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+const pctRank = (arr, v) => {
+  if (v == null || !arr.length) return null;
+  const below = arr.filter(x => x != null && x < v).length;
+  return Math.round(below / arr.length * 100);
+};
+
+function buildDecision(stocks, newsBySymbol) {
+  // Universe-relative: RS Rating = percentile of 3M relative return vs benchmark
+  const relArr = stocks.map(s => s.t?.rel3m).filter(v => v != null);
+  // Sector strength
+  const sectors = {};
+  for (const s of stocks) (sectors[s.sector] ||= []).push(s);
+  const sectorStats = {};
+  for (const [sec, list] of Object.entries(sectors)) {
+    const rets = list.map(s => s.t?.ret3m).filter(v => v != null).sort((a, b) => a - b);
+    const above50 = list.filter(s => s.t?.ema50 != null && s.price > s.t.ema50).length;
+    const above200 = list.filter(s => s.t?.ema200 != null && s.price > s.t.ema200).length;
+    sectorStats[sec] = {
+      ret3m: rets.length ? rets[rets.length >> 1] : null,
+      breadth50: list.length ? above50 / list.length * 100 : null,
+      breadth200: list.length ? above200 / list.length * 100 : null,
+      count: list.length,
+    };
+  }
+
+  for (const s of stocks) {
+    const f = s.f || {}, t = s.t || {};
+    // RS Rating across universe
+    s.rsRating = pctRank(relArr, t.rel3m);
+    s.sectorStrength = sectorStats[s.sector] || null;
+
+    // ---- News score from per-stock headlines ----
+    const n = newsBySymbol[s.symbol];
+    let newsScore = 50, newsCount = 0, newsSummary = null;
+    if (n && n.headlines?.length) {
+      newsCount = n.headlines.length;
+      const scored = n.headlines.filter(h => h.sentiment != null);
+      if (scored.length) {
+        const weighted = scored.reduce((a, h) => a + ((h.sentiment + 100) / 2) * (0.5 + h.materiality / 200), 0);
+        const wsum = scored.reduce((a, h) => a + (0.5 + h.materiality / 200), 0);
+        newsScore = wsum ? clamp(weighted / wsum, 0, 100) : 50;
+      }
+      newsSummary = n.headlines.slice(0, 3).map(h => ({ title: h.title, sentiment: h.sentiment, materiality: h.materiality, link: h.link, source: h.source }));
+    }
+    s.news = { score: Math.round(newsScore), count: newsCount, headlines: newsSummary || [] };
+
+    // ---- Risk score (higher = lower risk) ----
+    let risk = 100;
+    if (t.volatility != null) risk -= clamp((t.volatility - 20) * 0.8, 0, 25);
+    if (t.maxDD != null) risk -= clamp((-t.maxDD - 15) * 0.5, 0, 20);
+    if (f.de != null) risk -= clamp((f.de - 0.3) * 25, 0, 20);
+    if (f.ocfNp != null && f.ocfNp < 0.8) risk -= (0.8 - f.ocfNp) * 20;
+    if (t.avgTradedValue != null && t.avgTradedValue < 5e7) risk -= 10;
+    s.riskScore = Math.round(clamp(risk, 0, 100));
+
+    // ---- Stage 1: eligibility hard checks ----
+    const flags = [];
+    if (f.ocfNp != null && f.ocfNp < 0.3) flags.push({ level: 'INVESTIGATE', label: 'Weak cash conversion', detail: 'OCF/PAT ' + f.ocfNp.toFixed(2) + 'x' });
+    if (f.de != null && f.de > 1.5) flags.push({ level: 'REJECT', label: 'Excessive leverage', detail: 'D/E ' + f.de.toFixed(2) + 'x' });
+    if (f.np3 != null && f.np3 < 0) flags.push({ level: 'REJECT', label: 'Earnings deterioration', detail: 'PAT CAGR ' + f.np3.toFixed(0) + '%' });
+    if (f.pe != null && f.sectorPe != null && f.pe > f.sectorPe * 2) flags.push({ level: 'RESTRICT', label: 'Extreme valuation', detail: 'P/E ' + f.pe.toFixed(0) + 'x vs ' + f.sectorPe.toFixed(0) + 'x sector' });
+    if (t.avgTradedValue != null && t.avgTradedValue < 1e7) flags.push({ level: 'REJECT', label: 'Insufficient liquidity', detail: '₹' + (t.avgTradedValue / 1e7).toFixed(1) + ' Cr avg' });
+    if (!s.f) flags.push({ level: 'UNKNOWN', label: 'Incomplete fundamental data' });
+    if (!s.t) flags.push({ level: 'UNKNOWN', label: 'Incomplete price history' });
+    // No governance data available from our sources -> mark UNKNOWN honestly
+    flags.push({ level: 'UNKNOWN', label: 'Governance / auditor checks', detail: 'Not covered by data sources' });
+    const hasReject = flags.some(x => x.level === 'REJECT');
+    const eligibility = hasReject ? 'REJECT' : (flags.some(x => x.level === 'INVESTIGATE' || x.level === 'RESTRICT') ? 'CAUTION' : (flags.some(x => x.level === 'UNKNOWN') ? 'REVIEW' : 'ELIGIBLE'));
+    s.eligibility = { status: eligibility, flags };
+
+    // ---- Stage 2: attractiveness composite (100 pts) ----
+    const fScore = f.score ?? 0, tScore = t.score ?? 0;
+    let valScore = 50;
+    if (f.peg != null && f.peg > 0) valScore = clamp(120 - f.peg * 40, 0, 100);
+    else if (f.pe != null && f.sectorPe != null) valScore = f.pe < f.sectorPe ? 75 : 40;
+    const comp =
+      fScore * 0.35 + tScore * 0.25 + newsScore * 0.15 + s.riskScore * 0.15 + valScore * 0.10;
+    s.composite = Math.round(clamp(comp, 0, 100));
+    s.compositeParts = {
+      fundamental: Math.round(fScore * 0.35), technical: Math.round(tScore * 0.25),
+      news: Math.round(newsScore * 0.15), risk: Math.round(s.riskScore * 0.15), valuation: Math.round(valScore * 0.10),
+    };
+
+    // Minimum conditions & classification
+    let cls = s.composite >= 85 ? 'Strong Buy Candidate' : s.composite >= 75 ? 'Buy Candidate'
+      : s.composite >= 65 ? 'Watchlist' : s.composite >= 50 ? 'Neutral' : 'Avoid';
+    if (hasReject || fScore < 70) cls = 'Avoid';
+    else {
+      // RESTRICT / INVESTIGATE flags and weak technicals cap the classification at Watchlist
+      const softFlag = flags.some(x => x.level === 'RESTRICT' || x.level === 'INVESTIGATE');
+      if (softFlag && (cls === 'Strong Buy Candidate' || cls === 'Buy Candidate')) cls = 'Watchlist';
+      if (tScore < 65 && (cls === 'Strong Buy Candidate' || cls === 'Buy Candidate')) cls = 'Watchlist';
+    }
+    s.classification = cls;
+
+    // ---- Strategy buckets ----
+    const strategies = [];
+    if (fScore >= 80 && tScore >= 60 && f.np3 >= 15 && f.roce >= 18 && (f.peg == null || f.peg < 2)) strategies.push('Quality Growth');
+    if (fScore >= 70 && tScore >= 80 && s.rsRating >= 80 && f.qAccel > 0) strategies.push('Growth Momentum');
+    if (fScore >= 55 && (f.peg != null && f.peg < 1 || (f.pe != null && f.sectorPe != null && f.pe < f.sectorPe * 0.8)) && f.qAccel > 0 && (t.distMA200 ?? -100) > -5) strategies.push('Value + Turnaround');
+    s.strategies = strategies;
+
+    // ---- Thesis bullets (auto-generated from data) ----
+    const thesis = [], risks = [];
+    if (f.rev3 > 12) thesis.push('Revenue compounding at ' + f.rev3.toFixed(0) + '% (3Y CAGR)');
+    if (f.qAccel > 0) thesis.push('Quarterly earnings accelerating (+' + f.qAccel.toFixed(0) + ' pp YoY trend)');
+    if (f.roce > 18) thesis.push('ROCE ' + f.roce.toFixed(0) + '% — strong capital efficiency');
+    if (f.ocfNp > 0.8) thesis.push('Cash conversion healthy (OCF/PAT ' + f.ocfNp.toFixed(2) + 'x)');
+    if (s.rsRating >= 70) thesis.push('Top-' + (100 - s.rsRating) + '% relative strength vs universe');
+    if (t.breakoutVol) thesis.push('Volume-confirmed breakout');
+    if (newsScore > 60) thesis.push('Positive news tone (score ' + Math.round(newsScore) + ')');
+    if (f.np3 < 0) risks.push('PAT CAGR negative (' + f.np3.toFixed(0) + '%)');
+    if (f.de > 0.5) risks.push('Leverage elevated (D/E ' + f.de.toFixed(2) + 'x)');
+    if (f.ocfNp != null && f.ocfNp < 0.8) risks.push('Cash conversion weak (OCF/PAT ' + f.ocfNp.toFixed(2) + 'x)');
+    if (t.distHigh < -15) risks.push('Well below 52W high (' + t.distHigh.toFixed(0) + '%)');
+    if (t.maxDD < -30) risks.push('High historical drawdown (' + t.maxDD.toFixed(0) + '%)');
+    if (newsScore < 40 && newsCount) risks.push('Negative news tone');
+    for (const fl of flags) if (fl.level === 'REJECT' || fl.level === 'INVESTIGATE') risks.push(fl.label);
+    s.thesis = thesis; s.thesisRisks = risks;
+  }
+  return { sectorStats };
 }
 
 /* ---------------- main ---------------- */
@@ -685,9 +895,16 @@ function techChecks(t, bench) {
     };
   });
 
+  // Investment decision engine: RS rating, sector strength, eligibility, composite score
+  let newsBySymbol = {};
+  try { newsBySymbol = JSON.parse(fs.readFileSync('news.json', 'utf8')).stocks || {}; } catch {}
+  const { sectorStats } = buildDecision(stocks, newsBySymbol);
+  console.log('Decision engine:', stocks.filter(s => s.classification === 'Buy Candidate' || s.classification === 'Strong Buy Candidate').length, 'buy candidates |', stocks.filter(s => s.strategies?.length).length, 'strategy matches');
+
   const asOf = new Date(Math.max(...Object.values(quoteMap).map(q => q.regularMarketTime || 0).filter(Boolean)) * 1000);
   const out = {
     title: TITLE,
+    sectorStats,
     generatedAt: new Date().toISOString(),
     asOf: asOf.toISOString(),
     index: {
