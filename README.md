@@ -1,0 +1,67 @@
+# NIFTY Research Dashboard
+
+Scored fundamental + technical screening with a macro-news section mapping events to sector impact. Current build: **NIFTY 200**.
+
+## Output
+- `dashboard.html` — self-contained dashboard (open in any browser; data & news embedded, no server needed).
+
+## Sections
+1. **Fundamentals** — score /100 from the master checklist:
+   - Growth (revenue/PAT/EPS CAGRs, quarterly YoY)
+   - Profitability (ROCE, ROE, ROA, margins, incremental ROCE)
+   - Financial strength (D/E, net debt/EBITDA, borrowings, FCF)
+   - Cash flow quality (OCF/PAT, FCF, working-capital days)
+   - Valuation (P/E vs sector median)
+   - Click a row to expand every check with pass/fail, value and weight.
+2. **Technicals** — 10-point screening checklist plus a weighted /100 score (trend 25, momentum 20, relative strength 25, price performance 15, volume 10, 52W proximity 5), sparklines and full indicator detail.
+3. **Macro & News** — RBI, inflation, US Fed, elections, GST and FII cards with sector-impact notes and live Google News headlines.
+
+## Universe
+- `npm run refresh` builds for **NIFTY 200** (default).
+- `node fetch-all.js --index=500` builds the NIFTY 500 dataset (`data500.json`).
+- `node build-dashboard.js data500.json dashboard.html` renders the 500-stock dashboard.
+- There is no official NSE "NIFTY 250" list; if needed, use the top 250 NIFTY 500 names by market cap.
+
+For NIFTY 200, Yahoo Finance has no index symbol, so relative returns are computed against a **cap-weighted synthetic benchmark** of the 200 constituents.
+
+## Refresh
+```bash
+npm run refresh          # fetch stock data + news, rebuild dashboard (full)
+npm run refresh:news     # just refresh headlines, rebuild (fast)
+npm run build:only       # rebuild dashboard.html from cached data
+```
+
+Granular:
+```bash
+node fetch-all.js --index=200 [--limit=50] [--refresh]
+node fetch-news.js
+node build-dashboard.js data200.json dashboard.html
+```
+
+## Data sources
+- **Constituents:** NSE official index CSV lists
+- **Prices / indicators / market cap:** Yahoo Finance (NSE, delayed)
+- **Fundamentals / CAGRs / ratios / cash flow:** Screener.in (consolidated)
+- **Macro headlines:** Google News RSS
+
+## Caching & rate limits
+- `cache-tech.jsonl`, `cache-fund.jsonl`, `cache-fin.jsonl` store per-symbol data (raw text kept for fundamentals so parser fixes need no re-fetch).
+- Screener.in is fetched sequentially with ~420 ms delay; only missing symbols are fetched on repeat runs.
+
+## Put it online
+
+The dashboard is a single self-contained HTML file, so any static host works.
+
+**Quickest — Netlify Drop:** go to <https://app.netlify.com/drop>, drag in `dashboard.html`, and you get a public URL instantly. Sign up for a free account to keep it permanently.
+
+**Recommended — GitHub Pages with automatic daily refresh:**
+
+1. Create a GitHub repository and push this folder to it (the included `.github/workflows/refresh.yml` handles the rest).
+2. In the repo, go to **Settings → Pages → Build and deployment**, set **Source: Deploy from a branch**, choose the `gh-pages` branch, and save.
+3. Your site will be live at `https://<username>.github.io/<repo-name>/`.
+
+The workflow fetches fresh data and headlines every day at 06:30 IST, commits the updated data, and redeploys the site. You can also trigger it any time from the **Actions** tab → **Refresh dashboard data** → **Run workflow**.
+
+> **Note on the "Refresh headlines" button:** on a static host it re-reads the deployed `news.json`; it cannot fetch fresh headlines by itself because static sites have no server-side code. Use the GitHub Action (or `npm run refresh:news` locally + push) for genuinely new headlines.
+
+**Disclaimer:** For information and education only — not investment advice. Verify all figures with NSE / the company before acting.

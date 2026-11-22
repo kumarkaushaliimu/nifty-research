@@ -1,0 +1,22 @@
+{
+  "name": "nifty-research-dashboard",
+  "version": "1.0.0",
+  "main": "build-dashboard.js",
+  "scripts": {
+    "fetch": "node fetch-all.js --index=200",
+    "fetch:500": "node fetch-all.js --index=500",
+    "news": "node fetch-news.js",
+    "build": "node build-dashboard.js data200.json dashboard.html",
+    "refresh": "node fetch-all.js --index=200 && node fetch-news.js && node build-dashboard.js data200.json dashboard.html",
+    "refresh:news": "node fetch-news.js && node build-dashboard.js data200.json dashboard.html",
+    "build:only": "node build-dashboard.js data200.json dashboard.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nifty", "stocks", "screener"],
+  "author": "",
+  "license": "ISC",
+  "description": "Fundamental & technical research dashboard for NIFTY indices",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

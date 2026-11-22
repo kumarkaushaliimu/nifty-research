@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIFTY 500 — Research Dashboard</title>
+<style>
+  :root{
+    --bg:#070b12;--bg2:#0b111c;--panel:#0e1624;--panel2:#121c2c;
+    --line:#1c2839;--line2:#24344a;--txt:#e6edf6;--muted:#8b9bb1;--dim:#64748b;
+    --green:#2fd18c;--green-dim:rgba(47,209,140,.12);
+    --red:#ff6b6b;--red-dim:rgba(255,107,107,.12);
+    --amber:#f5b544;--cyan:#4cc9f0;--violet:#a78bfa;
+    --fund:#4cc9f0;--tech:#f5b544;--ret:#a78bfa;--macro:#a78bfa;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(900px 500px at 12% -8%, rgba(76,201,240,.10), transparent 60%),
+      radial-gradient(800px 500px at 88% -12%, rgba(167,139,250,.10), transparent 60%),
+      var(--bg);
+    color:var(--txt);font-family:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+    font-size:14px;line-height:1.45;min-height:100vh;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1900px;margin:0 auto;padding:24px 22px 60px}
+  a{color:var(--cyan);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* Header */
+  header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:20px}
+  .brand{display:flex;align-items:center;gap:14px}
+  .logo{width:46px;height:46px;border-radius:13px;flex:none;background:linear-gradient(145deg,#123b52,#0b2233);border:1px solid #1d4c66;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+  .logo svg{width:26px;height:26px}
+  h1{font-size:22px;letter-spacing:-.3px;font-weight:650;line-height:1.15}
+  h1 span{color:var(--cyan)}
+  .sub{color:var(--muted);font-size:12.5px;margin-top:4px}
+  .sub b{color:#c3d2e5;font-weight:600}
+  .stamp{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+  .stamp .idx{font-size:12px;color:var(--muted)}
+  .stamp .idx b{font-size:15px;color:var(--txt);font-variant-numeric:tabular-nums}
+  .stamp .gen{font-size:11px;color:var(--dim)}
+
+  /* KPIs */
+  .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:20px}
+  .kpi{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:12px;padding:13px 15px;position:relative;overflow:hidden}
+  .kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--k,var(--cyan))}
+  .kpi .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+  .kpi .val{font-size:21px;font-weight:650;letter-spacing:-.4px;margin-top:5px;font-variant-numeric:tabular-nums}
+  .kpi .n{font-size:11px;color:var(--dim);margin-top:2px}
+
+  /* Tabs */
+  .tabs{display:flex;gap:6px;margin-bottom:18px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .tab{appearance:none;border:1px solid transparent;border-bottom:none;background:transparent;color:var(--muted);font:inherit;font-weight:600;font-size:13.5px;padding:11px 18px;border-radius:9px 9px 0 0;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.15s;position:relative;top:1px}
+  .tab:hover{color:var(--txt);background:rgba(255,255,255,.02)}
+  .tab.active{color:var(--txt);background:var(--panel);border-color:var(--line)}
+  .tab.active::after{content:"";position:absolute;left:0;right:0;top:-1px;height:2px;background:var(--tc,var(--cyan))}
+  .tab .ic{font-size:15px}
+  .tab .badge{font-size:10px;background:var(--line2);color:var(--muted);padding:1px 7px;border-radius:9px;font-variant-numeric:tabular-nums}
+  .tab.active .badge{background:var(--line2);color:var(--txt)}
+  .section{display:none}
+  .section.active{display:block}
+
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px}
+  .toolbar .search{flex:1;min-width:220px;position:relative}
+  .toolbar .search input{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 12px 9px 34px;color:var(--txt);font:inherit;font-size:13px;outline:none}
+  .toolbar .search input:focus{border-color:var(--cyan)}
+  .toolbar .search::before{content:"⌕";position:absolute;left:12px;top:6px;color:var(--dim);font-size:18px}
+  select,button.btn{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:var(--txt);font:inherit;font-size:12.5px;outline:none;cursor:pointer}
+  select:focus,button.btn:hover{border-color:var(--line2)}
+  button.btn:hover{background:var(--panel2)}
+  .pill{display:flex;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:3px}
+  .pill button{appearance:none;border:none;background:transparent;color:var(--muted);font:inherit;font-size:12px;padding:6px 11px;border-radius:6px;cursor:pointer}
+  .pill button.on{background:var(--line2);color:var(--txt)}
+  .count{margin-left:auto;color:var(--dim);font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums}
+
+  /* Table */
+  .tablecard{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .legend{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .legend i{width:9px;height:9px;border-radius:2px;display:inline-block}
+  .scroll{overflow:auto;max-height:72vh}
+  table{border-collapse:separate;border-spacing:0;width:100%;min-width:1100px;font-size:12.5px}
+  thead th{position:sticky;top:0;background:var(--panel2);z-index:2;text-align:right;padding:10px 11px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:600;white-space:nowrap;border-bottom:1px solid var(--line2);cursor:pointer;user-select:none}
+  thead th.l{text-align:left}
+  thead th:hover{color:var(--txt)}
+  thead th .ar{color:var(--dim);font-size:9px;margin-left:3px}
+  thead th.f{box-shadow:inset 0 2px 0 var(--fund)}
+  thead th.t{box-shadow:inset 0 2px 0 var(--tech)}
+  tbody td{padding:9px 11px;text-align:right;border-bottom:1px solid rgba(28,40,57,.55);font-variant-numeric:tabular-nums;white-space:nowrap;vertical-align:middle}
+  tbody td.l{text-align:left}
+  tbody tr{cursor:pointer;transition:background .12s}
+  tbody tr:hover{background:rgba(255,255,255,.025)}
+  tbody tr.open{background:rgba(76,201,240,.045)}
+  .cname{font-weight:600;color:var(--txt)}
+  .csym{font-size:10.5px;color:var(--dim);margin-top:1px}
+  .sect{font-size:11px;color:var(--muted);max-width:140px;overflow:hidden;text-overflow:ellipsis}
+  .score{display:inline-flex;align-items:center;gap:7px;justify-content:flex-end}
+  .score .bar{width:46px;height:5px;border-radius:3px;background:var(--line2);overflow:hidden}
+  .score .bar i{display:block;height:100%;border-radius:3px}
+  .score b{font-size:13px;font-variant-numeric:tabular-nums;min-width:26px;text-align:right}
+  .pass{color:var(--green)}.fail{color:var(--red)}.neutral{color:var(--dim)}
+  .tag{font-size:10px;padding:2px 7px;border-radius:5px;background:var(--line2);color:var(--muted)}
+  .tag.g{background:var(--green-dim);color:var(--green)}
+  .tag.r{background:var(--red-dim);color:var(--red)}
+  .chip{font-size:10.5px;color:var(--muted)}
+  .spark{width:62px;height:22px;vertical-align:middle}
+
+  /* Detail panel */
+  .detail td{padding:0;background:var(--bg2)}
+  .detail-inner{padding:16px 18px;display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:18px}
+  .dcol h4{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:9px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .cl{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12px;border-bottom:1px dashed rgba(36,52,74,.5)}
+  .cl:last-child{border:none}
+  .cl .ck{width:15px;flex:none;text-align:center}
+  .cl .lab{flex:1;color:var(--muted)}
+  .cl .val{color:var(--txt);font-variant-numeric:tabular-nums;font-size:11.5px}
+  .cl .wt{font-size:10px;color:var(--dim);width:26px;text-align:right}
+  .catgrid{display:flex;flex-direction:column;gap:8px}
+  .cat{display:flex;align-items:center;gap:8px;font-size:11.5px}
+  .cat .n{width:120px;color:var(--muted)}
+  .cat .bar{flex:1;height:7px;background:var(--line2);border-radius:4px;overflow:hidden}
+  .cat .bar i{display:block;height:100%;border-radius:4px}
+  .cat .v{width:38px;text-align:right;font-variant-numeric:tabular-nums}
+  .dhead{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+  .dhead .nm{font-size:16px;font-weight:650}
+  .dhead .meta{font-size:11.5px;color:var(--muted)}
+  .dscore{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums}
+  .empty{padding:40px;text-align:center;color:var(--dim)}
+
+  /* Methodology */
+  .method{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px 20px;margin-top:16px}
+  .method h3{font-size:14px;margin-bottom:12px;color:var(--txt)}
+  .method .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .method .box{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:13px}
+  .method .box h4{font-size:12px;color:var(--cyan);margin-bottom:8px}
+  .method .box ul{list-style:none;font-size:11.5px;color:var(--muted)}
+  .method .box li{padding:3px 0;display:flex;justify-content:space-between;gap:10px}
+  .method .box li b{color:var(--txt);font-variant-numeric:tabular-nums;font-weight:600}
+  .method p{font-size:11.5px;color:var(--dim);margin-top:12px;line-height:1.6}
+
+  /* Macro */
+  .macrohead{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .macrohead h2{font-size:17px;font-weight:650}
+  .macrohead .sub{font-size:12px}
+  .mcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:14px}
+  .mcard{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:13px;padding:16px 17px;position:relative;overflow:hidden}
+  .mcard::after{content:"";position:absolute;right:-30px;top:-30px;width:100px;height:100px;border-radius:50%;background:var(--ac,rgba(167,139,250,.10));filter:blur(10px)}
+  .mcard .mtop{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+  .mcard .ic{font-size:22px}
+  .mcard .tg{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  .mcard .dt{font-size:10.5px;color:var(--dim);margin-left:auto}
+  .mcard h3{font-size:14.5px;font-weight:650;margin-bottom:8px;line-height:1.3}
+  .mcard .sum{font-size:12px;color:var(--muted);margin-bottom:11px;line-height:1.55}
+  .mcard .imp{background:rgba(0,0,0,.22);border-left:3px solid var(--ac,var(--violet));border-radius:0 7px 7px 0;padding:9px 11px;font-size:11.7px;color:#c3d2e5;line-height:1.5}
+  .mcard .imp b{color:var(--txt)}
+  .mcard .secs{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+  .mcard .secs span{font-size:10px;background:var(--line2);color:var(--muted);padding:2px 8px;border-radius:10px}
+  .news{margin-top:10px;border-top:1px dashed var(--line2);padding-top:9px}
+  .news .nh{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--dim);margin-bottom:5px}
+  .news a{display:block;font-size:11.5px;color:#a9bdd4;padding:3px 0;line-height:1.35}
+  .news a:hover{color:var(--cyan)}
+  .news a .src{color:var(--dim);font-size:10px}
+  .tone-pos{--ac:rgba(47,209,140,.12)}.tone-neg{--ac:rgba(255,107,107,.12)}.tone-neu{--ac:rgba(167,139,250,.12)}
+
+  .notes{margin-top:18px;font-size:11px;color:var(--dim);line-height:1.6}
+  .notes b{color:var(--muted)}
+  .disc{margin-top:10px;padding:11px 14px;border:1px solid var(--line);border-radius:9px;background:rgba(255,107,107,.04);font-size:10.8px;color:#a98b8b}
+
+  @media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.detail-inner{grid-template-columns:1fr}}
+  @media(max-width:700px){.kpis{grid-template-columns:repeat(2,1fr)}.wrap{padding:16px 12px 40px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#4cc9f0" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+      <div>
+        <h1><span>NIFTY 500</span> — Research Dashboard</h1>
+        <div class="sub">Fundamental &amp; technical scoring with macro context · <b id="asOf"></b></div>
+      </div>
+    </div>
+    <div class="stamp">
+      <div class="idx">Index <b id="idxPrice">—</b> <span id="idxChg"></span></div>
+      <div class="gen" id="genTime"></div>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpis"></section>
+
+  <div class="tabs">
+    <button class="tab active" data-sec="fund" style="--tc:var(--fund)"><span class="ic">📊</span> Fundamentals <span class="badge" id="badgeFund">0</span></button>
+    <button class="tab" data-sec="tech" style="--tc:var(--tech)"><span class="ic">📈</span> Technicals <span class="badge" id="badgeTech">0</span></button>
+    <button class="tab" data-sec="macro" style="--tc:var(--macro)"><span class="ic">🌐</span> Macro &amp; News <span class="badge" id="badgeMacro">0</span></button>
+  </div>
+
+  <!-- FUNDMENTALS -->
+  <section class="section active" id="sec-fund">
+    <div class="toolbar">
+      <div class="search"><input id="fsearch" placeholder="Search company or symbol…"></div>
+      <select id="fsector"><option value="">All sectors</option></select>
+      <div class="pill" id="ffilter">
+        <button class="on" data-f="all">All</button>
+        <button data-f="70">Score ≥70</button>
+        <button data-f="55">Score ≥55</button>
+        <button data-f="top">Top 25</button>
+      </div>
+      <button class="btn" id="fexport">⬇ Export CSV</button>
+      <span class="count" id="fcount"></span>
+    </div>
+    <div class="tablecard">
+      <div class="legend">
+        <span><i style="background:var(--fund)"></i> Fundamental score (0–100) — higher is better</span>
+        <span>Click a row to expand the full checklist</span>
+        <span class="chip">✓ pass · ✗ fail · — not available (excluded from score)</span>
+      </div>
+      <div class="scroll"><table id="ftbl">
+        <thead><tr>
+          <th class="l" data-key="name" style="width:200px">Company <span class="ar">▼</span></th>
+          <th class="l hide-980" data-key="sector" style="width:130px">Sector <span class="ar">▼</span></th>
+          <th class="f" data-key="score">Score <span class="ar">▼</span></th>
+          <th class="f" data-key="rev3">Rev 3Y <span class="ar">▼</span></th>
+          <th class="f" data-key="np3">PAT 3Y <span class="ar">▼</span></th>
+          <th class="f" data-key="roce">ROCE <span class="ar">▼</span></th>
+          <th class="f" data-key="roe">ROE <span class="ar">▼</span></th>
+          <th class="f" data-key="de">D/E <span class="ar">▼</span></th>
+          <th class="f" data-key="ocfNp">OCF/PAT <span class="ar">▼</span></th>
+          <th class="f" data-key="pe">P/E <span class="ar">▼</span></th>
+          <th class="f" data-key="sectorPe">Sector P/E <span class="ar">▼</span></th>
+          <th class="f" data-key="marketCap">Mkt Cap <span class="ar">▼</span></th>
+          <th data-key="price">Price <span class="ar">▼</span></th>
+          <th class="r" data-key="changePct">Chg% <span class="ar">▼</span></th>
+        </tr></thead>
+        <tbody id="fbody"></tbody>
+      </table></div>
+    </div>
+    <div class="method" id="fmethod"></div>
+  </section>
+
+  <!-- TECHNICALS -->
+  <section class="section" id="sec-tech">
+    <div class="toolbar">
+      <div class="search"><input id="tsearch" placeholder="Search company or symbol…"></div>
+      <select id="tsector"><option value="">All sectors</option></select>
+      <div class="pill" id="tfilter">
+        <button class="on" data-f="all">All</button>
+        <button data-f="70">Score ≥70</button>
+        <button data-f="55">Score ≥55</button>
+        <button data-f="10">10/10 conditions</button>
+      </div>
+      <button class="btn" id="texport">⬇ Export CSV</button>
+      <span class="count" id="tcount"></span>
+    </div>
+    <div class="tablecard">
+      <div class="legend">
+        <span><i style="background:var(--tech)"></i> Technical score (0–100) — higher is better</span>
+        <span>Click a row to expand conditions &amp; category breakdown</span>
+        <span class="chip">10-point screening checklist applied first</span>
+      </div>
+      <div class="scroll"><table id="ttbl">
+        <thead><tr>
+          <th class="l" data-key="name" style="width:200px">Company <span class="ar">▼</span></th>
+          <th class="l" data-key="sector" style="width:130px">Sector <span class="ar">▼</span></th>
+          <th class="t" data-key="score">Score <span class="ar">▼</span></th>
+          <th class="t" data-key="conditions" title="Number of the 10 screening conditions met">Cond <span class="ar">▼</span></th>
+          <th class="t" data-key="ema200">>200EMA <span class="ar">▼</span></th>
+          <th class="t" data-key="rsi">RSI <span class="ar">▼</span></th>
+          <th class="t" data-key="adx">ADX <span class="ar">▼</span></th>
+          <th class="t" data-key="ret3m">3M <span class="ar">▼</span></th>
+          <th class="t" data-key="rel3m">vs Index <span class="ar">▼</span></th>
+          <th class="t" data-key="distHigh">52W High <span class="ar">▼</span></th>
+          <th data-key="price">Price <span class="ar">▼</span></th>
+          <th data-key="trend">60D trend <span class="ar">▼</span></th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table></div>
+    </div>
+    <div class="method" id="tmethod"></div>
+  </section>
+
+  <!-- MACRO -->
+  <section class="section" id="sec-macro">
+    <div class="macrohead">
+      <div><h2>Macro events &amp; sector impact</h2><div class="sub" id="newsStamp"></div></div>
+      <button class="btn" id="newsRefresh">↻ Refresh headlines</button>
+    </div>
+    <div class="mcards" id="mcards"></div>
+    <div class="notes">
+      <b>How to use:</b> Each card links a live macro event to the sectors most affected. Headlines are pulled from Google News RSS at refresh time.
+      Use the <b>Fundamentals</b> and <b>Technicals</b> tabs to screen NIFTY 500 stocks, then cross-check the relevant sector exposure here.
+    </div>
+  </section>
+
+  <div class="notes">
+    <b>Data &amp; methodology.</b> Prices, market cap, EMA/RSI/ADX and returns: Yahoo Finance (NSE, delayed) ·
+    Financials, CAGRs, ROCE/ROE, debt and cash flow: Screener.in · Constituents: NSE official NIFTY 500 list ·
+    Scores are computed from the checklists shown in each section; unavailable items are excluded and the score is normalised to the available weight.
+  </div>
+  <div class="disc"><b>Disclaimer:</b> For information and education only — not investment advice. Data from third parties may be delayed, incomplete or inaccurate. Verify all figures with NSE / the company before acting. Past performance does not indicate future results.</div>
+</div>
+
+<script>
+const DATA = __DATA_JSON__;
+const NEWS = __NEWS_JSON__;
+const stocks = DATA.stocks || [];
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const fmt = (v,d=1) => v==null?'—':Number(v).toFixed(d);
+const pct = (v,d=1) => v==null?'—':(v>0?'+':'')+Number(v).toFixed(d)+'%';
+const abbr = v => {
+  if(v==null) return '—';
+  if(v>=1e13) return (v/1e13).toFixed(2)+' L Cr';
+  if(v>=1e7) return (v/1e7).toFixed(0)+' Cr';
+  if(v>=1e5) return (v/1e5).toFixed(2)+' L';
+  return v.toLocaleString('en-IN');
+};
+const color = v => v==null?'var(--dim)':(v>=60?'var(--green)':(v>=40?'var(--amber)':'var(--red)'));
+const cls = p => p===true?'pass':(p===false?'fail':'neutral');
+const mark = p => p===true?'✓':(p===false?'✗':'—');
+
+/* ---------- Header / KPIs ---------- */
+$('#asOf').textContent = 'as of ' + new Date(DATA.asOf).toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+$('#idxPrice').textContent = fmt(DATA.index?.price,0);
+const ic = DATA.index?.changePct;
+$('#idxChg').innerHTML = ic==null?'':`<span style="color:${ic>=0?'var(--green)':'var(--red)'}">${pct(ic)}</span>`;
+$('#genTime').textContent = 'compiled ' + new Date(DATA.generatedAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'})+' IST';
+
+const fStocks = stocks.filter(s=>s.f && s.f.score!=null);
+const tStocks = stocks.filter(s=>s.t && s.t.score!=null);
+const med = a => { if(!a.length) return null; const s=[...a].sort((x,y)=>x-y); return s.length%2?s[s.length>>1]:(s[s.length>>1-1]+s[s.length>>1])/2; };
+$('#badgeFund').textContent = fStocks.length;
+$('#badgeTech').textContent = tStocks.length;
+$('#badgeMacro').textContent = (NEWS?.macro||[]).length;
+
+const kpis = [
+  {l:'Universe',v:stocks.length,n:'NIFTY 500 constituents',k:'var(--cyan)'},
+  {l:'Fundamental coverage',v:fStocks.length,n:'with full fundamentals',k:'var(--fund)'},
+  {l:'Median fund score',v:fmt(med(fStocks.map(s=>s.f.score)),0),n:'of 100',k:'var(--fund)'},
+  {l:'Technical coverage',v:tStocks.length,n:'with price history',k:'var(--tech)'},
+  {l:'10/10 cond. matches',v:tStocks.filter(s=>s.t.conditions===10).length,n:'full technical setup',k:'var(--tech)'},
+  {l:'Index 3M return',v:pct(DATA.index?.ret3m),n:'NIFTY 500',k:'var(--violet)'},
+];
+$('#kpis').innerHTML = kpis.map(k=>`<div class="kpi" style="--k:${k.k}"><div class="l">${k.l}</div><div class="val">${k.v}</div><div class="n">${k.n}</div></div>`).join('');
+
+/* ---------- Tabs ---------- */
+$$('.tab').forEach(b=>b.addEventListener('click',()=>{
+  $$('.tab').forEach(x=>x.classList.remove('active'));
+  $$('.section').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');
+  $('#sec-'+b.dataset.sec).classList.add('active');
+}));
+
+/* ---------- Sector options ---------- */
+const sectors = [...new Set(stocks.map(s=>s.sector).filter(Boolean))].sort();
+for(const id of ['#fsector','#tsector']) $(id).insertAdjacentHTML('beforeend', sectors.map(s=>`<option>${s}</option>`).join(''));
+
+/* ---------- Sparkline ---------- */
+function sparkline(arr,color){
+  if(!arr||arr.length<2) return '';
+  const mn=Math.min(...arr),mx=Math.max(...arr),r=(mx-mn)||1;
+  const pts=arr.map((v,i)=>`${i/(arr.length-1)*62},${22-(v-mn)/r*20}`).join(' ');
+  return `<svg class="spark" viewBox="0 0 62 22"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.6"/></svg>`;
+}
+function scoreCell(score,kind){
+  const c=color(score);
+  return `<span class="score"><span class="bar"><i style="width:${score??0}%;background:${c}"></i></span><b style="color:${c}">${fmt(score,0)}</b></span>`;
+}
+
+/* ---------- State & render ---------- */
+function makeState(prefix){
+  const st={q:'',sector:'',filter:'all',key:'score',dir:-1};
+  const search=$(prefix+'search'), sector=$(prefix+'sector'), pill=$(prefix+'filter');
+  search.addEventListener('input',()=>{st.q=search.value.toLowerCase();render();});
+  sector.addEventListener('change',()=>{st.sector=sector.value;render();});
+  pill.addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    [...pill.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+    st.filter=b.dataset.f; render();
+  });
+  return st;
+}
+const fState=makeState('#f'), tState=makeState('#t');
+
+function applyFilter(list,st,kind){
+  let out=list.filter(s=>(!st.q||s.name.toLowerCase().includes(st.q)||s.symbol.toLowerCase().includes(st.q)) && (!st.sector||s.sector===st.sector));
+  if(st.filter!=='all'){
+    if(st.filter==='top') out=[...out].sort((a,b)=>(b[kind].score||0)-(a[kind].score||0)).slice(0,25);
+    else if(st.filter==='10') out=out.filter(s=>s.t.conditions===10);
+    else out=out.filter(s=>(s[kind].score||0)>=+st.filter);
+  }
+  const k=st.key,dir=st.dir;
+  out.sort((a,b)=>{
+    let av=getVal(a,k,kind),bv=getVal(b,k,kind);
+    if(av==null) av=-Infinity; if(bv==null) bv=-Infinity;
+    if(typeof av==='string') return av.localeCompare(bv)*dir;
+    return (av-bv)*dir;
+  });
+  return out;
+}
+function getVal(s,k,kind){
+  if(k==='name'||k==='sector') return s[k]||'';
+  if(k==='score') return s[kind].score;
+  if(k==='conditions') return s.t.conditions;
+  if(k==='price') return s.price;
+  if(k==='changePct') return s.changePct;
+  if(k==='trend') return (s.spark?.at(-1)||0)-(s.spark?.[0]||0);
+  if(k==='marketCap') return s.marketCap;
+  if(k==='sectorPe') return s.f?.sectorPe;
+  return s[kind]?.[k] ?? s[k] ?? null;
+}
+
+/* ---------- Fundamental render ---------- */
+function renderF(){
+  const list=applyFilter(fStocks,fState,'f');
+  $('#fcount').textContent=list.length+' of '+fStocks.length+' stocks';
+  $('#fbody').innerHTML=list.length?list.map((s,i)=>{
+    const f=s.f;
+    return `<tr data-i="${i}" data-sym="${s.symbol}">
+      <td class="l"><div class="cname">${s.name}</div><div class="csym">${s.symbol}</div></td>
+      <td class="l"><div class="sect" title="${s.sector}">${s.sector}</div></td>
+      <td>${scoreCell(f.score,'f')}</td>
+      <td class="${f.rev3>12?'pass':(f.rev3!=null?'fail':'neutral')}">${pct(f.rev3,0)}</td>
+      <td class="${f.np3>15?'pass':(f.np3!=null?'fail':'neutral')}">${pct(f.np3,0)}</td>
+      <td class="${f.roce>20?'pass':(f.roce!=null?'fail':'neutral')}">${pct(f.roce,0)}</td>
+      <td class="${f.roe>15?'pass':(f.roe!=null?'fail':'neutral')}">${pct(f.roe,0)}</td>
+      <td class="${f.de<.5?'pass':(f.de!=null?'fail':'neutral')}">${fmt(f.de,2)}</td>
+      <td class="${f.ocfNp>.8?'pass':(f.ocfNp!=null?'fail':'neutral')}">${fmt(f.ocfNp,2)}</td>
+      <td class="${f.pe!=null&&f.sectorPe!=null&&f.pe<f.sectorPe?'pass':''}">${fmt(f.pe,1)}</td>
+      <td class="chip">${fmt(f.sectorPe,1)}</td>
+      <td>${abbr(s.marketCap)}</td>
+      <td>${fmt(s.price,0)}</td>
+      <td style="color:${s.changePct>=0?'var(--green)':'var(--red)'}">${pct(s.changePct,2)}</td>
+    </tr>`;
+  }).join(''):'<tr><td colspan="14" class="empty">No stocks match the filters</td></tr>';
+  bindRows('#fbody',list,'f');
+}
+
+/* ---------- Technical render ---------- */
+function renderT(){
+  const list=applyFilter(tStocks,tState,'t');
+  $('#tcount').textContent=list.length+' of '+tStocks.length+' stocks';
+  $('#tbody').innerHTML=list.length?list.map((s,i)=>{
+    const t=s.t;
+    const cond=t.conditions;
+    return `<tr data-i="${i}" data-sym="${s.symbol}">
+      <td class="l"><div class="cname">${s.name}</div><div class="csym">${s.symbol}</div></td>
+      <td class="l"><div class="sect" title="${s.sector}">${s.sector}</div></td>
+      <td>${scoreCell(t.score,'t')}</td>
+      <td><span class="tag ${cond>=8?'g':(cond>=5?'':'r')}">${cond}/10</span></td>
+      <td class="${t.ema200!=null?(s.price>t.ema200?'pass':'fail'):'neutral'}">${t.ema200!=null?(s.price>t.ema200?'Yes':'No'):'—'}</td>
+      <td class="${t.rsi>=55&&t.rsi<=70?'pass':(t.rsi!=null?'fail':'neutral')}">${fmt(t.rsi,1)}</td>
+      <td class="${t.adx>20?'pass':(t.adx!=null?'fail':'neutral')}">${fmt(t.adx,1)}</td>
+      <td class="${t.ret3m>0?'pass':(t.ret3m!=null?'fail':'neutral')}">${pct(t.ret3m,1)}</td>
+      <td class="${t.rel3m>0?'pass':(t.rel3m!=null?'fail':'neutral')}">${pct(t.rel3m,1)}</td>
+      <td class="${t.distHigh>=-10?'pass':(t.distHigh!=null?'fail':'neutral')}">${pct(t.distHigh,1)}</td>
+      <td>${fmt(s.price,0)}</td>
+      <td>${sparkline(s.spark,t.score>=60?'var(--green)':(t.score>=40?'var(--amber)':'var(--red)'))}</td>
+    </tr>`;
+  }).join(''):'<tr><td colspan="12" class="empty">No stocks match the filters</td></tr>';
+  bindRows('#tbody',list,'t');
+}
+
+/* ---------- Sort headers ---------- */
+function bindSort(tblId,getState,render){
+  $$('#'+tblId+' thead th[data-key]').forEach(th=>th.addEventListener('click',()=>{
+    const st=getState(),k=th.dataset.key;
+    if(st.key===k) st.dir*=-1; else {st.key=k;st.dir=-1;}
+    render();
+  }));
+}
+bindSort('ftbl',()=>fState,renderF);
+bindSort('ttbl',()=>tState,renderT);
+
+/* ---------- Detail rows ---------- */
+function bindRows(bodyId,list,kind){
+  $$(bodyId+' tr[data-i]').forEach(tr=>tr.addEventListener('click',()=>{
+    const next=tr.nextElementSibling;
+    if(next&&next.classList.contains('detail')){ next.remove(); tr.classList.remove('open'); return; }
+    $$(bodyId+' .detail').forEach(x=>x.remove());
+    $$(bodyId+' tr[data-i]').forEach(x=>x.classList.remove('open'));
+    const s=list[+tr.dataset.i];
+    tr.classList.add('open');
+    const d=document.createElement('tr'); d.className='detail';
+    const cols=tr.querySelectorAll('td').length;
+    d.innerHTML=`<td colspan="${cols}">${detailHTML(s,kind)}</td>`;
+    tr.after(d);
+  }));
+}
+function catBars(cats,kind){
+  if(!cats) return '';
+  const c=color(cats.score);
+  return `<div class="catgrid">${Object.entries(cats).map(([n,v])=>{
+    if(!v||v.score==null) return '';
+    return `<div class="cat"><span class="n">${n}</span><span class="bar"><i style="width:${v.score}%;background:${color(v.score)}"></i></span><span class="v">${fmt(v.score,0)}</span></div>`;
+  }).join('')}</div>`;
+}
+function checksList(checks){
+  if(!checks) return '';
+  return checks.map(c=>`<div class="cl"><span class="ck ${cls(c.pass)}">${mark(c.pass)}</span><span class="lab" title="${c.label}">${c.label}</span><span class="val">${c.display}</span><span class="wt">${c.weight}</span></div>`).join('');
+}
+function detailHTML(s,kind){
+  const obj=s[kind];
+  const sc=kind==='f'?'Fundamental':'Technical';
+  const head=`<div class="dhead"><span class="nm">${s.name}</span><span class="meta">${s.symbol} · ${s.sector}</span><span class="tag">${sc}</span><span class="dscore" style="color:${color(obj.score)}">${fmt(obj.score,0)}<span style="font-size:12px;color:var(--dim)">/100</span></span></div>`;
+  if(kind==='f'){
+    const c=color(obj.score);
+    return `<div class="detail-inner">
+      <div class="dcol"><h4>Checklist (weight)</h4>${checksList(obj.checks)}</div>
+      <div class="dcol"><h4>Category scores</h4>${catBars(obj.cats,'f')}
+        <div style="margin-top:16px"><h4>Key metrics</h4>
+        <div class="cl"><span class="lab">Revenue CAGR 3Y / 5Y</span><span class="val">${pct(obj.rev3,0)} / ${pct(obj.rev5,0)}</span></div>
+        <div class="cl"><span class="lab">PAT CAGR 3Y / 5Y</span><span class="val">${pct(obj.np3,0)} / ${pct(obj.np5,0)}</span></div>
+        <div class="cl"><span class="lab">OCF / Net profit (5Y)</span><span class="val">${fmt(obj.ocfNp,2)}x</span></div>
+        <div class="cl"><span class="lab">FCF positive years</span><span class="val">${obj.fcfPos5}/5</span></div>
+        <div class="cl"><span class="lab">Debt / equity</span><span class="val">${fmt(obj.de,2)}x</span></div>
+        <div class="cl"><span class="lab">P/E vs sector median</span><span class="val">${fmt(obj.pe,1)}x / ${fmt(obj.sectorPe,1)}x</span></div>
+        <div class="cl"><span class="lab">Latest annual / quarter</span><span class="val">${obj.latestAnnual||'—'} / ${obj.latestQuarter||'—'}</span></div>
+        </div>
+      </div>
+      <div class="dcol"><h4>Score composition</h4>
+        <div class="cat"><span class="n">Score</span><span class="bar"><i style="width:${obj.score}%;background:${c}"></i></span><span class="v">${fmt(obj.score,0)}</span></div>
+        <div class="cl"><span class="lab">Weight available</span><span class="val">${obj.coverage} pts</span></div>
+        <div class="cl"><span class="lab">Checks passed</span><span class="val">${obj.checks.filter(x=>x.pass===true).length}/${obj.checks.filter(x=>x.pass!=null).length}</span></div>
+        <div style="margin-top:16px"><h4>Interpretation</h4><div style="font-size:11.5px;color:var(--muted);line-height:1.6">
+        Score is the weighted % of available checks that passed. Checks where data is unavailable are excluded and the total is normalised, so a stock with limited history is scored only on what can be verified.
+        </div></div>
+      </div>
+    </div>`;
+  } else {
+    return `<div class="detail-inner">
+      <div class="dcol"><h4>Screening conditions</h4>${checksList(obj.checks.filter(c=>['above200','ema50_200','ema20_50','ema200Rise','rsi','adx','ret3m','rel3m','high52','vol','breakout'].includes(c.id)))}</div>
+      <div class="dcol"><h4>Category scores</h4>${catBars(obj.cats,'t')}
+        <div style="margin-top:16px"><h4>Indicator values</h4>
+        <div class="cl"><span class="lab">Price / 20 / 50 / 200 EMA</span><span class="val">${fmt(s.price,0)} / ${fmt(obj.ema20,0)} / ${fmt(obj.ema50,0)} / ${fmt(obj.ema200,0)}</span></div>
+        <div class="cl"><span class="lab">RSI (14) / ADX (14)</span><span class="val">${fmt(obj.rsi,1)} / ${fmt(obj.adx,1)}</span></div>
+        <div class="cl"><span class="lab">Returns 1M / 3M / 6M</span><span class="val">${pct(obj.ret1m)} / ${pct(obj.ret3m)} / ${pct(obj.ret6m)}</span></div>
+        <div class="cl"><span class="lab">Rel. vs NIFTY 500 3M</span><span class="val">${pct(obj.rel3m)}</span></div>
+        <div class="cl"><span class="lab">52W high / distance</span><span class="val">${fmt(obj.high52,0)} / ${pct(obj.distHigh)}</span></div>
+        <div class="cl"><span class="lab">Volume breakout</span><span class="val">${obj.breakoutVol?'Yes':'No'}</span></div>
+        </div>
+      </div>
+      <div class="dcol"><h4>Score composition</h4>
+        <div class="cat"><span class="n">Score</span><span class="bar"><i style="width:${obj.score}%;background:${color(obj.score)}"></i></span><span class="v">${fmt(obj.score,0)}</span></div>
+        <div class="cl"><span class="lab">Conditions met</span><span class="val">${obj.conditions}/10</span></div>
+        <div style="margin-top:16px"><h4>Interpretation</h4><div style="font-size:11.5px;color:var(--muted);line-height:1.6">
+        The 10-point checklist screens for trend structure, momentum and relative strength. The weighted score rewards the categories in the user framework — trend 25, momentum 20, relative strength 25, price performance 15, volume 10, 52W proximity 5.
+        </div></div>
+      </div>
+    </div>`;
+  }
+}
+
+/* ---------- Methodology panels ---------- */
+function buildMethod(){
+  const fg=[['Revenue CAGR 3Y / 5Y','>12% / >10%'],['Net profit CAGR 3Y / 5Y','>15% / >12%'],['EPS CAGR 5Y','>12%'],['Quarterly revenue / PAT YoY','Positive'],['ROCE / ROE / ROA','>20% / >15% / >10%'],['Operating margin','>15%'],['Net / gross / EBITDA margin','Stable or rising'],['Incremental ROCE','Improving'],['Debt / equity','<0.5x'],['Net debt / EBITDA','<1.5x'],['Borrowings','Stable or declining'],['Free cash flow','Positive ≥3 of 5 yrs'],['Operating cash flow','Positive most years'],['OCF / Net profit (5Y)','>0.8x'],['Receivable / inventory / WC days','Stable or declining'],['P/E vs sector median','Below median']];
+  $('#fmethod').innerHTML=`<h3>Fundamental scoring — master checklist</h3><div class="grid">
+    <div class="box"><h4>1 · Business growth</h4><ul>${fg.slice(0,4).map(x=>`<li>${x[0]}<b>${x[1]}</b></li>`).join('')}</ul></div>
+    <div class="box"><h4>2 · Profitability</h4><ul>${fg.slice(4,8).map(x=>`<li>${x[0]}<b>${x[1]}</b></li>`).join('')}</ul></div>
+    <div class="box"><h4>3 · Financial strength</h4><ul>${fg.slice(8,13).map(x=>`<li>${x[0]}<b>${x[1]}</b></li>`).join('')}</ul></div>
+    <div class="box"><h4>4 · Cash quality &amp; 5 · Valuation</h4><ul>${fg.slice(13).map(x=>`<li>${x[0]}<b>${x[1]}</b></li>`).join('')}</ul></div>
+  </div><p>Each check carries a weight. A stock earns the full weight when the preferred condition is met. Unavailable data is excluded and the final score is normalised to the weight that could be evaluated. Sector-median P/E is computed from NIFTY 500 constituents within the same sector.</p>`;
+
+  const tech=[['1 · Close above 200 EMA','trend'],['2 · 50 EMA above 200 EMA','trend'],['3 · 20 EMA above 50 EMA','momentum'],['4 · 200 EMA rising (20 sessions)','trend'],['5 · RSI (14) between 55–70','momentum'],['6 · ADX (14) above 20','momentum'],['7 · 3-month return positive','performance'],['8 · 3M relative return vs index positive','relative'],['9 · Within 10% of 52W high','proximity'],['10 · Volume > 20-day avg on breakout','volume']];
+  const weights=[['Long-term trend (EMA 50/200)','25'],['Momentum (RSI, ADX)','20'],['Relative strength vs NIFTY 500','25'],['Price performance (1M, 3M, 6M)','15'],['Volume confirmation','10'],['Proximity to 52-week high','5']];
+  $('#tmethod').innerHTML=`<h3>Technical scoring — checklist &amp; weights</h3><div class="grid">
+    <div class="box"><h4>10-point screening checklist</h4><ul>${tech.map(x=>`<li>${x[0]}</li>`).join('')}</ul></div>
+    <div class="box"><h4>Score weights (total 100)</h4><ul>${weights.map(x=>`<li>${x[0]}<b>${x[1]}</b></li>`).join('')}</ul></div>
+  </div><p>Stocks are screened on the 10 conditions first. The weighted score then rewards trend structure, momentum, relative strength versus the NIFTY 500 index, multi-horizon price performance, volume confirmation and proximity to the 52-week high. RSI and ADX receive partial credit near their thresholds.</p>`;
+}
+
+/* ---------- Macro ---------- */
+function buildMacro(){
+  $('#newsStamp').textContent='Macro context updated '+new Date(NEWS.generatedAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+  const tone={positive:'tone-pos',negative:'tone-neg',neutral:'tone-neu'};
+  $('#mcards').innerHTML=(NEWS.macro||[]).map(m=>`
+    <div class="mcard ${tone[m.tone]||'tone-neu'}">
+      <div class="mtop"><span class="ic">${m.icon}</span><div><div class="tg">${m.tag}</div></div><span class="dt">${m.date}</span></div>
+      <h3>${m.title}</h3>
+      <div class="sum">${m.summary}</div>
+      <div class="imp"><b>Sector impact:</b> ${m.impact}</div>
+      <div class="secs">${(m.sectors||[]).map(s=>`<span>${s}</span>`).join('')}</div>
+      <div class="news"><div class="nh">Live headlines</div>
+        ${(m.headlines||[]).length?m.headlines.map(h=>`<a href="${h.link}" target="_blank" rel="noopener">${h.title} <span class="src">— ${h.source}</span></a>`).join(''):'<div class="chip">No headlines available — refresh to retry.</div>'}
+      </div>
+    </div>`).join('');
+}
+
+/* ---------- Export ---------- */
+function exportCSV(list,kind){
+  const cols=kind==='f'?['name','symbol','sector','score','rev3','np3','roce','roe','de','ocfNp','pe','marketCap','price']:['name','symbol','sector','score','conditions','ema20','ema50','ema200','rsi','adx','ret3m','rel3m','distHigh','price'];
+  const rows=[cols.join(',')];
+  for(const s of list){ const o=kind==='f'?s.f:s.t; rows.push(cols.map(c=>{
+    let v=c==='score'?o.score:(c==='name'||c==='symbol'||c==='sector'?s[c]:(c==='price'?s.price:(c==='conditions'?o.conditions:o[c])));
+    if(v==null) return ''; if(typeof v==='string') return '"'+v.replace(/"/g,'""')+'"'; return v;
+  }).join(',')); }
+  const blob=new Blob([rows.join('\n')],{type:'text/csv'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download=(kind==='f'?'nifty500_fundamentals_':'nifty500_technicals_')+new Date().toISOString().slice(0,10)+'.csv'; a.click();
+}
+$('#fexport').addEventListener('click',()=>exportCSV(applyFilter(fStocks,fState,'f'),'f'));
+$('#texport').addEventListener('click',()=>exportCSV(applyFilter(tStocks,tState,'t'),'t'));
+$('#newsRefresh').addEventListener('click',async()=>{
+  const b=$('#newsRefresh'); b.textContent='↻ Refreshing…';
+  try{ const r=await fetch('news.json?t='+Date.now()); if(r.ok){ Object.assign(NEWS,await r.json()); buildMacro(); b.textContent='✓ Refreshed'; setTimeout(()=>b.textContent='↻ Refresh headlines',1500);} else throw 0; }
+  catch{ b.textContent='Run: node fetch-news.js'; }
+});
+
+/* ---------- Init ---------- */
+renderF(); renderT(); buildMethod(); buildMacro();
+</script>
+</body>
+</html>

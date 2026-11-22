@@ -1,0 +1,337 @@
+{
+  "generatedAt": "2026-11-21T19:46:09.247Z",
+  "macro": [
+    {
+      "id": "rbi",
+      "icon": "🏦",
+      "tag": "Monetary policy",
+      "title": "RBI hikes repo rate to 5.50%",
+      "date": "Nov 2026",
+      "tone": "negative",
+      "summary": "The MPC voted unanimously to raise the policy repo rate by 25 bps to 5.50% (SDF 5.25%, MSF 5.75%) to contain inflation that has breached the upper tolerance band.",
+      "impact": "Banking & NBFCs: margin pass-through helps lenders with sticky deposit costs; near-term pressure on rate-sensitive sectors — real estate, auto, infrastructure, and long-duration growth stocks.",
+      "sectors": [
+        "Banks",
+        "NBFCs",
+        "Real Estate",
+        "Auto",
+        "Infrastructure"
+      ],
+      "query": "RBI repo rate monetary policy",
+      "headlines": [
+        {
+          "title": "RBI Bulletin - Reserve Bank of India",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1SRmJxUjVnNS05VGo4SlNwVHdFR0FpWUExM1NsWTNJMEJzZV9ZeWZmYm9MOHBXTzZ6Y1hHU1hJY0VYNDVUWTZNTVE2d0FNa3gzU3VhVWFvQ0F3dW9lZlRNU01NRXdZUjRDdm1Leg?oc=5",
+          "source": "Reserve Bank of India",
+          "date": "2026-10-23T07:00:00.000Z"
+        },
+        {
+          "title": "Shrinkflation: Why the RBI Rate Hike May Fail in 2026 - Frontline Magazine",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYU5YZzNhV1RycGNleFp0YUYwZlY4UTZTNGh6NHhlbWNmS0ZkOUpVQjFCY1FTbS1hRHFOYWY5bWJPMmIxWkd1Mi1lYzZZRkV5Z0NEVVJNTzdpZHI2ZmU4ZG1XZzUyNmFlVW9pZ2JqbnIwREpweHJWb1ZCY3FhbkpxVTdtaWRqZDZKNEJUTXM3WE9UNnPSAZoBQVVfeXFMT2NaQjB1aWpYUHVVSXRWY25xdUZxMTFlWVRPVUJsdWtTNUJibjNuN29MRExUeFZwN3FmTzZqOXdxNnV0LXZwQzBVLWlrYUZBMGNkdHNyNUxpWGE5b3lUOWFzWVAwdTljaF8wamo0TGFSRE5yMm5nOUFGNFpTWTZaU2FvcXc3LTFxOC1mb2cwUktqLTR0U1ptMEw1QQ?oc=5",
+          "source": "Frontline Magazine",
+          "date": "2026-11-19T08:46:16.000Z"
+        },
+        {
+          "title": "RBI Repo Rate Outlook: Goldman Sachs Projects 75 Basis Points of Further Hikes as Inflation Pressures Persist - Kotak Neo",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeXdxZG9waVBQa0tMR0NrNkZBMjhXa3dERlQySElzVTd1N0lsUkZBM21rM2dhYnlQTF9zUVdYQ2R5aTM3TjJzUVZxSWxGVEMwX2tjVGphVUNzMlZOZzhwS3NLUDN4SGwwOEJTcFBVYk5Sa203akxPMnRFbnBXY2dmczA1ZHlVNzc0Z0puTTFQYnBzWVJqVWV5ZU5PS3VMVXlVZ2loTlZuZVc3bUw3cDh3?oc=5",
+          "source": "Kotak Neo",
+          "date": "2026-11-18T15:48:34.000Z"
+        },
+        {
+          "title": "Goldman Sachs sees RBI repo rate rising by 75 bps to 6.25% by mid-2027 - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeFNoTmpTUVFnNmlpUVFTdnVSNFNNTnFKNXcyeXc2a3dyWm41S29pN3hackw2d3hsRVhSZ2ExQ1FLWmJkVE5nMGx1aktaTTRIZ01qRmxLME9WSjNFdmpNSjhuME1faU5DaTFCTTczbEdScV81XzM3VEcxeGhWSTV4Y0JEUFlBT0VaQkdGLXcycGFVNUR1aVczNEdQQUt6ZnlTSjBkYW41dGJGQWNUTWVnSFc5dEF4Y3ptZVRxYVA1QktwNEp2WE81NmlwZlpwYjhqRUHSAdcBQVVfeXFMTnRQMnN0LVZ2TUthVFJuckE5cEJkYXJzSklTMHlidWl0dDJaTVl0Znc1aVR5bkNQOVVzcmlxTEx4d01qYnNlN08xLWpEVGlobEdYUlY3RDd2WVRlcUhDWkRBNnQ3VjB5TWppX1F0VXEtUlFNamhGRHgwNG5CTDdCdy1fUm1sUjlqX1VCV0xKUU51UHlxUjlkdWh5a1VkU1VPTGJFQnRObzA1TkpPbG1FZmhxSjhGQi04Qlhsc3ZQZXhLcG9XdzhQMFR2RlViZ0pwOFNwMjEtYzQ?oc=5",
+          "source": "Business Standard",
+          "date": "2026-11-18T14:35:47.000Z"
+        },
+        {
+          "title": "RBI set to announce repo rate decision amid geopolitical tensions - DD News",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNTRHOVQyMkdXS1E4eG9mVEozXzZCdUZQWlJPSUpwMDJQT3RzbjdMVjJXUV9QZE9NMFRfdllGWlQ1NVZMZUlGTk9lX1dGeWtSYmd1NVFYUm5scjk4NFJRVGtxYlJZR3VPcXV3Y2xLODljeWdYajNJMko4SUh3dHRZOEs0NjFRcFo3RElBTDd5enBUZ21jblE?oc=5",
+          "source": "DD News",
+          "date": "2026-10-07T04:29:57.000Z"
+        },
+        {
+          "title": "25-basis-point repo rate hike unlikely to impact economic expansion, says RBI Governor - News On AIR",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQ29ZZmNUVlBkdXBXcHVtUW5NaVREd0hLZ3pzeE1YN20tNzZOaEtVRnpuQmlPOHRJdjBmOGpzc09DcjZaMUtVMFAzVHVIamRDakpaakVKRkR1TWpCblJ5R0R4bWM1aTdyVlhGNVhNbDVocmh2UFE4NlRkcXo2TTVfSGdR?oc=5",
+          "source": "News On AIR",
+          "date": "2026-10-07T07:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "inflation",
+      "icon": "📈",
+      "tag": "Inflation",
+      "title": "CPI inflation jumps to 6.09% in October",
+      "date": "Oct 2026",
+      "tone": "negative",
+      "summary": "Retail CPI rose to 6.09% from 5.54%, the 12th consecutive monthly increase, breaching the RBI’s 6% upper tolerance band. Food and fuel were the main drivers.",
+      "impact": "High inflation limits RBI’s room for rate cuts and keeps borrowing costs elevated. Hits consumer discretionary and input-heavy manufacturers; favours firms with strong pricing power.",
+      "sectors": [
+        "FMCG",
+        "Consumer Robustness",
+        "Cement",
+        "Metals"
+      ],
+      "query": "India CPI inflation October 2026",
+      "headlines": [
+        {
+          "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR SEPTEMBER, 2026 - www.pib.gov.in",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA1SG93bmdrTkc4ZnQ5bmxCT1Q5NGhFSmNLNTNZUGl5dU82VTNKd25VWFJVQmVzb3dLSWVJWUJTMEVIR2sweGNCak9NOWlxblJIUW1RWl9GSTNDUmVxS3BhU3FUSEowWHVvaENGSnJCVDhIUzR3UjA3R2NNVQ?oc=5",
+          "source": "www.pib.gov.in",
+          "date": "2026-10-12T07:00:00.000Z"
+        },
+        {
+          "title": "India's wholesale inflation accelerates to 12.29% in October on fuel price surge - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOTZCYmwwajlmSXIyWWx2WXhZaE81VjdHTS1vc0wtdUpBNG01WnFDdVF1bXlmNXNwalQ2N2lKT1hXODMydGtUY25fcDgxQW5jVnFTVUNXQ09NN2twb1hiNE9kVHowRUZhenVIY2dDUzhPTkFaTzBqaUF5emNlaHdLc3JEcWhrTlBuemFxR01HNUNJV1FjVnlxYTJ0bWpIcks0YUFv?oc=5",
+          "source": "Reuters",
+          "date": "2026-11-16T08:16:40.000Z"
+        },
+        {
+          "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR OCTOBER, 2026 - www.pib.gov.in",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TMWhxblNQUXN4bHZaZzhUUXFfcGY4b3VhMndvZC1nYVJHcjQxZ1dJLW9MNmczQnBmaW40bVhDOElQUHBrWDlOd0RGWWpzS2ZVTGpDbzdKbkRxZXM0V3FCckxlR1FNMTRSVUFGQzNmTmxpNWVsZUdRbHRxSVo?oc=5",
+          "source": "www.pib.gov.in",
+          "date": "2026-11-12T08:00:00.000Z"
+        },
+        {
+          "title": "India’s retail inflation jumps to 5.54% in September, above estimates - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBKZXdKREQ5MXktcDhlM25EcjQ3LTBrdXU0NVZONGFiTy1lN2ZTY1VSZ0ZYdjhJczAzWUg3djI1UWd1WmdiWFZFX0pYRVFRTDFqUGhjM3pGNklZV0NycUd6Rl9ieGt6Ykh4ODlnVFVndW8wYjdFVHBFclBPcjnSAYIBQVVfeXFMT2RpQTgwSEw4anhQb0lnTE83cF9FYzZTc3Q3bno2eGJ0b0FxbENpckx1cXFrUEdJMkJfMnB4NjgxTEk1ekViM3VZNWNsZERRZ04xSjVTOWhSVlZwS3JhZlBVQlVZUkw4UU11eDEtSE1IZjZWV1V6a3FQaFBTZUF0dmxFZw?oc=5",
+          "source": "CNBC",
+          "date": "2026-10-12T07:00:00.000Z"
+        },
+        {
+          "title": "Retail Inflation - INSIGHTS IAS",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xcWJQTHphZHo0Yy1FTGdlcUNtUlFPcXZVU0lvWUs4bGhVZTlZVEVKa0R3b040R0lZZUstc1NUazkzNE1MdVZCYk1PMXZWdFJZQ1ZmcmlGWkwwRUtmblJBdVh1Zmt0T0IzSGs2SA?oc=5",
+          "source": "INSIGHTS IAS",
+          "date": "2026-11-13T10:16:10.000Z"
+        },
+        {
+          "title": "India’s Wholesale Inflation Rises to 12.29% in October - Equitypandit",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVWlSZDBBT2dVUjcwN3Nka2RNLUtRaGxPMThxSnJoSFlKbzBLM2I1SXFqN20tdFhZakhpdEI3RkxQZGdwSmpYYVh4ZkZPWFh3VktRNVZPTG1QUVpGNDlFcnc4czhwVlB2S1o0dFFXY0lFdkVqMno1aDNRQVR6bnNxVmxIaXowS1RMV1E?oc=5",
+          "source": "Equitypandit",
+          "date": "2026-11-16T07:19:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fed",
+      "icon": "🇺🇸",
+      "tag": "US Federal Reserve",
+      "title": "Fed holds rates at 3.75%–4.00%",
+      "date": "Oct–Nov 2026",
+      "tone": "neutral",
+      "summary": "The FOMC kept the federal funds target range unchanged at 3.75%–4.00% after a 25 bps hike in September. Markets price a hold or at most one cut in December.",
+      "impact": "A higher-for-longer US rate keeps the rate differential in favour of the dollar, pressuring the rupee and limiting FII risk appetite. A dovish pivot would be a positive catalyst for Indian equities.",
+      "sectors": [
+        "IT",
+        "Pharma",
+        "Export-oriented",
+        "REITs"
+      ],
+      "query": "Federal Reserve FOMC interest rate decision",
+      "headlines": [
+        {
+          "title": "Fed Minutes Show Almost All Officials Expect More Rate Hikes - Bloomberg.com",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT3JhS0Q0alA5RWNIWGxURDlLSWhic0NQQmY1MTJkTXlCclZDMWh4Z18xRGdhWXRsdWp2OTJjRExiSHZqRXFqSHU5VFB3WnNSV2hFWnNHdlRmRENzaDBsVGpWeTNGQU5ZRlJ0MzQza2tkUDFDdmxqMVlYNGlnM0dqajdnWVI3eVUxNVhibGhSXzZsQ2gxYlZuTk9MQ1VPUzV3ZWNxQ0NkRlZqOE9DUGpCbA?oc=5",
+          "source": "Bloomberg.com",
+          "date": "2026-11-18T20:52:12.000Z"
+        },
+        {
+          "title": "Fed minutes: Officials favored holding rates steady in October, but they see hikes ahead - Yahoo Finance",
+          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTDFIcXN2WXhLWlRORzhBZHZUaDRwbzNQYU13eFNPbTNsbmEzdjdHcWRkX2U5dTdZS0FMRlZoX2hIRlJqWnN6UmNTTnI4ZkxUN18yMWU4ZmVhSmQ2dDRoaUFtalkwZmlDRDBSZTRtS1cyWkpBWXRiS2tQM2lFVFl4aldNQk54emFkcVZmcG1xX1ZPc3JhUzBXTkg0ZUsxY1JIc0pEYmIwdDNGcUlORnN3VGJLY0M1eWV3X3R1VVlsM1hGY29xczZRTldQRmZ3R1N1VncxX0RaZm9hRGY0ci1reFZQQW8?oc=5",
+          "source": "Yahoo Finance",
+          "date": "2026-11-18T19:57:19.000Z"
+        },
+        {
+          "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdUR5MEc2YWZ1RlhNY2R6S0tQRzVYd1pocVNEN3NERWF2d2ZjbHNlc0p5LUVYTVo2Rm9jV1RSMnpaRGgxOG5FNVc4eWJ1M3Y4cWxmNDNSWVhCUU1taVRwOG1TQmZ5QTUtZVdEQXduLU53S1I0S2J5VlM1X1ZTWWVoSDhpYXV0NDhteXUzY3ZRTld0OGVwYXp1V2VtcW1ZYkFERkQxRtIBqgFBVV95cUxOanNuUmdXUVY2R2ZJeHY5SFhuVDZOX2tuSU9xQl9EUFdmZnZCTk51bHlZaEN5U1czYUJaQXlndGYwaDhCa3hCT1IxdTgtMzhVT2ljb1daTnFLQWxiTHdRYXRpaW80RXdFdW9YNmNUVzEwbHJsVDlTaGg5MkRTdFhzbmJJTjg3STVLMEt3Yjd4NkJqRDZvQ2pVOGVqYUxKMkppRFZBX0QxYUlUZw?oc=5",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "date": "2026-11-18T21:10:03.000Z"
+        },
+        {
+          "title": "Fed Saw Need to Keep Raising Interest Rates Despite Holding Steady in October - The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQZWNVYnFNZV9nd0xLQW9EenZFTEJZS1A0VF9jcXgydHdZMlNUY21sTndVYzZXTThLS19UOThYOF9oZS1hbURtSlBhcUYyTVB1XzB2QUk5dlZva3RlNzlyWmtweDNhUUdyNVJGV290RzNLYTBEU1RXMlpiNEtHZ09HTVFyZ09ldVdKUXNiMHFLSk45Y3RiOWEzWDFB?oc=5",
+          "source": "The New York Times",
+          "date": "2026-11-18T19:09:22.000Z"
+        },
+        {
+          "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsNEtLYjBNb05hZjBmRkV5NDctYTNrTTF1a0FwQzlpdG42Y3ROZmNVdmROTHRMbTBobHFhTnBzUVVDZEwxdGk5cm9HRWlWMTBCYk5EM0doODFNNnFPb0JfRDR1VVFwSzlsYnV0MUVfeldlTGpw?oc=5",
+          "source": "Forbes",
+          "date": "2026-10-28T07:00:00.000Z"
+        },
+        {
+          "title": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike - CNBC",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ0FXYWthQmJLZi05SXhQR1o2akNmbUo4WFAyUWVjbjdkNmdwWi05clFGakpLMEFkSi1oS2ljalM2N2NyclZWTE9temNQMTJjZk9EQTYwZUJiMVlPcE1zQzA4eE5OU0tNQTg5QU5fU3k4bGIxM2NIVVFGZUZzRlR6VXEwVjBLNmvSAYwBQVVfeXFMUDZSczNSbHAxcjNFa1FMNWU3STJRUVBRV0x6SjhFVFRBdGNqSFhqMGl5bGtMSkN0YzQyWUpWLVppMmxpQWNFbFF4VmY0eE5feTJ5UVotZnNPYVdEdXhzWWVmaTk3YmdXNGdtRHlRN1RqeElDMXBEbkw4Z1hyWWxnM3hBWm9MME5Xbm5MNU0?oc=5",
+          "source": "CNBC",
+          "date": "2026-11-18T12:20:11.000Z"
+        }
+      ]
+    },
+    {
+      "id": "elections",
+      "icon": "🗳️",
+      "tag": "Elections",
+      "title": "State poll verdicts reshape regional policy",
+      "date": "May 2026",
+      "tone": "neutral",
+      "summary": "West Bengal saw a record BJP win while Tamil Nadu’s TVK emerged as the largest party. State-level policy shifts influence local industry, infrastructure and welfare spending.",
+      "impact": "Election outcomes drive state-specific sectors — infrastructure, road construction, power distribution and regional banks. Policy continuity affects industrial corridor investments.",
+      "sectors": [
+        "Infrastructure",
+        "Construction",
+        "Power",
+        "Regional Banks"
+      ],
+      "query": "India assembly election results 2026",
+      "headlines": [
+        {
+          "title": "Rajasthan panchayat election results 2026: 5 takeaways as Congress beats BJP; RLP makes big gains - The Times of India",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOYWpON0wyTXdnc1J4MWFKdnhaLV9RdUdQcDBFUkN0Y2ViNnYyLUc0Slg5aHB0ekxGLUVJRlpRcENNUjlzZmxwRDVXQzg1dmdCMDE3VF9GZGxOOUd3YkJlN3liSzVfWEdtMm0yT1lEZDRKTzlVSVdHTUZTZDNIeldjZENiUDQ0bms4NnV0UmcwU2RxTzJ5VjFaTS1Hc1k2V20xTnM3RHhxWTUzOEYzUmZ1OEFBTGhmTml1a1FfeGNSMUtiN0l6SUduampuRjNkdWFSZDdzTGNOQ3daM09hYU5Ca0ZwV0pZN1NIOWIwMTk2MTk4azdzOUHSAfsBQVVfeXFMTVBONm9zd05WdUxaX1ZOaU9WTG9mYVpteEtSM0lWNXdEN015WUpuYkJWQ1lHM3RISXhqUUNySnU3VVJTOFB3NmxYVWw5WS1hUTU3NWluaW9RV2dfRXhIYTFXYzZrdVNUOXhiTjVRNGxOaWtpbjBrX2xPX3JMUGNDNnVzSzJGVjdLTWpZRXpucjlNWmx4aW5YeDRxTVp1VDgxY1N1eElKLXh2RGdKZnN2LWlWeVNnNGU4M2FnaHFlMVROWHdJNGJoQmI3Sm43eEJCRWIyLTRkWlBqMnBMWjVibmFCWFJsZWEwbHhnS0N1TU9NajFpUFo2X285ems?oc=5",
+          "source": "The Times of India",
+          "date": "2026-11-20T14:22:00.000Z"
+        },
+        {
+          "title": "Suvendu Adhikari | 2026 West Bengal Assembly Election Results, BJP, TMC, Mamata Banerjee, & Facts - Britannica",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBBeVowSUVmRTU0NVFvbmVwaGVzeTU1SVJoTU5wYW9iS1J2REFscHNORUd4aG9oZmZkaEVfQ1c3NVQzU1NldVh6d3AtdEZnUXVjUzFoZjhoMzRhZ194czlVdWJvUQ?oc=5",
+          "source": "Britannica",
+          "date": "2026-11-15T08:00:00.000Z"
+        },
+        {
+          "title": "Tamil Nadu bypolls to test TVK’s rise and AIADMK’s strength - Frontline Magazine",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONzJKRXQ2ZEJTUEFMdGQxY2JLakFJMUxCaGhoMTk3SDRQM0N5TTVxVzlUd240ZVZ3QUtmOHlLSnJFdlpjSExwRmNzazBENXpad0FSdzhQalpjdU9Nc0J3eVRNSlBtQVFmWUNRcEdHV1EzR2czdW9WZzE5UzE2bXBCWlc1YnJuUU1yRHJEUFFVVW9mVUdMeEJBbVVERTV4c1MzTjVEbFF4aVd1NTh3LU5n0gG2AUFVX3lxTE5MMTJ0SUtLeWZwWGNRYWFUQmRXbGxUVGJSZ2tkTTZaNl9WNFJEbHJDREFQdkZzVVQ5Q3NyaDBHRm1aRTlLYUtFOXMxRnhVdkthYVNsUmJFTkQzN2N6bkh0bjIyMFV2ckw2SU1wWVFpRVhFQlpicVFKYzRSc2RwQUdSNzNSQVhPR040dzYtUjVFT1pQTVl3RGZuejNtMm1lNDlnWWdTUVh3UmpNbjZlbDltMnF1aWhn?oc=5",
+          "source": "Frontline Magazine",
+          "date": "2026-09-16T07:00:00.000Z"
+        },
+        {
+          "title": "Why Rajasthan panchayat results are bad news for BJP, CM Bhajan Lal Sharma - The Indian Express",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOWN0cEt4bENUbUl6TWloUkxpSjNpY1l1S1hwWFgyVzZKWWUwZTJ3dVFiNW54eWYwekRMOXA2cUZqczJ1ZG5ySm5ON2NUZ1JmQ3N1a202aUhpcTlKak1qY0hBT3lhbzdsUGVwbHpTSU1qNVVPRHRfck01V0kwMDR3QmQzMVRmcjRuYXVaNXJDRHdWNDYzeDFfclhVeTNXYWhtVC1nZk9GVUpNUlBPbnFxclpsNU7SAbsBQVVfeXFMTW1RbDJuNnpXemNKSFV1b0FfYTFBLWdBZEhCanJfTm1reUxPUFdFc2QwLVhkaV9PMUhtVzVXNXJtTC0ydDZIazdxQ0xiNTg1SkplSzFvVjlPdWZteXhSMHprSVd3UndaSDBYQlR0cTNCU2dfc0tvZ0g4NUdoVklUVG04eENhd3FLcmo2cnpfZl9NOHRXSkV0eTVmYkZBbTdKNXdJdEdkY3hrbFRDdjF2TmVfWFZjeUs1aEZYQQ?oc=5",
+          "source": "The Indian Express",
+          "date": "2026-11-20T12:02:22.000Z"
+        },
+        {
+          "title": "Election 2026: Assam, Kerala, Puducherry vote in test for Modi's BJP - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFOGpaMmJFRmdOY3pQNV9JT2lUaC0xamxhV01RaVBKTDN5NnpsQzlNeUtxaWh4WXJIb0ZscTk3VG5zZER4R2lORzBQajl5LVZ0bkZLME10QWRnQQ?oc=5",
+          "source": "BBC",
+          "date": "2026-04-09T07:00:00.000Z"
+        },
+        {
+          "title": "What Modi’s big win in Indian state elections could mean for its democracy - Al Jazeera",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkxSODNlblVYU0cwUjVJS2Q2RzA2TXhnRlBEd0R5RVpBazNFSU40U0szbEhxTjFGT1ZLZjg2dVp3SEUtR1FMM3djZ3lqeVJpMnVqUnRWQW1TNTVpWVhfbEU3T0k1bHRjRkhrczE0eWRqTTF3RUdwSmJ3QnYzcnpzY0s2ZENJZkJJRnRtN21vMV9PR3VyWFpMSFNXWnhLR1dzWFdIeE12SGFjd0EzdmJoYmNtUdIBuAFBVV95cUxOM0tjYWh4bTNDSEpuM3dVU3BNNWNTek9yLS14eGJNVVV4aE5wTUU0V25Ta0U0RjdveU5ubHR2aVBadHZqTThON1VsWFU4YjljUGJPVnV2QWpBQWtveFAteUozSUdZYllwRWtsamg4S1Z1RjJCTERYdWN5YWhCaUh4Vmx5UGE4TGxsZjBsaWFaS2FTQVZxcFYwdzhpWDU3aHBVbkl0MDNsbEZtZF9uZVR0b0drSjBUYk0t?oc=5",
+          "source": "Al Jazeera",
+          "date": "2026-05-05T07:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "gst",
+      "icon": "📋",
+      "tag": "Government policy",
+      "title": "Next-Gen GST reforms roll out from Nov 1",
+      "date": "Nov 2026",
+      "tone": "positive",
+      "summary": "GST shifts to a \"Trust First, Verify Later\" regime with phased compliance reforms, faster refunds, higher prosecution threshold (₹1 Cr → ₹5 Cr) and lower penalties. Gross GST collections grew 11.6% YoY to ~₹12.46 lakh crore in H1.",
+      "impact": "Easier compliance and faster refunds ease working capital for MSMEs and manufacturers. Boosts e-commerce, logistics, FMCG and formal-sector consumption.",
+      "sectors": [
+        "E-commerce",
+        "Logistics",
+        "FMCG",
+        "MSME",
+        "Manufacturing"
+      ],
+      "query": "GST council reforms India November 2026",
+      "headlines": [
+        {
+          "title": "Free-flowing input tax credit: GST Council’s new plan - Law.asia",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Yb0VTeldSc29RZWV6YXRBWUdrcUdhbjBfeENScHZDNU8ydkpnNEJmUmdPU0F1NDZGbjJGb21tbUpOdlFONFQ1YkRiWVBMZTVmYUJoX0lkV2ZEUQ?oc=5",
+          "source": "Law.asia",
+          "date": "2026-11-18T14:30:27.000Z"
+        },
+        {
+          "title": "Recommendations of the 57th Meeting of the GST Council - www.pib.gov.in",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9xbDJaMG8xc1EwU3NQRURsMUlOckI5Mm1YajJOendaNVlZQ2J2NFJwNm9xOHFPVVFxSEFGM0FjUEpxaF9CeTVsdkFmMFlQOEEzVzNpSU9sZzhQNmRJOVRIR0cwVTlid3NPMGphaUxoVXdnQ0RQN1pLYnJwSQ?oc=5",
+          "source": "www.pib.gov.in",
+          "date": "2026-10-08T07:00:00.000Z"
+        },
+        {
+          "title": "57th GST Council Meeting 2026 Recommends Changes to ITC, Refunds and GST Penalties - India Briefing",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPT1JoNlJnX2xVX2xuejRwQnhScFg5ME5QTjZfNWhSLUhyZHkwbVllanlIYnpNdDRrLUY4bWNMbFVWYUE1cnkxbXdWLTYwNkhaVS02WS1JNDRBVmRHU2NhNkNRME9Va2plVS1IX1hMU1VhVnBoYjN5M3lVMEwybWU2cm81S3lvTlNHSGVkam1FdlpPeF9RRmxFeWdpdlR2ZXc?oc=5",
+          "source": "India Briefing",
+          "date": "2026-10-09T07:00:00.000Z"
+        },
+        {
+          "title": "Next-Gen GST Process Reforms - www.pib.gov.in",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fM3ppTU5VczVvdVQ2R0w2VGtoSmVJV2dGVC1UR3FLQTBxRnh1a1B1aHlWc0d5TDRTQjdqaklJM1N2YVpMRDNxTzZCdVRfMnNXTXI2SGE1VVR6OWJndi1tbXNGX29TaEoy?oc=5",
+          "source": "www.pib.gov.in",
+          "date": "2026-10-09T07:00:00.000Z"
+        },
+        {
+          "title": "New GST Rules 2026: From November 1, reforms to be rolled out in phases - What CBIC confirmed - Livemint",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOLWNULW5vTDV3TncxV2J6c1c5V0hSM2piWkdsOWowTkZUamxHNDVxaFhFNXRINXZIM09oY1FwdFJwR2lJa0V1R1ZxMl9vWl9iNmRsT05McFJzeU0yWjB6TXZyaEFNakdJNFFueWplVmVQWkVWZUxhVG1iWWQ3U2QwbThqbHlJeExJUVkwUVAtREVqcnVpZngzSjZObDB5bHdNZHpOX0Z0VDF3U0lIVWRXOFExbDdSTzUwMGZMbjY1N01KUTZVbGktVk1lUGpRazItREZOQ2Zfa9IB3AFBVV95cUxPOEpzTzJrdzc3YjBydGExdndTb2xPQ1lOY1RwT3FydjNiZlRtMGJRTnJmZ3h3bF9ZMVNsc0hBT2I2NTRUOHBtTmM2YUV1d3Q0QXhhc0h0THFmcVFNQ3BWNmJGSE53aS1ybWNTNlY2TWpGQVFoMVMtRHZEbXNGVUs2Z1Q2LXVQejBlbDdQX2hHUDVkcUloenBCd0daMlc1Q3VSUWhJaWFrbGt5Z0I3OURGRG9yY1FoT1RNbUthNzJIaEhnWnRPM3pjY1VRZWo2NVJJSGpQeXNaNG5vMVJ1?oc=5",
+          "source": "Livemint",
+          "date": "2026-10-24T07:00:00.000Z"
+        },
+        {
+          "title": "GST Reforms 2026 – Easier Compliance, Faster Refunds and Reduced Prosecution Risks - Vajiram & Ravi",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4U0ZqVXZRX2tLRndJN1pRTndlUVJNU284V0xFMW5SSmxQLWUwVTROZEVHZTl4TWxwNFoxWjJZcXdBQ3ZVakVNeGs3bm5SZE5ubGljMGJjMXVOYnZ0TS15RWt3RW85clVFN3kxTw?oc=5",
+          "source": "Vajiram & Ravi",
+          "date": "2026-10-09T07:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "fii",
+      "icon": "💰",
+      "tag": "Capital flows",
+      "title": "FIIs pour ~₹66,300 Cr into equities in November",
+      "date": "Nov 2026",
+      "tone": "positive",
+      "summary": "Foreign investors net bought roughly ₹66,300 crore in the first seven sessions of November (full-month net ~₹1.01 lakh crore), driving benchmarks to nine-month highs. The rupee strengthened above 92.67/USD.",
+      "impact": "Strong FII flows benefit large-cap, high-liquidity names and banking/IT heavyweights. A reversal would hit the same segments first. Rupee strength helps importers and hurts exporters’ rupee realisations.",
+      "sectors": [
+        "Large Caps",
+        "Banking",
+        "IT",
+        "Imports"
+      ],
+      "query": "FII inflows Indian equities November 2026 rupee",
+      "headlines": [
+        {
+          "title": "Indian Stock Market Extends 4-Week Rally as Sensex and Nifty Hit 9-Month Highs on Record FII Buying - Kotak Neo",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdHRLUWlWUGExQUVQdm41Q3RTXzVkdzhBNVY1ckc2X2VmRHQ5ZGdESlV2Z290X0lWVXdCcHh2MkZkZE9rcWRfUVBzVTFiWHZEZTZXV0R2VjVaZlh5dXFBQUw2WE0wcHF1ZnBlWWR2REFwS3F4dXlCR3FoLXNBZDBHYmxva3NhLWt3eHV4ZGxoSjBQc3RPQ1pNVXl5c2pVaGIzYU54Ni1TUHh1bzI3dG9UYWR4NTR0QUxjalFCV3pvTXV6MzJacy1ORmxHZU1FcDVrLWpSUjNwYjEzSVFOejc5N0hn?oc=5",
+          "source": "Kotak Neo",
+          "date": "2026-11-21T05:52:38.000Z"
+        },
+        {
+          "title": "Indian equities see record $10.6 billion FII inflows in Nov so far; here's why brokerages are bullish - Moneycontrol.com",
+          "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOWThRSFEwVnpOSzdnVDZNN0t1TFJXMXZUeDl0ckQ2c1pZRjVvUW43LWZyZjA2a1UtWmR5Z01pbWMzNTNoZENDVjRIbVlSd1BrNEM4QmZnbHZtV01nNi1QZlBfZzFkb3NJMTdyWkp5TjVjWnBHRGxaUVZNamt6R3pNSDhVbnNRY2ozdWI1bW1MeWlOYUo1NG9uc0F2cnFhNy1fNlVhcVRucXZpaERMTXIzUDIyenlKYVh2dTR2amRJUVJYY0gwdnJOVWo4M0ZmTDdfOHhBT3BZSnJralBnMGlMYjQ0ZjZhY2FsSnNrUm93b9IB9AFBVV95cUxNbWZ1X0Zza1hZdXJsbDU4UjNkMkhxSmpma2dkdS1URkVvNkxhWUZHZUk2aVd4dFhRNWJGWkxwdW9DcDNRMV9WSUc5YWo5NEtfNk1QOUVTQWphRUVKOXVaWWstM29kX0VrdTlKZXZkSGk3R19oZ1BzQ1VwUzF1cXdwZzRucmk2R0RyWmM0b1FINHZUcXM0QzJlUGpMWHBrVHRFZ3hfRHRNc2hNcmlwUEtfaGtnYXdhelNENXJqZnlfbEg0TnVIU0g5T3d6UmZ6VWJTV0ZrTkVFeTZIOXhlVVRlRVQyVEE3bXl0WmRoQ2trT211dzN6?oc=5",
+          "source": "Moneycontrol.com",
+          "date": "2026-11-18T12:05:07.000Z"
+        },
+        {
+          "title": "Rupee Rises 65 Paise to 92.67 Against US Dollar - HDFC Sky",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2JjV0pZa1Q3bHhENC0yMGdtMjF6WmVUdXRMVEJPQlRvRWlQMnA1c3htM19hVjFRbmJKQ0Q0M1FMcmtoRk1LX0dqTElSdVp1enYtNzB4b2FpN1NzSnJfdFFNTmVQNm9Bb2NVQUItbS1Odzh3UmdVMlBibllFcUNwNWRZNFRKM0R4ajdmZWVOdjhMNXlfUG5VRDZpZlh2c2Fsa2JKWHVORi1aLU1wSXRzc2h0aWg4cS1VRGRXWA?oc=5",
+          "source": "HDFC Sky",
+          "date": "2026-11-20T11:05:23.000Z"
+        },
+        {
+          "title": "Rupee Surges Past 93/USD on FII Inflows & Weak Crude - Rediff MoneyWiz",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQN2FPemhsLXNPN3BWSU1TMVdCMXN6dFNtNzNmTXp6OFFMWXE5YlJHb0pxM2x6dXVIaUZ6STR1UVZyLV9sQzAzUWJibmhNVi10UFpKaDRaOVNLQnhhamVxaUxUdE52UGJLN2lER0lOOGlaNmNaekU0ZHBsNEM2UTNzSTk5YmFOZ3RyR3RGR3Bzc2tJZXV5Q3czOS1MQTctekZka1pQc9IBqgFBVV95cUxPY1NmaDlYbF9lZmE5d3hvRy0wYkU0aEJVVmFRRXpyWlBRMnFyTXl3bmVvQ0FQRGFlMGpEUlh0WFdkMkJ4WXhmUHc5dXdCMVJSUU5qcldYaTBpLVVRN3RWa3YtU0JIN2NvRzA2WldseWJ5Y3hoWkJ3MklJc1owdnZRSnc4dXM3aUtKTWtGbUNnU2lkSWhoQzkyTU4wWFZadk12Y2pCd2xWNFdjQQ?oc=5",
+          "source": "Rediff MoneyWiz",
+          "date": "2026-11-20T10:52:10.000Z"
+        },
+        {
+          "title": "FIIs pump record Rs 1.01 lakh crore into Indian equities in November - Cityairnews",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa1Bham00SDRCUDY0T0gyeTJncDg2OVVzUEZQS1J5NWZreUdfMTVQbHhzanlISmdhWE1Zbk95dTFKeDBKU3BNUTFnNWpnOFJ5aHNINnV1TmY1MjBlLXFBWW1KWGpMbFdnZ0U4VHI2R0N0V09aMXRqdUZrdUFQRU15cy1NbC1zWDNqUWRiV0d3LUdvbzBkSVEzLWhKcmh4cGVubmZVWXZn?oc=5",
+          "source": "Cityairnews",
+          "date": "2026-11-20T15:28:06.000Z"
+        },
+        {
+          "title": "India draws $13 billion in FII inflows, extends buying streak to 14 sessions - CNBC TV18",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNOFJvbG5yb0JBSjVlbHF0VEFYNzBsUGg5Sk5Lb2dzaVp4ZUEzbHpWb0Z6WWRZVlZ2R3ZYTXZnTnRIVXVhS1ZTQTNTWXFDM3FNZi1sMThNQkxMdHBqTk1RQUd1Si02ZXdKNFNhMV9DT2pFRVN6S0NNdklCakpGZnZNeFpfM1VvTFF0eVdibTVNbV95SHJ1Nm1ZbF9TRFBXclZzZFExVFd5eUp0anFMd04xb1JrajcxT25Gek9nY0JvQkZqVTJzb2VuWkJLa9IB0AFBVV95cUxNZGU3bUdhSy1HYmx6a0RBRERHamNpc3JLeGJEeFgybTFtZVp3ZkFtNnNBV0p1ZGpJTXBZQXpHTkxZR2Z4enFzZ3RuMEs4UU5HcnJZdHB5NEw0YklYT1NfRVBvOERFUk9VVGk4T3FwQ0szbXFtMGF2ZGxBSFlDTFlnZVlaeTlCckg0d09xQVhBdDNpRER5U29nX0xOZWk3RVhodWY2clh5RzJnRWg5NzMwT2RFVG1sRG5iT2JpaUNrVm15SzhlRlprNTVJMWJrRGhj?oc=5",
+          "source": "CNBC TV18",
+          "date": "2026-11-19T13:14:09.000Z"
+        }
+      ]
+    }
+  ]
+}
