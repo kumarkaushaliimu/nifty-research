@@ -232,6 +232,7 @@
   <div class="tabs">
     <button class="tab active" data-sec="fund" style="--tc:var(--fund)"><span class="ic">📊</span> Fundamentals <span class="badge" id="badgeFund">0</span></button>
     <button class="tab" data-sec="tech" style="--tc:var(--tech)"><span class="ic">📈</span> Technicals <span class="badge" id="badgeTech">0</span></button>
+    <button class="tab" data-sec="darvas" style="--tc:var(--cyan)"><span class="ic">📦</span> Darvas Box <span class="badge" id="badgeDarvas">0</span></button>
     <button class="tab" data-sec="decision" style="--tc:var(--green)"><span class="ic">🎯</span> Investment Decision <span class="badge" id="badgeDecision">0</span></button>
     <button class="tab" data-sec="macro" style="--tc:var(--violet)"><span class="ic">🌐</span> News, Events &amp; Intelligence <span class="badge" id="badgeMacro">0</span></button>
   </div>
@@ -318,6 +319,12 @@
           <th class="t" data-key="updownVol" title="Up-day vs down-day volume (last 20 sessions)">Up/Dn Vol <span class="ar">▼</span></th>
           <th class="t" data-key="atrPct">ATR% <span class="ar">▼</span></th>
           <th class="t" data-key="distHigh">52W High <span class="ar">▼</span></th>
+          <th class="t" data-key="support1">S1 <span class="ar">▼</span></th>
+          <th class="t" data-key="support2">S2 <span class="ar">▼</span></th>
+          <th class="t" data-key="resistance1">R1 <span class="ar">▼</span></th>
+          <th class="t" data-key="resistance2">R2 <span class="ar">▼</span></th>
+          <th class="t" data-key="targetPrice">Target <span class="ar">▼</span></th>
+          <th class="t" data-key="upsidePct">Upside <span class="ar">▼</span></th>
           <th data-key="price">Price <span class="ar">▼</span></th>
           <th data-key="trend">60D trend <span class="ar">▼</span></th>
         </tr></thead>
@@ -325,6 +332,53 @@
       </table></div>
     </div>
     <div class="method" id="tmethod"></div>
+  </section>
+
+  <!-- DARVAS BOX -->
+  <section class="section" id="sec-darvas">
+    <div class="macrohead">
+      <div><h2>Darvas Box Theory</h2><div class="sub">Nicolas Darvas breakout method — buy when price clears a well-defined consolidation box on strong volume, with the box top as support and box height as the measured target. Recomputed daily.</div></div>
+    </div>
+    <div class="dcsummary" id="darvasSummary"></div>
+    <div class="toolbar">
+      <div class="search"><input id="dvrsearch" placeholder="Search company or symbol…"></div>
+      <select id="dvrsector"><option value="">All sectors</option></select>
+      <div class="pill" id="dvrfilter">
+        <button class="on" data-f="all">All</button>
+        <button data-f="breakout">Breakouts</button>
+        <button data-f="70">Score ≥70</button>
+        <button data-f="near">Near breakout</button>
+      </div>
+      <button class="btn" id="dvrexport">⬇ Export CSV</button>
+      <span class="count" id="dvrcount"></span>
+    </div>
+    <div class="tablecard">
+      <div class="legend">
+        <span><i style="background:var(--cyan)"></i> Darvas score (0–100) — higher is better</span>
+        <span>Click a row to see box levels, risk/reward and the trade setup</span>
+        <span class="chip">Target = box top + box height (measured move) · Stop = box bottom</span>
+      </div>
+      <div class="scroll"><table id="dvrtbl">
+        <thead><tr>
+          <th class="l" data-key="name" style="width:190px">Company <span class="ar">▼</span></th>
+          <th class="l" data-key="sector" style="width:120px">Sector <span class="ar">▼</span></th>
+          <th data-key="darvasScore">Score <span class="ar">▼</span></th>
+          <th class="l" data-key="darvasBreakout">Status <span class="ar">▼</span></th>
+          <th data-key="boxTop">Box Top <span class="ar">▼</span></th>
+          <th data-key="boxBottom">Box Bottom <span class="ar">▼</span></th>
+          <th data-key="boxPct">Box % <span class="ar">▼</span></th>
+          <th data-key="breakoutVolRatio">Vol Ratio <span class="ar">▼</span></th>
+          <th data-key="darvasSupport">Support <span class="ar">▼</span></th>
+          <th data-key="darvasStop">Stop <span class="ar">▼</span></th>
+          <th data-key="darvasTarget">Target <span class="ar">▼</span></th>
+          <th data-key="darvasUpside">Upside <span class="ar">▼</span></th>
+          <th data-key="price">Price <span class="ar">▼</span></th>
+          <th data-key="trend">60D trend <span class="ar">▼</span></th>
+        </tr></thead>
+        <tbody id="dvrbody"></tbody>
+      </table></div>
+    </div>
+    <div class="method" id="dvrmethod"></div>
   </section>
 
   <!-- INVESTMENT DECISION -->
@@ -467,22 +521,22 @@ function scoreCell(score,kind){
 }
 
 /* ---------- State & render ---------- */
-function makeState(prefix){
+function makeState(prefix, renderFn){
   const st={q:'',sector:'',filter:'all',key:'score',dir:-1};
   const search=$(prefix+'search'), sector=$(prefix+'sector'), pill=$(prefix+'filter');
-  search.addEventListener('input',()=>{st.q=search.value.toLowerCase();render();});
-  sector.addEventListener('change',()=>{st.sector=sector.value;render();});
+  search.addEventListener('input',()=>{st.q=search.value.trim().toLowerCase();renderFn();});
+  sector.addEventListener('change',()=>{st.sector=sector.value;renderFn();});
   pill.addEventListener('click',e=>{
     const b=e.target.closest('button'); if(!b) return;
     [...pill.children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
-    st.filter=b.dataset.f; render();
+    st.filter=b.dataset.f; renderFn();
   });
   return st;
 }
-const fState=makeState('#f'), tState=makeState('#t');
+const fState=makeState('#f', renderF), tState=makeState('#t', renderT);
 
 function applyFilter(list,st,kind){
-  let out=list.filter(s=>(!st.q||s.name.toLowerCase().includes(st.q)||s.symbol.toLowerCase().includes(st.q)) && (!st.sector||s.sector===st.sector));
+  let out=list.filter(s=>(!st.q||(s.name||'').toLowerCase().includes(st.q)||(s.fullName||'').toLowerCase().includes(st.q)||(s.symbol||'').toLowerCase().includes(st.q)) && (!st.sector||s.sector===st.sector));
   if(st.filter!=='all'){
     if(st.filter==='top') out=[...out].sort((a,b)=>(b[kind].score||0)-(a[kind].score||0)).slice(0,25);
     else if(st.filter==='10') out=out.filter(s=>s.t.conditions===10);
@@ -506,6 +560,7 @@ function getVal(s,k,kind){
   if(k==='trend') return (s.spark?.at(-1)||0)-(s.spark?.[0]||0);
   if(k==='marketCap') return s.marketCap;
   if(k==='sectorPe') return s.f?.sectorPe;
+  if(kind==='darvas') return s.t?.[k] ?? null;
   return s[kind]?.[k] ?? s[k] ?? null;
 }
 
@@ -560,6 +615,12 @@ function renderT(){
       <td class="${t.updownVol>1?'pass':(t.updownVol!=null?'fail':'neutral')}">${fmt(t.updownVol,2)}</td>
       <td class="chip">${fmt(t.atrPct,1)}%</td>
       <td class="${t.distHigh>=-10?'pass':(t.distHigh!=null?'fail':'neutral')}">${pct(t.distHigh,1)}</td>
+      <td class="chip">${fmt(t.support1,0)}</td>
+      <td class="chip">${fmt(t.support2,0)}</td>
+      <td class="chip">${fmt(t.resistance1,0)}</td>
+      <td class="chip">${fmt(t.resistance2,0)}</td>
+      <td class="${t.upsidePct>5?'pass':''}">${fmt(t.targetPrice,0)}</td>
+      <td class="${t.upsidePct>0?'pass':(t.upsidePct!=null?'fail':'neutral')}">${pct(t.upsidePct,1)}</td>
       <td>${fmt(s.price,0)}</td>
       <td>${sparkline(s.spark,t.score>=60?'var(--green)':(t.score>=40?'var(--amber)':'var(--red)'))}</td>
     </tr>`;
@@ -712,6 +773,120 @@ $('#newsRefresh').addEventListener('click',async()=>{
   catch{ b.textContent='Run: node fetch-news.js'; }
 });
 
+/* ---------- Darvas Box render ---------- */
+const dvStocks = stocks.filter(s => s.t?.darvasScore != null).map(s => ({ ...s, trend: (s.spark?.at(-1)||0)-(s.spark?.[0]||0) }));
+$('#badgeDarvas').textContent = dvStocks.length;
+const dvsectors = [...new Set(dvStocks.map(s=>s.sector).filter(Boolean))].sort();
+$('#dvrsector').insertAdjacentHTML('beforeend', dvsectors.map(s=>`<option>${s}</option>`).join(''));
+const dvrState = { q:'', sector:'', filter:'all', key:'darvasScore', dir:-1, renderFn:null };
+dvrState.renderFn = () => renderDarvas();
+$('#dvrsearch').addEventListener('input', e => { dvrState.q=e.target.value.trim().toLowerCase(); renderDarvas(); });
+$('#dvrsector').addEventListener('change', e => { dvrState.sector=e.target.value; renderDarvas(); });
+$('#dvrfilter').addEventListener('click', e => {
+  const b=e.target.closest('button'); if(!b) return;
+  [...$('#dvrfilter').children].forEach(x=>x.classList.remove('on')); b.classList.add('on');
+  dvrState.filter=b.dataset.f; renderDarvas();
+});
+$$('#dvrtbl thead th[data-key]').forEach(th=>th.addEventListener('click',()=>{
+  const k=th.dataset.key; if(dvrState.key===k)dvrState.dir*=-1; else {dvrState.key=k;dvrState.dir=-1;} renderDarvas();
+}));
+function renderDarvas(){
+  let out=dvStocks.filter(s=>(!dvrState.q||(s.name||'').toLowerCase().includes(dvrState.q)||(s.fullName||'').toLowerCase().includes(dvrState.q)||(s.symbol||'').toLowerCase().includes(dvrState.q))&&(!dvrState.sector||s.sector===dvrState.sector));
+  if(dvrState.filter==='breakout') out=out.filter(s=>s.t.darvasBreakout);
+  else if(dvrState.filter==='near') out=out.filter(s=>!s.t.darvasBreakout && s.t.boxTop!=null && s.price>=s.t.boxTop*0.97);
+  else if(dvrState.filter!=='all') out=out.filter(s=>s.t.darvasScore>=+dvrState.filter);
+  const k=dvrState.key,dir=dvrState.dir;
+  out.sort((a,b)=>{let av=getVal(a,k,'darvas'),bv=getVal(b,k,'darvas');
+    if(k==='name'||k==='sector'||k==='darvasBreakout'){av=av==null?'':(typeof av==='boolean'?(av?'z':'a'):String(av));bv=bv==null?'':(typeof bv==='boolean'?(bv?'z':'a'):String(bv));return av.localeCompare(bv)*dir;}
+    if(av==null)av=-Infinity;if(bv==null)bv=-Infinity;return (av-bv)*dir;});
+  $('#dvrcount').textContent=out.length+' of '+dvStocks.length+' stocks';
+  $('#dvrbody').innerHTML=out.length?out.map((s,i)=>{
+    const t=s.t;
+    return `<tr data-i="${i}" data-sym="${s.symbol}">
+      <td class="l"><div class="cname">${s.name}</div><div class="csym">${s.symbol}</div></td>
+      <td class="l"><div class="sect" title="${s.sector}">${s.sector}</div></td>
+      <td>${scoreCell(t.darvasScore,'darvas')}</td>
+      <td class="l">${t.darvasBreakout?'<span class="tag g">BREAKOUT</span>':(s.price>=t.boxTop*0.97?'<span class="tag">Near box top</span>':'<span class="tag">In box</span>')}</td>
+      <td>${fmt(t.boxTop,0)}</td>
+      <td>${fmt(t.boxBottom,0)}</td>
+      <td class="chip">${fmt(t.boxPct,1)}%</td>
+      <td class="${t.breakoutVolRatio>=1.5?'pass':''}">${fmt(t.breakoutVolRatio,2)}x</td>
+      <td>${fmt(t.darvasSupport,0)}</td>
+      <td class="${t.darvasStop!=null&&s.price>t.darvasStop?'pass':'fail'}">${fmt(t.darvasStop,0)}</td>
+      <td class="pass">${fmt(t.darvasTarget,0)}</td>
+      <td class="${t.darvasUpside>0?'pass':'fail'}">${pct(t.darvasUpside,1)}</td>
+      <td>${fmt(s.price,0)}</td>
+      <td>${sparkline(s.spark,t.darvasScore>=70?'var(--green)':(t.darvasScore>=50?'var(--amber)':'var(--red)'))}</td>
+    </tr>`;
+  }).join(''):'<tr><td colspan="14" class="empty">No stocks match the filters</td></tr>';
+  $$('#dvrbody tr[data-i]').forEach(tr=>tr.addEventListener('click',()=>{
+    const next=tr.nextElementSibling;
+    if(next&&next.classList.contains('detail')){next.remove();tr.classList.remove('open');return;}
+    $$('#dvrbody .detail').forEach(x=>x.remove()); $$('#dvrbody tr[data-i]').forEach(x=>x.classList.remove('open'));
+    const s=out[+tr.dataset.i]; tr.classList.add('open');
+    const d=document.createElement('tr'); d.className='detail';
+    d.innerHTML=`<td colspan="14">${darvasCard(s)}</td>`; tr.after(d);
+  }));
+}
+function darvasCard(s){
+  const t=s.t;
+  const rr=(t.darvasTarget!=null&&s.price>t.darvasStop)?((t.darvasTarget-s.price)/(s.price-t.darvasStop)).toFixed(1):'—';
+  return `<div class="detail-inner rcard">
+    <div class="dcol"><h4>Box setup</h4>
+      <div class="rline">Current price: <b>₹${fmt(s.price,0)}</b></div>
+      <div class="rline">Box top (resistance): <b>₹${fmt(t.boxTop,0)}</b></div>
+      <div class="rline">Box bottom (support): <b>₹${fmt(t.boxBottom,0)}</b></div>
+      <div class="rline">Box height / width: <b>₹${fmt(t.boxHeight,0)} / ${fmt(t.boxPct,1)}%</b></div>
+      <div class="rline">Status: <b>${t.darvasBreakout?'Breakout confirmed':(s.price>=t.boxTop*0.97?'Approaching box top':'Inside box')}</b></div>
+      <div class="rline">Breakout volume ratio: <b>${fmt(t.breakoutVolRatio,2)}x</b></div>
+    </div>
+    <div class="dcol"><h4>Trade parameters</h4>
+      <div class="rline">Support (old box top): <b>₹${fmt(t.darvasSupport,0)}</b></div>
+      <div class="rline">Stop loss (box bottom): <b>₹${fmt(t.darvasStop,0)}</b></div>
+      <div class="rline">Target (measured move): <b>₹${fmt(t.darvasTarget,0)}</b></div>
+      <div class="rline">Upside to target: <b>${pct(t.darvasUpside,1)}</b></div>
+      <div class="rline">Risk / reward: <b>${rr}</b></div>
+      <div class="rline">Holding above support: <b>${t.holdingSupport==null?'—':(t.holdingSupport?'Yes':'No')}</b></div>
+      <div style="margin-top:12px"><span class="dscore" style="color:${color(t.darvasScore)}">${fmt(t.darvasScore,0)}<span style="font-size:12px;color:var(--dim)">/100</span></span></div>
+    </div>
+    <div class="dcol"><h4>How the score is built</h4>
+      <div class="rline">Box structure (~12% ideal): <b>25 pts max</b></div>
+      <div class="rline">Valid breakout + volume: <b>25 pts max</b></div>
+      <div class="rline">Holding above old box top: <b>20 pts</b></div>
+      <div class="rline">Above 50 / 200 EMA: <b>10 + 10 pts</b></div>
+      <div class="rline">Risk/reward: <b>10 pts max</b></div>
+      <div class="rline" style="margin-top:8px"><b>Interpretation:</b> A high score means a tight, well-defined box with a volume-confirmed breakout that is holding its new support and offering favourable risk/reward toward the measured target.</div>
+    </div>
+  </div>`;
+}
+function buildDarvasUI(){
+  const brk=dvStocks.filter(s=>s.t.darvasBreakout).length;
+  const near=dvStocks.filter(s=>!s.t.darvasBreakout&&s.t.boxTop!=null&&s.price>=s.t.boxTop*0.97).length;
+  const strong=dvStocks.filter(s=>s.t.darvasScore>=70).length;
+  $('#darvasSummary').innerHTML=[
+    {l:'Confirmed breakouts',v:brk,n:'closed above box top',k:'var(--green)'},
+    {l:'Near box top',v:near,n:'potential breakouts',k:'var(--cyan)'},
+    {l:'Score ≥70',v:strong,n:'strong setups',k:'var(--amber)'},
+    {l:'Universe',v:dvStocks.length,n:'stocks scanned daily',k:'var(--violet)'},
+  ].map(x=>`<div class="dcbox" style="--dc:${x.k}"><div class="l">${x.l}</div><div class="v">${x.v}</div><div class="n">${x.n}</div></div>`).join('');
+  $('#dvrmethod').innerHTML=`<h3>Darvas Box Theory — method &amp; scoring</h3><div class="grid">
+    <div class="box"><h4>1 · Build the box</h4><ul><li>Box top = 20-session high</li><li>Box bottom = 20-session low</li><li>Ideal box width ≈ 12%</li></ul></div>
+    <div class="box"><h4>2 · Buy signal</h4><ul><li>Close above the box top</li><li>Volume &gt;1.5× the 20-day average</li><li>Old box top becomes support</li></ul></div>
+    <div class="box"><h4>3 · Exit &amp; target</h4><ul><li>Stop = box bottom</li><li>Target = box top + box height</li><li>Exit if support breaks</li></ul></div>
+    <div class="box"><h4>Score (100 pts)</h4><ul><li>Box structure<b>25</b></li><li>Breakout + volume<b>25</b></li><li>Holding support<b>20</b></li><li>Trend (50/200 EMA)<b>20</b></li><li>Risk/reward<b>10</b></li></ul></div>
+  </div><p>Darvas boxes are recomputed every daily run from the latest 2 years of NSE price data. A high score identifies a tight consolidation with a volume-confirmed breakout holding its support and a favourable measured-move target. This is a screening method, not a trading recommendation.</p>`;
+}
+$('#dvrexport').addEventListener('click',()=>{
+  const cols=['name','symbol','sector','darvasScore','darvasBreakout','boxTop','boxBottom','boxPct','breakoutVolRatio','darvasSupport','darvasStop','darvasTarget','darvasUpside','price'];
+  const rows=[cols.join(',')];
+  for(const s of dvStocks){rows.push(cols.map(c=>{
+    let v=(c==='name'||c==='symbol'||c==='sector')?s[c]:s.t[c];
+    if(v==null)return '';if(typeof v==='string')return '"'+v.replace(/"/g,'""')+'"';return v;
+  }).join(','));}
+  const b=new Blob([rows.join('\n')],{type:'text/csv'}),a=document.createElement('a');a.href=URL.createObjectURL(b);
+  a.download='nifty_darvas_'+new Date().toISOString().slice(0,10)+'.csv';a.click();
+});
+
 /* ---------- Investment Decision render ---------- */
 const dStocks = stocks.filter(s => s.composite != null);
 $('#badgeDecision').textContent = dStocks.length;
@@ -731,7 +906,7 @@ $$('#dtbl thead th[data-key]').forEach(th=>th.addEventListener('click',()=>{
 
 function classKey(c){ return c.includes('Strong')?'Strong':c.includes('Buy')?'Buy':c.includes('Watch')?'Watch':c.includes('Avoid')?'Avoid':'Neutral'; }
 function renderD(){
-  let out = dStocks.filter(s => (!dState.q||s.name.toLowerCase().includes(dState.q)||s.symbol.toLowerCase().includes(dState.q)) && (!dState.sector||s.sector===dState.sector));
+  let out = dStocks.filter(s => (!dState.q||(s.name||'').toLowerCase().includes(dState.q)||(s.fullName||'').toLowerCase().includes(dState.q)||(s.symbol||'').toLowerCase().includes(dState.q)) && (!dState.sector||s.sector===dState.sector));
   if(dState.filter==='buy') out=out.filter(s=>s.classification.includes('Buy'));
   else if(dState.filter==='watch') out=out.filter(s=>s.classification==='Watchlist');
   else if(dState.filter==='avoid') out=out.filter(s=>s.classification==='Avoid'||s.eligibility?.status==='REJECT');
@@ -870,7 +1045,7 @@ function buildFactors(){
 }
 
 /* ---------- Init ---------- */
-renderF(); renderT(); buildMethod(); buildMacro(); buildDecisionUI(); buildFactors(); renderD();
+renderF(); renderT(); buildDarvasUI(); renderDarvas(); buildMethod(); buildMacro(); buildDecisionUI(); buildFactors(); renderD();
 </script>
 </body>
 </html>
