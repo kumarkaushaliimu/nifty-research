@@ -6,7 +6,8 @@ Scored fundamental + technical screening with a macro-news section mapping event
 - `dashboard.html` — self-contained dashboard (open in any browser; data & news embedded, no server needed).
 
 ## Sections
-0. **Investment Decision** (new) — a two-stage engine built from the ChatGPT review:
+0. **Market Today** — daily snapshot: index level, advancers/decliners, total volume & turnover, a **market-cap-sized heatmap** coloured by % change, and a sortable table of price, volume, avg volume, volume ratio, turnover and day range for every constituent. Searchable by name/symbol and filterable by sector, gainers/losers and high volume.
+1. **Investment Decision** — a two-stage engine built from the ChatGPT review:
    - **Stage 1 – Eligibility** hard checks (excessive leverage, earnings deterioration, weak cash conversion, extreme valuation, illiquidity, governance UNKNOWN). A REJECT cannot be a Buy regardless of score.
    - **Stage 2 – Attractiveness** composite /100 = Fundamental 35 + Technical 25 + News 15 + Risk 15 + Valuation 10.
    - Classification: Strong Buy / Buy / Watchlist / Neutral / Avoid, with minimum conditions (Fundamental ≥70, Technical ≥65 for momentum).

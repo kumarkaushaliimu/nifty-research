@@ -962,6 +962,10 @@ function buildDecision(stocks, newsBySymbol) {
       symbol: c.symbol, name: c.name.replace(/\s+Ltd\.?$/, '').replace(/\s+Co\.?$/, '').trim(), fullName: c.name,
       sector: c.sector,
       price, changePct: num(q.regularMarketChangePercent),
+      volume: num(q.regularMarketVolume) ?? null,
+      avgVolume: num(q.averageDailyVolume3Month) ?? num(q.averageVolume) ?? null,
+      turnover: (num(q.regularMarketVolume) != null && num(q.regularMarketPrice) != null)
+        ? q.regularMarketVolume * q.regularMarketPrice : null,
       marketCap: num(q.marketCap) ?? f?.marketCap ?? null,
       pe: f?.pe ?? num(q.trailingPE), pb: num(q.priceToBook), divYield: f?.divYield ?? num(q.dividendYield),
       eps: num(q.epsTrailingTwelveMonths), bookValue: f?.bookValue ?? num(q.bookValue), beta: num(q.beta),
