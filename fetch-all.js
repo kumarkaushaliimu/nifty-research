@@ -299,45 +299,6 @@ function buildTech(sym, chart, indexReturns) {
   const targetPrice = resistance1 ?? high52;
   const upsidePct = price ? (targetPrice / price - 1) * 100 : null;
 
-  // ---- Darvas Box Theory ----
-  // Build the current box from a 20-session window, detect breakouts and score.
-  const clampScore = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
-  const BOXN = 20;
-  let boxTop = null, boxBottom = null, boxHeight = null, boxPct = null;
-  let darvasBreakout = false, breakoutIdx = -1, breakoutVolRatio = null;
-  if (n > BOXN + 5) {
-    boxTop = Math.max(...highs.slice(-BOXN - 1, -1));
-    boxBottom = Math.min(...lows.slice(-BOXN - 1, -1));
-    boxHeight = boxTop - boxBottom;
-    boxPct = boxTop ? boxHeight / boxTop * 100 : null;
-    // Scan recent sessions for a close above the then-prior box top on strong volume
-    for (let i = n - 20; i < n; i++) {
-      const priorTop = Math.max(...highs.slice(i - BOXN, i));
-      const priorVol = vols.slice(i - BOXN, i).reduce((a, b) => a + b, 0) / BOXN;
-      if (closes[i] > priorTop && priorVol > 0 && vols[i] > priorVol * 1.5) {
-        darvasBreakout = true; breakoutIdx = i; breakoutVolRatio = vols[i] / priorVol; break;
-      }
-    }
-  }
-  const darvasSupport = darvasBreakout ? boxTop : boxBottom;  // prior top becomes support
-  const darvasStop = boxBottom;
-  const darvasTarget = (darvasBreakout && boxHeight != null) ? boxTop + boxHeight : (resistance1 ?? high52);
-  const darvasUpside = price ? (darvasTarget / price - 1) * 100 : null;
-  const holdingSupport = darvasBreakout && darvasSupport != null ? price >= darvasSupport * 0.99 : null;
-  // Darvas score (0-100)
-  let darvasScore = 0;
-  if (boxPct != null) darvasScore += clampScore(25 - Math.abs(boxPct - 12) * 1.6, 0, 25); // structure: ~12% box ideal
-  if (darvasBreakout) darvasScore += breakoutVolRatio >= 1.5 ? 25 : (breakoutVolRatio >= 1.2 ? 15 : 8);
-  else if (price != null && boxTop != null && price > boxTop * 0.97) darvasScore += 8; // approaching breakout
-  if (holdingSupport === true) darvasScore += 20;
-  else if (darvasBreakout && holdingSupport === false) darvasScore += 5;
-  if (ema50 != null && price > ema50) darvasScore += 10;
-  if (ema200 != null && price > ema200) darvasScore += 10;
-  const rr = (darvasTarget != null && price && darvasStop != null && price > darvasStop)
-    ? (darvasTarget - price) / (price - darvasStop) : null;
-  if (rr != null) darvasScore += clampScore(rr * 5, 0, 10);
-  darvasScore = Math.round(clampScore(darvasScore, 0, 100));
-
   return {
     price, ema20, ema50, ema200, ema200Prev, rsi, adx,
     ret1m, ret3m, ret6m, ret1y,
@@ -350,9 +311,6 @@ function buildTech(sym, chart, indexReturns) {
     // Support / resistance / target (daily)
     pivot, pivotS1, pivotS2, pivotR1, pivotR2,
     support1, support2, resistance1, resistance2, targetPrice, upsidePct,
-    // Darvas Box Theory
-    boxTop, boxBottom, boxHeight, boxPct, darvasBreakout, breakoutIdx, breakoutVolRatio,
-    darvasSupport, darvasStop, darvasTarget, darvasUpside, holdingSupport, darvasScore,
     spark: closes.slice(-60).map(v => Math.round(v * 100) / 100),
   };
 }

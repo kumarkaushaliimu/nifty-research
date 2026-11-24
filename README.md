@@ -21,8 +21,7 @@ Scored fundamental + technical screening with a macro-news section mapping event
    - Valuation (P/E vs sector median)
    - Click a row to expand every check with pass/fail, value and weight.
 2. **Technicals** — 10-point screening checklist plus a weighted /100 score (trend 25, momentum 20, relative strength 25, price performance 15, volume 10, 52W proximity 5), sparklines, full indicator detail, and daily **support (S1/S2), resistance (R1/R2), target price and upside %** from swing pivots and 20-day highs/lows.
-3. **Darvas Box** — Nicolas Darvas breakout method rebuilt daily: 20-session box top/bottom, volume-confirmed breakouts, old box top as support, box bottom as stop, and a measured-move target (box top + box height). Darvas score /100 from box structure (25), breakout+volume (25), holding support (20), trend (20) and risk/reward (10). Includes breakout filters and CSV export.
-4. **Macro & News** — RBI, inflation, US Fed, elections, GST and FII cards with sector-impact notes and live Google News headlines.
+3. **Macro & News** — RBI, inflation, US Fed, elections, GST and FII cards with sector-impact notes and live Google News headlines.
 
 Search on all stock tabs matches both company name and symbol (plus full legal name).
 
