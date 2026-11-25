@@ -1,6 +1,6 @@
 # NIFTY Research Dashboard
 
-Scored fundamental + technical screening with a macro-news section mapping events to sector impact. Current build: **NIFTY 200**.
+Scored fundamental + technical screening with a macro-news section mapping events to sector impact. Current build: **NIFTY 500** (full 501-constituent official NSE list, shared with the Darvas Box project as `ind_nifty500list.csv`).
 
 ## Output
 - `dashboard.html` — self-contained dashboard (open in any browser; data & news embedded, no server needed).

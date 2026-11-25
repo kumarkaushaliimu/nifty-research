@@ -25,20 +25,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch macro + company news (uses committed data200.json for stock list)
+      - name: Fetch macro + company news (uses committed data500.json for stock list)
         run: node fetch-news.js
 
       - name: Fetch stock data + run decision engine (uses fresh news.json)
-        run: node fetch-all.js --index=200
+        run: node fetch-all.js --index=500
 
       - name: Build dashboard
-        run: node build-dashboard.js data200.json dashboard.html
+        run: node build-dashboard.js data500.json dashboard.html
 
       - name: Commit refreshed data back to main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard.html data200.json news.json cache-*.jsonl
+          git add dashboard.html data500.json news.json ind_nifty500list.csv cache-*.jsonl
           if git diff --cached --quiet; then echo "No data changes"; else git commit -m "Auto-refresh $(date -u +%Y-%m-%d)"; git push; fi
 
       - name: Stage site files

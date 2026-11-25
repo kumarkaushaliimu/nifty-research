@@ -136,7 +136,7 @@ const FACTORS = [
   // Per-stock company news (ChatGPT review: biggest gap)
   const stocks = [];
   try {
-    const d = JSON.parse(fs.readFileSync('data200.json', 'utf8'));
+    const d = JSON.parse(fs.readFileSync('data500.json', 'utf8'));
     // Prioritise top 60 by fundamental+technical score to keep runtime reasonable
     stocks.push(...d.stocks.filter(s => s.f || s.t).sort((a,b) => ((b.f?.score||0)+(b.t?.score||0)) - ((a.f?.score||0)+(a.t?.score||0))).slice(0, 60));
     if (!stocks.length && d.stocks.length) stocks.push(...d.stocks.slice(0, 40));

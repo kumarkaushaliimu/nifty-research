@@ -787,7 +787,14 @@ function buildDecision(stocks, newsBySymbol) {
 /* ---------------- main ---------------- */
 (async () => {
   console.log('Fetching ' + TITLE + ' constituents...');
-  const csv = await (await fetch('https://archives.nseindia.com/content/indices/' + CSV_FILE, { headers: { 'User-Agent': UA } })).text();
+  // Prefer the local NIFTY 500 list (same file used by the Darvas project) so both
+  // projects share one canonical universe; fall back to the NSE archive if absent.
+  const localFile = CSV_FILE === 'ind_nifty500list.csv' && fs.existsSync('ind_nifty500list.csv')
+    ? 'ind_nifty500list.csv' : null;
+  const csv = localFile
+    ? fs.readFileSync(localFile, 'utf8')
+    : await (await fetch('https://archives.nseindia.com/content/indices/' + CSV_FILE, { headers: { 'User-Agent': UA } })).text();
+  if (localFile) console.log('  using local file:', localFile);
   const constituents = csv.trim().split(/\r?\n/).slice(1).map(line => {
     const m = line.match(/^(.*),([^,]*),([^,]*),([^,]*),([^,]*)$/);
     if (!m) return null;
