@@ -239,6 +239,7 @@
     </div>
     <div class="stamp">
       <div class="idx">Index <b id="idxPrice">—</b> <span id="idxChg"></span></div>
+      <div class="gen" id="idxTime"></div>
       <div class="gen" id="genTime"></div>
     </div>
   </header>
@@ -489,6 +490,8 @@ $('#asOf').textContent = 'as of ' + new Date(DATA.asOf).toLocaleDateString('en-I
 $('#idxPrice').textContent = fmt(DATA.index?.price,0);
 const ic = DATA.index?.changePct;
 $('#idxChg').innerHTML = ic==null?'':`<span style="color:${ic>=0?'var(--green)':'var(--red)'}">${pct(ic)}</span>`;
+const idxAsOf = DATA.index?.asOf ? new Date(DATA.index.asOf).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'}) : null;
+$('#idxTime').textContent = idxAsOf ? 'index as of ' + idxAsOf + ' IST' : '';
 $('#genTime').textContent = 'compiled ' + new Date(DATA.generatedAt).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'})+' IST';
 
 const fStocks = stocks.filter(s=>s.f && s.f.score!=null);

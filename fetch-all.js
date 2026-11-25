@@ -805,13 +805,23 @@ function buildDecision(stocks, newsBySymbol) {
 
   await yahooSession();
 
-  // index history
+  // index history (for returns/spark) + dedicated quote (for latest value/change)
   const idxChart = await getJson('https://query1.finance.yahoo.com/v8/finance/chart/%5ECRSLDX?range=2y&interval=1d');
   const idxRes = idxChart?.chart?.result?.[0];
   const idxCloses = (idxRes?.indicators?.quote?.[0]?.close || []).filter(v => v != null);
   const ir = bars => idxCloses.length > bars ? (idxCloses[idxCloses.length - 1] / idxCloses[idxCloses.length - 1 - bars] - 1) * 100 : null;
   const indexReturns = { m1: ir(21), m3: ir(63), m6: ir(126), m12: ir(252) };
   const indexMeta = idxRes?.meta || {};
+
+  // Fresh index quote — the chart endpoint's meta can lag; quote gives the latest price/change.
+  let indexQuote = {};
+  const idxQ = await getJson('https://query1.finance.yahoo.com/v7/finance/quote?symbols=%5ECRSLDX&crumb=' + encodeURIComponent(session.crumb));
+  indexQuote = idxQ?.quoteResponse?.result?.[0] || {};
+  const idxPrice = num(indexQuote.regularMarketPrice) ?? num(indexMeta.regularMarketPrice) ?? (idxCloses.at(-1) || null);
+  const idxChangePct = num(indexQuote.regularMarketChangePercent) ?? num(indexMeta.regularMarketChangePercent) ?? null;
+  const idxTime = num(indexQuote.regularMarketTime) ?? num(indexMeta.regularMarketTime) ?? null;
+  const indexAsOf = idxTime ? new Date(idxTime * 1000).toISOString() : new Date().toISOString();
+  console.log('  index quote:', idxPrice, idxChangePct + '%', 'as of', indexAsOf);
 
   // quotes
   const quoteMap = {};
@@ -953,12 +963,13 @@ function buildDecision(stocks, newsBySymbol) {
     generatedAt: new Date().toISOString(),
     asOf: asOf.toISOString(),
     index: {
-      symbol: INDEX === '200' ? 'SYNTHETIC' : (indexMeta.symbol || '^CRSLDX'),
+      symbol: INDEX === '200' ? 'SYNTHETIC' : (indexQuote.symbol || indexMeta.symbol || '^CRSLDX'),
       name: TITLE,
-      price: indexMeta.regularMarketPrice ?? (idxCloses.at(-1) || null),
-      changePct: indexMeta.regularMarketChangePercent ?? null,
-      high52: indexMeta.fiftyTwoWeekHigh ?? (idxCloses.length ? Math.max(...idxCloses.slice(-252)) : null),
-      low52: indexMeta.fiftyTwoWeekLow ?? (idxCloses.length ? Math.min(...idxCloses.slice(-252)) : null),
+      price: idxPrice,
+      changePct: idxChangePct,
+      asOf: indexAsOf,
+      high52: num(indexQuote.fiftyTwoWeekHigh) ?? indexMeta.fiftyTwoWeekHigh ?? (idxCloses.length ? Math.max(...idxCloses.slice(-252)) : null),
+      low52: num(indexQuote.fiftyTwoWeekLow) ?? indexMeta.fiftyTwoWeekLow ?? (idxCloses.length ? Math.min(...idxCloses.slice(-252)) : null),
       ret1m: activeIndexReturns.m1, ret3m: activeIndexReturns.m3, ret6m: activeIndexReturns.m6, ret1y: activeIndexReturns.m12,
       spark: idxCloses.slice(-60),
     },
