@@ -263,7 +263,7 @@
     <div class="heatwrap">
       <div class="heathead"><h3>NIFTY 200 Heatmap</h3><span class="chip">Tile size = market cap · Colour = % change · Hover for details</span></div>
       <div id="heatmap" class="heatmap"></div>
-      <div class="heatlegend"><span>−5%+</span><span class="sw" style="background:#0f5132"></span><span class="sw" style="background:#1a7f4b"></span><span class="sw" style="background:#2fa268"></span><span class="sw" style="background:#3a3f4b"></span><span class="sw" style="background:#c05656"></span><span class="sw" style="background:#e05252"></span><span class="sw" style="background:#ff4444"></span><span>+5%+</span></div>
+      <div class="heatlegend"><span>−5%</span><span class="sw" style="background:#ff4444"></span><span class="sw" style="background:#e05252"></span><span class="sw" style="background:#c05656"></span><span class="sw" style="background:#3a3f4b"></span><span class="sw" style="background:#2fa268"></span><span class="sw" style="background:#1a7f4b"></span><span class="sw" style="background:#0f5132"></span><span>+5%</span></div>
     </div>
     <div class="toolbar" style="margin-top:16px">
       <div class="search"><input id="mktsearch" placeholder="Search company or symbol…"></div>
@@ -809,8 +809,9 @@ $$('#mkttbl thead th[data-key]').forEach(th=>th.addEventListener('click',()=>{
 function heatColor(p){
   if(p==null) return '#3a3f4b';
   const v=Math.max(-5,Math.min(5,p));
-  if(v>=0){ const t=v/5; return `rgb(${Math.round(58+197*t)},${Math.round(63+25*t)},${Math.round(75+13*t)})`; }
-  const t=-v/5; return `rgb(${Math.round(58+197*t)},${Math.round(63-26*t)},${Math.round(75-7*t)})`;
+  // Positive = green (R falls, G rises). Negative = red (R rises, G falls).
+  if(v>=0){ const t=v/5; return `rgb(${Math.round(47-15*t)},${Math.round(120+90*t)},${Math.round(90+30*t)})`; }
+  const t=-v/5; return `rgb(${Math.round(120+135*t)},${Math.round(70-20*t)},${Math.round(80-10*t)})`;
 }
 function buildHeatmap(){
   const list=mktStocks.filter(s=>s.marketCap!=null).sort((a,b)=>b.marketCap-a.marketCap).slice(0,120);
