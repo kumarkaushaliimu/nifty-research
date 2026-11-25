@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T14:13:40.841Z",
+  "generatedAt": "2026-11-25T05:20:05.300Z",
   "macro": [
     {
       "id": "rbi",
@@ -20,10 +20,10 @@
       "query": "RBI repo rate monetary policy",
       "headlines": [
         {
-          "title": "RBI Monetary Policy Meet: Repo rate unchanged at 6.5%, primary focus on controlling inflation - ET Government",
-          "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPSXNkaXBudWgtbGZ0YjJvdkl5d3hkZmpqWFNVYWd4OTFQLXBPQ05rZHN5RVA3WHNpNVlFT0N6TF9TQVpoTW9xNV9xaW8zc3NaOUIycjhrTWJMQTVRNGdwa1ZLMmkyb2d3TlM3MW9QVTNBVG5KWnNjbG4wSHI4NnNxQ2o5ajF5VDkyTHIxenNTamoxdUVEMjhnU0RjTUNxUTZ4SGh3bmNxc2RnV0FKLWxURldPeXpINDE4Tk1rRUZnWlI4ajJjR0l0eldycFBYWUJPcXU1aDBnVS1nTi1RbGh5elk0MVQ2QmlxV0NWRkRNOW9vVVV2STdlOWpMclfSAfcBQVVfeXFMT3pfMlpMODBhTmU5RzdFRWpBdzF0dlpucTliY2xxazN0bktGZ2Z5em1vVWxySlFKdFE0MTNNQ3pQWUdLc3cxNHA5bV9wMy10YnVSOXpINl9XQnBpX1ZuVGNfVDR6M0RlSWdJMnk2bm1meU9EQ3pqa0tITHg5MHpFOFNBR1hucDMwdVFCM3ptcG14TTdibUVQNE5uMXhidWk3N181VmdYMFp3QlQweUlKb2Q2U1h2cHVkOVBRMHBkX0VvUHE4Sk56cERzV2VjRGJzSWxaR2ZWaUduUHl4TlhHVGZGV2hRMzU3RWktMzZzYTdfM2c2ZUJDcw?oc=5",
-          "source": "ET Government",
-          "date": "2026-11-21T19:16:17.000Z"
+          "title": "RBI Bulletin - Reserve Bank of India",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1SRmJxUjVnNS05VGo4SlNwVHdFR0FpWUExM1NsWTNJMEJzZV9ZeWZmYm9MOHBXTzZ6Y1hHU1hJY0VYNDVUWTZNTVE2d0FNa3gzU3VhVWFvQ0F3dW9lZlRNU01NRXdZUjRDdm1Leg?oc=5",
+          "source": "Reserve Bank of India",
+          "date": "2026-10-23T07:00:00.000Z"
         },
         {
           "title": "RBI MPC December 2026: 25 bps repo rate hike emerges as base case, what it means for borrowers - SME Futures",
@@ -32,16 +32,10 @@
           "date": "2026-11-24T10:51:31.000Z"
         },
         {
-          "title": "Press Releases - Reserve Bank of India",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4zWktwUTFTUnhzWTVxbE11N2FMNGJTa1Q0RmZ0eGhURnZ1TDVnWUhWd1FoMmVKUThXM25SVGhWMFBBWFJGUnZ3SHlyLTFFejNCaE1BSTdZR0p6M1E0Sm03b2MteFNUWmVkOGs4cE5TVVpQQk56?oc=5",
-          "source": "Reserve Bank of India",
+          "title": "India joins global rate-tightening wave with first hike in nearly 4 years - Reuters",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQlZCVTJBN0oxSFUtU3pHLXZBVzVpQVJfMXRkVnRMMWFXeUhrczVkVmRkelVJckVZOGc4QVZkVDBlSDRCVE1XMEJEUXBmWlVGaklQcDRxUTlFNVl0a3h6TlhqWmpVT1gyMmR4VTZtdmRWSTU3SUtPeGZPYndYdjlaVEsxWUdJU2U1RjhaS3Z2YU8xZ3lHbXVsaklld1hCTkRzS0lpTGJzcnJNX01TallDRQ?oc=5",
+          "source": "Reuters",
           "date": "2026-10-07T07:00:00.000Z"
-        },
-        {
-          "title": "Shrinkflation: Why the RBI Rate Hike May Fail in 2026 - Frontline Magazine",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYU5YZzNhV1RycGNleFp0YUYwZlY4UTZTNGh6NHhlbWNmS0ZkOUpVQjFCY1FTbS1hRHFOYWY5bWJPMmIxWkd1Mi1lYzZZRkV5Z0NEVVJNTzdpZHI2ZmU4ZG1XZzUyNmFlVW9pZ2JqbnIwREpweHJWb1ZCY3FhbkpxVTdtaWRqZDZKNEJUTXM3WE9UNnPSAZoBQVVfeXFMT2NaQjB1aWpYUHVVSXRWY25xdUZxMTFlWVRPVUJsdWtTNUJibjNuN29MRExUeFZwN3FmTzZqOXdxNnV0LXZwQzBVLWlrYUZBMGNkdHNyNUxpWGE5b3lUOWFzWVAwdTljaF8wamo0TGFSRE5yMm5nOUFGNFpTWTZaU2FvcXc3LTFxOC1mb2cwUktqLTR0U1ptMEw1QQ?oc=5",
-          "source": "Frontline Magazine",
-          "date": "2026-11-19T08:46:16.000Z"
         },
         {
           "title": "RBI Repo Rate Outlook: Goldman Sachs Projects 75 Basis Points of Further Hikes as Inflation Pressures Persist - Kotak Neo",
@@ -50,10 +44,16 @@
           "date": "2026-11-18T15:48:34.000Z"
         },
         {
-          "title": "25-basis-point repo rate hike unlikely to impact economic expansion, says RBI Governor - News On AIR",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQ29ZZmNUVlBkdXBXcHVtUW5NaVREd0hLZ3pzeE1YN20tNzZOaEtVRnpuQmlPOHRJdjBmOGpzc09DcjZaMUtVMFAzVHVIamRDakpaakVKRkR1TWpCblJ5R0R4bWM1aTdyVlhGNVhNbDVocmh2UFE4NlRkcXo2TTVfSGdR?oc=5",
-          "source": "News On AIR",
-          "date": "2026-10-07T07:00:00.000Z"
+          "title": "Home Loan EMI Alert: RBI Looks Set to Raise Rates in December as Inflation Crosses 6% - NiftyTrader",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBOVnkzTGNMekxoSWNYTDdmc09VRS1NZFFNSEo5b190WDNSaFJ3SnZFSTJ1enhhVG92S2tBcGYxS1V1bTF3TU5aOUFqR2h2cWFFeVhGTktJcWZGNDRXWTZCRk1CeWF0TVJrOF80?oc=5",
+          "source": "NiftyTrader",
+          "date": "2026-11-23T12:03:03.000Z"
+        },
+        {
+          "title": "India's inflation breach: Why the RBI can't afford a timid December - The Federal",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTUQtdV9yaUFzaFBzMXNYODF4eHQ5REh3UjZVTlpTbzJKcXVVUTRQX3BqNFZnQ3JXNEFtbVlDSTM3MEkyXy1LM0MtejRPdFc3ZUJLT0tWcmpBd05sRFg5dGQxc0I0TVNNSXBXRXpPc2FtYzl0VFdWbUxyRlJ4elRVQkhxd21TdU9hR0FJaDN4U0hFTU5qbUJDSk9sZ3hvdlhRdE52amM3ZGYxNXRHeWFoWg?oc=5",
+          "source": "The Federal",
+          "date": "2026-11-23T01:00:00.000Z"
         }
       ]
     },
@@ -81,9 +81,9 @@
           "date": "2026-11-12T08:00:00.000Z"
         },
         {
-          "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR OCTOBER, 2026 - www.pib.gov.in",
+          "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR OCTOBER, 2026 - पीआईबी",
           "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TMWhxblNQUXN4bHZaZzhUUXFfcGY4b3VhMndvZC1nYVJHcjQxZ1dJLW9MNmczQnBmaW40bVhDOElQUHBrWDlOd0RGWWpzS2ZVTGpDbzdKbkRxZXM0V3FCckxlR1FNMTRSVUFGQzNmTmxpNWVsZUdRbHRxSVo?oc=5",
-          "source": "www.pib.gov.in",
+          "source": "पीआईबी",
           "date": "2026-11-12T08:00:00.000Z"
         },
         {
@@ -93,21 +93,21 @@
           "date": "2026-10-23T07:00:00.000Z"
         },
         {
-          "title": "State of the economy: How India’s macro indicators performed in October 2026 - bfsi.economictimes.indiatimes.com",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQazhiY3czRVVmVDVEQ04wOG1tRjc3dmlVSDlJTEd3WUkzNTlsbmFIc1hMbG91UWl0akxOZmlkOXc4U1lWM3BVbHU3bG53QmN2a0duMUtLZVAyeXRSVF9ic0dqR3RITEVoUTZESHlDVXotZk9NRkh2QUNaeExvSDE2dHBMejNVOXJVdzdFdnd4TWRPTUFaeWRzM1dsYXpqdnpiYm5QVWxFT21sQW43bUpuY2IzRlhVYTliekxVei1VRlhmRW5McEd1WThmaXZJNU5j0gHWAUFVX3lxTFB1dVBIajg2dmFxa0U0eXpYREFQMDRBTUZtSVc0cnhiX3pDSEFhODJ3dUhPb1VRd0tfaTVFZDlfY3RqVU5NWmNPOFRTaXNHRDRLOFROMUhlYzIzTU9yU2otNGl3N2VXN2FxZzlMSzB4UWU2SHlHNHdPMEJHTWY1NkFHWGpNR1ZZNDBTZkJBcS1mOTQ4eFliQm5ZaFk1em5jamJETF9WS2JySXBpU2d3SWxoZnVmUTMtbEJONXktUHBxaHo4dG9nLXhIcV9xdURkZ2wwRW5LZ1E?oc=5",
-          "source": "bfsi.economictimes.indiatimes.com",
-          "date": "2026-11-20T11:14:55.000Z"
-        },
-        {
           "title": "India's retail inflation hits two-year high of 6.09% as food prices rise - Down To Earth",
           "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTEd1Q1Nnd3BSNU9WZEpaVV9wcEtzN2Z0TUdJekpSZEhPZElpQm5XNzBTSmhSY0kzdDh5VV9QYVBZWHcwTG95ZTJfNFpuOUpDdXEzcUR5REVVLWd4TVZReVlrTllTWWppRl85S3VETXZUUGVQZ25jaHpiT052LUFnME9jZzliYjQ0b0hSVW9rek1DZm9XYzB5TncyLXlrTUlJalppNWtaZWh1NG9W0gG6AUFVX3lxTE4wZWd2ajdTZzNXWEx1R3FqMUwySG9PVmhTQW5GS2JvTEJrUUFpck9ac3YwOGlrN3BpYU8wVmdZQVN0ZXF4aTF0dHNDYTlaYnZ5NmNQM0VuSTZiNEZhUlpFSVNwNmhMQTNJWmFuRnZBUmt4eUxYZWk4QlNhU2k5bGExX0VodC1LVFdGaG5GRlRpWllMVnZha2xlcmxXN24zelBZeHBRRWNtUGRrRHFRUE10Zk9ZTXN6Qnp3UQ?oc=5",
           "source": "Down To Earth",
           "date": "2026-11-13T08:00:00.000Z"
         },
         {
-          "title": "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026 - The Hindu",
-          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNcG1kVHc1UG84UnZ3NHhqUTRVczdDN3IyMFlVQnl6alQtN2I0MWZzRUZTYmRGSFJFUFQyYWVXOWswZ1hOUFJUZkFDX0VtUElFXy1vRjhJcEIydzM3c3pQYTcxcmNMWHM3U0FLTW41TWNLZnB1TkY5eUhFSmtZQnlVemN5ZlhPSm5weUVXRTd1eS1jTUN6TW03M3k1T01ydUY0NkEyREpNeHdtT2RGMWhaY3BSb2VPdUF1U0l6cVZnaVE5LVpUdnFNeFhHbEgtTkVwY2FwR21KU2luclFQa3diYXZUNkk3Tl9LS3h3cnktLW9fd1I20gH7AUFVX3lxTFBVYndrVHZBci1fN2ZiWExUTU54QWhhYmZOaGJEcGZMSy1nX1pGcmJLYWMyZVp1dG50OVMwOUxIRVpBeTQwUGZTN1M5SURNeEVocDQ1blRCaHZRZDdyb1lwVFVLek5lREdkc3RmZTNwMHhKbXVEclhfMGROZ0JocmNTeDhra3BzWVYzXy1TeFNxdGNxMnhtdVI0RERmNEE1UVpIMG1HZ1AzaHdYMU1qSm5LVkp6cHlZbll4N2pJRGFqdFdFQ0haSnp6S2VXVWFaVFZYVHE2Sjh6LTVzakxfTXFrRll2T0Q2d19PcndwT1dMdzNUMWlOSXZJRHlB?oc=5",
-          "source": "The Hindu",
+          "title": "PRESS RELEASE OF CONSUMER PRICE INDEX ON BASE 2024=100 FOR AUGUST, 2026 - पीआईबी",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qTzJoODRNSVlUNU5iazVYQmw3bW5NbE1zbjZuU0VxQmctUkFVMnVKWlVuWVVKUGRtQjVaTHY0ZUhKWktIelcwVUZVZDNfZU1Ual9EVF9EV1pwV2M3anl2S0duTmdhZmha?oc=5",
+          "source": "पीआईबी",
+          "date": "2026-09-14T07:00:00.000Z"
+        },
+        {
+          "title": "Food Prices Rise Nearly 9% from a Year Ago, Pushing India’s October Retail Inflation Above 6% - The Policy Edge",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQUhjSjgtYzEtZ2tvMDZhUWp3akdZbEpGUjJlWGQxRnc5Y2JGcVdoaDFWSzJHdWF2OXNnb0V0UWRGSXUzaHpma2hqSjdiTmRybS1DQUMxOTdkc0dneVViYi1pT0E0QmV1bGdrOTU4QkU3Nk9BbTYtV2padm5sQTh6Q0hRVGxOWTQ2MGlLS1VlVGJnM1o0WkVFYVJ3c3p4RGhqdWRmUGRxbkZxZWVOalNnQzVGVTQyd2NK?oc=5",
+          "source": "The Policy Edge",
           "date": "2026-11-12T08:00:00.000Z"
         }
       ]
@@ -130,16 +130,22 @@
       "query": "Federal Reserve FOMC interest rate decision",
       "headlines": [
         {
+          "title": "Fed Governor Lisa Cook Says Her October Dissent Reflected Inflation Fight’s Urgency - WSJ",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYnFFaTJhWE1OUWZkZzM5R3cxZmt3WEppdzUtS1JKcHdzUkxKVXZnSVJpT2V5QUREQTZBZ004VUl0QlExbW10VFpCeVpkSVE3UVBablVPbDhKcmFWcWg3V1R5U2pzbVptdHk2MDhFeVg3R1o1WktBWnMwTmotVWwzbkFZem5FakRSY0lvRDZ5TzlXTjJNcGhLaUhzbE1Qdw?oc=5",
+          "source": "WSJ",
+          "date": "2026-11-20T18:23:00.000Z"
+        },
+        {
           "title": "Will the Fed Raise Interest Rates in December 2026? What to Know Before the Dec. 9 Decision - Around Prague",
           "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSExVWUhSWUR3VW5lejh6Szk2VFZsb19ZZnFMRzMyQW1YUzU5bDd1dWZoYUpqUlM4bmFyUk1nc2tGOGY0eWNIRXViUmZwLVR0UkMtSmxCVGMweEJ2SXdwMzVxelZROGs3SFZNZktlcmxJRnB0Yks2QUNjVjJIaGE5SWR1bHZZbFBkbHpyWnFqcXo1SHBmbndvb2ZNWmFsV1RSc2M0ZDNabS1kSDlUZHRRZnU5TQ?oc=5",
           "source": "Around Prague",
           "date": "2026-11-23T23:23:23.000Z"
         },
         {
-          "title": "Fed Governor Lisa Cook Says Her October Dissent Reflected Inflation Fight’s Urgency - WSJ",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYnFFaTJhWE1OUWZkZzM5R3cxZmt3WEppdzUtS1JKcHdzUkxKVXZnSVJpT2V5QUREQTZBZ004VUl0QlExbW10VFpCeVpkSVE3UVBablVPbDhKcmFWcWg3V1R5U2pzbVptdHk2MDhFeVg3R1o1WktBWnMwTmotVWwzbkFZem5FakRSY0lvRDZ5TzlXTjJNcGhLaUhzbE1Qdw?oc=5",
-          "source": "WSJ",
-          "date": "2026-11-20T18:23:00.000Z"
+          "title": "Fed minutes: Higher interest rates needed in December as inflation worries mount - ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdUR5MEc2YWZ1RlhNY2R6S0tQRzVYd1pocVNEN3NERWF2d2ZjbHNlc0p5LUVYTVo2Rm9jV1RSMnpaRGgxOG5FNVc4eWJ1M3Y4cWxmNDNSWVhCUU1taVRwOG1TQmZ5QTUtZVdEQXduLU53S1I0S2J5VlM1X1ZTWWVoSDhpYXV0NDhteXUzY3ZRTld0OGVwYXp1V2VtcW1ZYkFERkQxRtIBqgFBVV95cUxOanNuUmdXUVY2R2ZJeHY5SFhuVDZOX2tuSU9xQl9EUFdmZnZCTk51bHlZaEN5U1czYUJaQXlndGYwaDhCa3hCT1IxdTgtMzhVT2ljb1daTnFLQWxiTHdRYXRpaW80RXdFdW9YNmNUVzEwbHJsVDlTaGg5MkRTdFhzbmJJTjg3STVLMEt3Yjd4NkJqRDZvQ2pVOGVqYUxKMkppRFZBX0QxYUlUZw?oc=5",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "date": "2026-11-18T21:10:03.000Z"
         },
         {
           "title": "Fed rate decision October 2026: Is a December hike next? - Equiti Global",
@@ -148,21 +154,15 @@
           "date": "2026-11-09T09:16:11.000Z"
         },
         {
+          "title": "Bill Ackman says Federal Reserve is 'about to make another mistake' - Fox Business",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUE9HVW1nMUdjOGFRNk5ndXFqUmZRZTRQYnlaUnRZdDRCcFI3RXlUNWNKQkRfeHREMDUtb0pyUWRBTWVra1hjVUlSZzhMVGxiSTExVmIzUWtFTk9wb3VuOHNOVkdyNXRURjFUSTJpLTRaUTA1UUd6S1JfMkpLVUQ2Q3VJMkQxN1FQa0ZFMXNyUU1takl1WlEwRDBNTdIBoAFBVV95cUxNRHNsdWxrWGhsRlFiSDFZclhXNWFfMHY5Nks0MXdWMzh2eWdjNHFMaGFzNjNjODJkTmJWN3FnU2NzQVA4d2x6NFM3VjRCUGd0bF92b2xlNVNiS3FaOC15clZxM1daOXhCai1IZXRRUGVuRzV3Ml9pamMwZFRiSTN4Ull5bk4tQnpISmxWYjBHZjJ6WGwwd0xQalA2dVJzN25W?oc=5",
+          "source": "Fox Business",
+          "date": "2026-11-23T21:47:00.000Z"
+        },
+        {
           "title": "Federal Funds Rate History 1990 to 2026 - Forbes",
           "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBsNEtLYjBNb05hZjBmRkV5NDctYTNrTTF1a0FwQzlpdG42Y3ROZmNVdmROTHRMbTBobHFhTnBzUVVDZEwxdGk5cm9HRWlWMTBCYk5EM0doODFNNnFPb0JfRDR1VVFwSzlsYnV0MUVfeldlTGpw?oc=5",
           "source": "Forbes",
-          "date": "2026-10-28T07:00:00.000Z"
-        },
-        {
-          "title": "Fed leaves interest rates unchanged despite inflation in the US - Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWkZ4MjgyNUxNMy1YdDNIZU9zVkg5YW4wZGFnWXlJaXpFN21CWmt1NUtwZ1NFem5WbmlabmZidHluTmhOdnhTSDN4VUhGZGpYb0ljcHpfOG90cXFWTWdWVkZ1VkVQY2VPWWU5OHA3TEpTa0V4ZXN3SUJTQU9zQ0x4c2xUcmt1U2ZNN1l2X3BqZ2pUZ2xyemVlU201ckZ2Q2RpQ1NsVUpXalRlSV9C0gGyAUFVX3lxTE5STllLXzlnRG9TMzhlUXZZUl91SEhzbnZ3ZTRzel9FcElGemJVWXFXc3g0S0x3VUthZmUtdW8zNnVfbkQxS1QwTnp1bjdxb2dYdHREUDE0WjJtVDVUUTB2N1V3ekNBcTNJZm1uWEpURlRQOTFsMGhWaVAzUFlEVzdSaW9BYmpXbjRpNmh3ckRCcTNOVVZWZDZzRUNQa3p4RWQzZ1dXYXV2ZlJpWXVFWlBoU2c?oc=5",
-          "source": "Al Jazeera",
-          "date": "2026-10-28T07:00:00.000Z"
-        },
-        {
-          "title": "Federal Reserve makes interest rate decision ahead of midterms - Fox Business",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR0hLUjN3TllXcDVjaXRBaUwxOW1QcnJLRkc3ZGR3SnR1U283WVdPeWozMmw2eFlLa3ZVb011TlEtMHI0RjV6eWE0T2ZXcXRNQVR5eEIzbVhRektfTHkzLWNLbVc5U0RQaXUyRnFSZ2VCUmZNOFlpcTQyWXc5S21zRWxpb2FBSS1FSkpiVnc0VnV5S2o50gGaAUFVX3lxTE1DUFpkcUswb2dYdVhleE1XejZfZVdTSHJsbUhOelF3Z1B4UUpGdWhqUGQzTmxvTmhGbFFQZ1VNdmhNenprZE1Hbjh6bW9RUTFGN0lfYkZMZ3g4YUh1VlM2eUhGNHNpVUN5ZG12R2RrSnpxTDRKTVR6Y29oMUhHNVdMZ1N1UzFLUjF3LUNnc0pvUFNQZXA1T1JnQ0E?oc=5",
-          "source": "Fox Business",
           "date": "2026-10-28T07:00:00.000Z"
         }
       ]
@@ -185,40 +185,40 @@
       "query": "India assembly election results 2026",
       "headlines": [
         {
+          "title": "News On AIR | May 4, 2026 5:46 PM - News On AIR",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQakh5eW5sZlQ5R1lHZ1lIM3VTQ2pfRk85b0YtRFJWLXpOVDBaNjM0YkF1NnlpQWhYZ0U2UTBBRHlMc0VVY2o5Vi1uZWlWc2FJMVFMc0gxR3lfNHRxeHZBUU9mbVlYczJMbmtRSXlyVm1ETVdSY0k3SzZvcExyY1JTa19ROEVLSTFxbnZlS0VDQlVZZ3pnUUVBUA?oc=5",
+          "source": "News On AIR",
+          "date": "2026-11-25T01:03:00.000Z"
+        },
+        {
           "title": "West Bengal legislative assembly election results - Britannica",
           "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBVcC1CbUdmSFpmeEw0U0RQOWJ1V3JnS2p1NGZQQURSVTZxR0tFaTQ4M0ttcFRVYk9EZG9HS25NUlVmNTl6Wk9UNlk2WFlWUG5XVHFteHNheTJzQi1kUXI2V1FCSk43ZTl4eDV6d1RsSQ?oc=5",
           "source": "Britannica",
           "date": "2026-10-09T07:00:00.000Z"
         },
         {
-          "title": "Suvendu Adhikari | 2026 West Bengal Assembly Election Results, BJP, TMC, Mamata Banerjee, & Facts - Britannica",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBBeVowSUVmRTU0NVFvbmVwaGVzeTU1SVJoTU5wYW9iS1J2REFscHNORUd4aG9oZmZkaEVfQ1c3NVQzU1NldVh6d3AtdEZnUXVjUzFoZjhoMzRhZ194czlVdWJvUQ?oc=5",
-          "source": "Britannica",
-          "date": "2026-11-15T08:00:00.000Z"
+          "title": "How the BJP is reorganising Indian politics - East Asia Forum",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQzg5ajgwZXFLSXhtTWFMNldUcnhZVUE1dzN2cm1pQkc2SVNnVXVvazRWTDBYY2tUTHI4NldMYS1oam83V1ZOVW91Smxrb3VlSnk0MWJmOUNtUmc4WkdkVkhYN2p1cGpURVpUbGdsaTdBWDRNaEZQbGlHNlJKMEpMbDZvU0M0Z1RU?oc=5",
+          "source": "East Asia Forum",
+          "date": "2026-09-14T07:00:00.000Z"
         },
         {
-          "title": "Tamil Nadu bypolls to test TVK’s rise and AIADMK’s strength - Frontline Magazine",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONzJKRXQ2ZEJTUEFMdGQxY2JLakFJMUxCaGhoMTk3SDRQM0N5TTVxVzlUd240ZVZ3QUtmOHlLSnJFdlpjSExwRmNzazBENXpad0FSdzhQalpjdU9Nc0J3eVRNSlBtQVFmWUNRcEdHV1EzR2czdW9WZzE5UzE2bXBCWlc1YnJuUU1yRHJEUFFVVW9mVUdMeEJBbVVERTV4c1MzTjVEbFF4aVd1NTh3LU5n0gG2AUFVX3lxTE5MMTJ0SUtLeWZwWGNRYWFUQmRXbGxUVGJSZ2tkTTZaNl9WNFJEbHJDREFQdkZzVVQ5Q3NyaDBHRm1aRTlLYUtFOXMxRnhVdkthYVNsUmJFTkQzN2N6bkh0bjIyMFV2ckw2SU1wWVFpRVhFQlpicVFKYzRSc2RwQUdSNzNSQVhPR040dzYtUjVFT1pQTVl3RGZuejNtMm1lNDlnWWdTUVh3UmpNbjZlbDltMnF1aWhn?oc=5",
-          "source": "Frontline Magazine",
-          "date": "2026-09-16T07:00:00.000Z"
+          "title": "Uttar Pradesh MLC polls: BJP wins five seats, SP three; counting underway - The Hindu",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSFJKSWREZ0VjSkFtWTlWcE1WcGQ2T2ozTlEybEs3WkpXdnV0a2dzNGZ3bUFxalJWZlI1ZzZjNDhNM0YzU2VMMkhGaklsZDc5a0MyR0ItbU00QVF1ZzVNc08zZlFiSkM3ZVVXSXlSTVVKS3RtTUFNbHlWc2FHMEFkSzVIWkRmWHVvU3c1M0d5ZkJGSzBsZ0FJM0V1ckd4bWNkWkFSYzE2R0lEY1hFdGZMWTJ0R25DMjNIbGtEWU1jbDZiM1pzNzFZZ1Y1S2VlV2k5N3ZZNNIB2wFBVV95cUxON3lhakg3a3RtYlE4dC1aVXVrQUx4ZzR1R1FCY0p0eHRGS3o4d1N2X0Y1MTEtZTlZdVVmeGdSU2I1bUFwUnpRSklHbkRZSy1QdE9YeTl6NGI2X2RPdnVSNlc2SVNmSVEtNDRsNDEtejZRaUNieE1ud0YwUWFQaHV5S2dvLWRMbGxhMU1mQjE2UnhWTVJLQmJCWnExc1RRY0FJTldGQlVKdEk5V1NxcTlnMFdjLUYwZThBbjVWOS0tcU80TTgteEdHNkJzMVpGOVNucGkzamFhUVlneXM?oc=5",
+          "source": "The Hindu",
+          "date": "2026-10-28T07:00:00.000Z"
         },
         {
-          "title": "Election 2026: Assam, Kerala, Puducherry vote in test for Modi's BJP - BBC",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBFOGpaMmJFRmdOY3pQNV9JT2lUaC0xamxhV01RaVBKTDN5NnpsQzlNeUtxaWh4WXJIb0ZscTk3VG5zZER4R2lORzBQajl5LVZ0bkZLME10QWRnQQ?oc=5",
-          "source": "BBC",
-          "date": "2026-04-09T07:00:00.000Z"
+          "title": "PM Modi Says By-Election Results Reflect People’s Deep-Rooted Connect with BJP-NDA's Good Governance Agenda - DD India",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPeGJWemYyRmlkSlNweDJqMnY4d1dOZmdiNTg4XzJ4b2o5dGdhdWRXNGswUFNMNEtVdVF6Y19XV25qNW94bU9DRjBOOGtvV2hBMDUzRnU5ZUo2Z3ZDODljemNBQUxZcGRBM0N5YmJ4OWt4TlJDVVJjNThNRUFpT1BfMjczUGEyb0lwYXNFREtOWjV2RUlyUnlsN1hHUEJfUFBsaGVDSGdZQ3pKdTF1RjJSTWR1Smhab3VWM3NRaU5UeHBQM2RWMXQ4MDhNTC1jRUszemc?oc=5",
+          "source": "DD India",
+          "date": "2026-10-09T07:00:00.000Z"
         },
         {
-          "title": "What Modi’s big win in Indian state elections could mean for its democracy - Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkxSODNlblVYU0cwUjVJS2Q2RzA2TXhnRlBEd0R5RVpBazNFSU40U0szbEhxTjFGT1ZLZjg2dVp3SEUtR1FMM3djZ3lqeVJpMnVqUnRWQW1TNTVpWVhfbEU3T0k1bHRjRkhrczE0eWRqTTF3RUdwSmJ3QnYzcnpzY0s2ZENJZkJJRnRtN21vMV9PR3VyWFpMSFNXWnhLR1dzWFdIeE12SGFjd0EzdmJoYmNtUdIBuAFBVV95cUxOM0tjYWh4bTNDSEpuM3dVU3BNNWNTek9yLS14eGJNVVV4aE5wTUU0V25Ta0U0RjdveU5ubHR2aVBadHZqTThON1VsWFU4YjljUGJPVnV2QWpBQWtveFAteUozSUdZYllwRWtsamg4S1Z1RjJCTERYdWN5YWhCaUh4Vmx5UGE4TGxsZjBsaWFaS2FTQVZxcFYwdzhpWDU3aHBVbkl0MDNsbEZtZF9uZVR0b0drSjBUYk0t?oc=5",
-          "source": "Al Jazeera",
-          "date": "2026-05-05T07:00:00.000Z"
-        },
-        {
-          "title": "Assembly Election Results 2026: Timing, Live Coverage And Where To Watch - NDTV",
-          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQ3AyekdrX0R2bG1QUzZwa3F2ajFfQWE3YkFSV1dTMG9JblNHZmphR1NiWTh5cXBMTTFNZ3NDc3FyVkJtdFg3aHZLNXpaWm9hMmRHUU9GdTVBTU1vUDlWckVBTm5Cc1l4cGx6YlAyUng3MEFQRzE5U04xTDhOZ0JTNDhVUV9SbFY2TG44S0xqNVR6Q0N1RXU5X3l4aTRVWEowVTFQejB30gGuAUFVX3lxTE1UbFh0UXdVUTJTQzVkUWtfSEIybnJEOEdhVXp6NWJFcjVHYjZPNktLejctMWxpdUNWNTVBYUlydW15eERTVVlVMnp2VUtYV1RneEJuZU0xdUJmVVFpbVhCVlFfWXhkenMyeUswMlhtblhMb19URkc1a0JHSE1oaFJFTWw2cEN0MUdpY0otZHczUW9PQmlGUVQ0Y1dIWkhJUjAyTDJmSWx3SVJPcUhMUQ?oc=5",
-          "source": "NDTV",
-          "date": "2026-05-03T07:00:00.000Z"
+          "title": "MLC Election Results 2026: BJP-Led NDA Secures 16 Seats as SP Strikes in UP, Jan Suraaj Enters Bihar Council - Jagran Josh",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZHpFMkp6N19oYkJJSkVlem82YkNKVjdtZWxOak5kd0xiRGJxeWgzWGFqZUFVUWJrVkFBd3BDUFF1aUtVSHpfaExMQ1B4cGpTazUxNjRMWFkzYTdWMkhWVmM0NW0wZXJPV3FyelRRREdIWWlnVFVzM0VxSlpta2ZKQXhJSktOSFBva3o3X0ttUHhiclJZSndHZjlDMjNnRGtJQVdoT0pEWGVRR0I2RVNCUmc3VUhiRDVmakttZWh4UnZxVmRfeFHSAcwBQVVfeXFMTlphVnpFcm9HNkNfNzdWLW5nSWNpd0JmYVEzTnJxTnd3dkx6aHRVcjBfbE9NdEhmblRuVkNlWDVkdVB5OWwwUmo2cldOOXp4bkY0b09WeTFQdlRRSER2TmdwOHYzNllsbUZsaGhvSlZrRnNhTXp1TE10SXlZMjJmSU1qQ0lqVFBDelhvV0o0cVk0MmprUGp4RFFCd0dZR2NyOUptTmR5V2pEYzRmcS1RTkRKaEFwNkVaSHBESUQ5NmRVWnZlbXR4VFhvVklh?oc=5",
+          "source": "Jagran Josh",
+          "date": "2026-11-02T08:00:00.000Z"
         }
       ]
     },
@@ -241,9 +241,9 @@
       "query": "GST council reforms India November 2026",
       "headlines": [
         {
-          "title": "Next-Gen GST Process Reforms - www.pib.gov.in",
+          "title": "Next-Gen GST Process Reforms - पीआईबी",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1fM3ppTU5VczVvdVQ2R0w2VGtoSmVJV2dGVC1UR3FLQTBxRnh1a1B1aHlWc0d5TDRTQjdqaklJM1N2YVpMRDNxTzZCdVRfMnNXTXI2SGE1VVR6OWJndi1tbXNGX29TaEoy?oc=5",
-          "source": "www.pib.gov.in",
+          "source": "पीआईबी",
           "date": "2026-10-09T07:00:00.000Z"
         },
         {
@@ -256,7 +256,7 @@
           "title": "57th GST Council Recommendations, 2026: Process Reforms in Registration, Refunds and Dispute Resolution - IMPRI Impact and Policy Research Institute",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQU8tWEJUUjJFM1U1OVpaM09JNkNjU2pZbFczUGl2NVQ2Ny1QSmtGcVk1MElMSDNabE9lclBUSGpwb0h4cGhVQ0lVdTF6OGp6b2xHaVk1XzZpeW83RWV2amJzYnh5TDNobVRZOEx2NE4zT2JFQTg0dEFUdXNwSHZ2LU5Jb3ZfRUpzbmNRN3lJX0YwYzg?oc=5",
           "source": "IMPRI Impact and Policy Research Institute",
-          "date": "2026-11-14T12:32:02.000Z"
+          "date": "2026-11-14T08:00:00.000Z"
         },
         {
           "title": "57th GST Council Meeting 2026 Recommends Changes to ITC, Refunds and GST Penalties - India Briefing",
@@ -271,9 +271,9 @@
           "date": "2026-11-05T09:41:00.000Z"
         },
         {
-          "title": "Recommendations of the 57th Meeting of the GST Council - www.pib.gov.in",
+          "title": "Recommendations of the 57th Meeting of the GST Council - पीआईबी",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rbHF3LXN5Mkx2TElpTkhrSXZrQVk5d3RPM3JkbkpXOTRZeDdnX0NOU0VvV1NvVU5UNEgwZ2lubFk1MURTVFdYeUJuTFZMRXo3dVI1VWthdHlONWVfQTNxWXFZX0FSZ2pq?oc=5",
-          "source": "www.pib.gov.in",
+          "source": "पीआईबी",
           "date": "2026-10-08T07:00:00.000Z"
         }
       ]
@@ -296,22 +296,10 @@
       "query": "FII inflows Indian equities November 2026 rupee",
       "headlines": [
         {
-          "title": "Foreign institutional investors return with ₹1.12 lakh crore - Multibagg AI",
-          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYnlkUTlwZkF6VGJpdGViQmJzMnBlMmJBb0FwSUhpa0FFVkNkTFB3c1BSNmhwUmtoZEZQSXlVZDh1T1JnTTlPODVkOEJMa2tJZDBYNHI0ZzZQM3MwVWNxblh2TThrQVV2eHRsOWVKTVQ2QmN3TGRoRTJwUzUxMXRMXzhsWlpULVVNQlZGOWtpX0VReVhOdVVLbkd4ekpnWFNQQWluYVdPaw?oc=5",
-          "source": "Multibagg AI",
-          "date": "2026-11-23T21:33:58.000Z"
-        },
-        {
           "title": "Indian Stock Market Extends 4-Week Rally as Sensex and Nifty Hit 9-Month Highs on Record FII Buying - Kotak Neo",
           "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdHRLUWlWUGExQUVQdm41Q3RTXzVkdzhBNVY1ckc2X2VmRHQ5ZGdESlV2Z290X0lWVXdCcHh2MkZkZE9rcWRfUVBzVTFiWHZEZTZXV0R2VjVaZlh5dXFBQUw2WE0wcHF1ZnBlWWR2REFwS3F4dXlCR3FoLXNBZDBHYmxva3NhLWt3eHV4ZGxoSjBQc3RPQ1pNVXl5c2pVaGIzYU54Ni1TUHh1bzI3dG9UYWR4NTR0QUxjalFCV3pvTXV6MzJacy1ORmxHZU1FcDVrLWpSUjNwYjEzSVFOejc5N0hn?oc=5",
           "source": "Kotak Neo",
           "date": "2026-11-21T05:52:38.000Z"
-        },
-        {
-          "title": "Rupee Weakens Before the Holiday as Foreign Flows and Commodity Trading Remain in View - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNMldvMzFOaXB0SnRKYzZCZUlmb3laLVVXR0pRY0JJY0wxczZXcnR6alIxVFlCNXlCUnhGejh3dXRCbDBDNUdCTTVKMldPRlZOMVhyUEVhV3JBQzY4MWFzMXBadEE0MXY0T0poXzNLSmxvLXNDS3lUSTVrbTRkekVfLUxlWE9mOG1ZaXhFSmtMdEp0MHRsdlphb3dEQTRTbHR3cms0TTRIa0NPc2N2cEZxcWpkd0RtYUVJRGZKejNOS19jUDFuN2VlM19Na3RmWTdCYUVV?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-24T06:45:15.000Z"
         },
         {
           "title": "Rupee Surges Past 93/USD on FII Inflows & Weak Crude - Rediff MoneyWiz",
@@ -330,6 +318,18 @@
           "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOWThRSFEwVnpOSzdnVDZNN0t1TFJXMXZUeDl0ckQ2c1pZRjVvUW43LWZyZjA2a1UtWmR5Z01pbWMzNTNoZENDVjRIbVlSd1BrNEM4QmZnbHZtV01nNi1QZlBfZzFkb3NJMTdyWkp5TjVjWnBHRGxaUVZNamt6R3pNSDhVbnNRY2ozdWI1bW1MeWlOYUo1NG9uc0F2cnFhNy1fNlVhcVRucXZpaERMTXIzUDIyenlKYVh2dTR2amRJUVJYY0gwdnJOVWo4M0ZmTDdfOHhBT3BZSnJralBnMGlMYjQ0ZjZhY2FsSnNrUm93b9IB9AFBVV95cUxNbWZ1X0Zza1hZdXJsbDU4UjNkMkhxSmpma2dkdS1URkVvNkxhWUZHZUk2aVd4dFhRNWJGWkxwdW9DcDNRMV9WSUc5YWo5NEtfNk1QOUVTQWphRUVKOXVaWWstM29kX0VrdTlKZXZkSGk3R19oZ1BzQ1VwUzF1cXdwZzRucmk2R0RyWmM0b1FINHZUcXM0QzJlUGpMWHBrVHRFZ3hfRHRNc2hNcmlwUEtfaGtnYXdhelNENXJqZnlfbEg0TnVIU0g5T3d6UmZ6VWJTV0ZrTkVFeTZIOXhlVVRlRVQyVEE3bXl0WmRoQ2trT211dzN6?oc=5",
           "source": "Moneycontrol.com",
           "date": "2026-11-18T12:05:07.000Z"
+        },
+        {
+          "title": "Rupee rebounds to seven-month high driven by FII inflows - MorungExpress",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVVp4bTdmR2dVdjhmMHAxXzhEdlREaXBRalE5Slg0TnRaeGdkOXZ2ZEFibTFSNDdwU1c0RER4OUVmNVBTMzBXdnp4S1hUdVdsOXNsZ2xCU01lTTRTWVVmU0FwdE5JVXA4Q0RsVTN3QkdRZ1BuckZ0UWVFYXNKYUlrYmxLbW16bFEwbWY0VVVWOA?oc=5",
+          "source": "MorungExpress",
+          "date": "2026-11-19T12:53:31.000Z"
+        },
+        {
+          "title": "FIIs pump record Rs 1.01 lakh crore into Indian equities in November - Cityairnews",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPa1Bham00SDRCUDY0T0gyeTJncDg2OVVzUEZQS1J5NWZreUdfMTVQbHhzanlISmdhWE1Zbk95dTFKeDBKU3BNUTFnNWpnOFJ5aHNINnV1TmY1MjBlLXFBWW1KWGpMbFdnZ0U4VHI2R0N0V09aMXRqdUZrdUFQRU15cy1NbC1zWDNqUWRiV0d3LUdvbzBkSVEzLWhKcmh4cGVubmZVWXZn?oc=5",
+          "source": "Cityairnews",
+          "date": "2026-11-20T15:28:06.000Z"
         }
       ]
     }
@@ -354,7 +354,7 @@
           "title": "USD to INR Forecast: Dollar to Rupee Prediction for 2026, 2027, 2028–2030, 2040 and Beyond - LiteFinance",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQWJqTjMyMS03eXplQnZsQ09vYUhfdkxRS0lnSkF1RHJKRnNWaWdfT29XZ0ZxU3I0SHZfdHMtZzRRakt6T2hPa00zZDJ3YzZOQVRhaXhKMnU0RnhydG5haUc4b29vV0ZlMlczRkhKTkVjSFlOM252MWFxc0tYbVNxVEpMUFFmOUl3VUFxNk1fcTRCNTA?oc=5",
           "source": "LiteFinance",
-          "date": "2026-11-24T07:23:16.000Z"
+          "date": "2026-11-25T03:32:45.000Z"
         },
         {
           "title": "USD/INR forecast: Here’s why the Indian rupee is soaring today - TradingView",
@@ -369,10 +369,10 @@
           "date": "2026-03-12T07:00:00.000Z"
         },
         {
-          "title": "Indian Rupee stares positive start on Tuesday amid weakened US Dollar - FXStreet",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcURwRHJ5Q2t6aGRSMWczb05WNE44MXRSdFc3NWdWVlkxYkdoTUhjQkhlZlRDZ1E4NFh2OVp1YnV5dXFQQ0JUbGdfZV9oMzVjNEdtRzVWZ3ZYQmloVGw5SjlsMDZ1a0NaVnZqYWZVb24wV3pJV0Y2ZTM5ZU9aOWFnd09HdFRNSXNxb0NfOUNZNjUtYmFWVWxRYnJFQWh6a2tSbnRza2ttOHlmRTBubWt1ODZn?oc=5",
-          "source": "FXStreet",
-          "date": "2026-01-26T08:00:00.000Z"
+          "title": "Rupee hits new record low amid Iran war: Will INR drop to 100 vs US dollar? - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSnJwek9LS01ySHpQRzI3bTJuVFd2enRfc1dBWmo0Umx2RTBpUEJMY0Y0RDlaTHZ4YnJHZXVlSmJNSHJqNnpUYlFIOUI4WXAzSjFBcU9GeThnakdlaEFraTA2NTVjMFlOWXQtZ1loUmtfTGVDUDRRREVVRTRRTnZuUDdhNi1CN2dWc3ZDeU9WYUtGc09TN0Fab3A0X0FqQ2hwenVnbDFLbjVkaUs3bUdEOVMtQ3BzejhLMGI5OThFUzQwb2dEeDZTb9IBzgFBVV95cUxQLTY1TW9CM2xCazgyR1U2RVZtSDg0X0RrWHZHeWg4eEtyZERlTmRabmwxVGYxaHlzQUU1S25vaXdHWTNMTmp6RkFIQTcxQjNLWHNhRkpjWV92NW9ERFJPMzJuZHpnVTdjN0d0UF9qcTc3RXFtTFVMUk9IUmZPRU52djBMWGFRbkZUT0JkNi1fQzZ0NG0zUVgtZHZjRFQ4MHgwVGtUS0xISmRRaE5hWUJTUUpqWnlnZ05ObHZxY0pZT3hZNUFHNXBxc3NUZXY1QQ?oc=5",
+          "source": "Business Standard",
+          "date": "2026-03-24T07:00:00.000Z"
         }
       ]
     },
@@ -399,22 +399,22 @@
           "date": "2026-11-23T04:55:40.000Z"
         },
         {
-          "title": "Crude oil falls over 3% over the week, aluminium sinks 6%, silver tumbles 16%; key factors to know - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSE5fZTVwOUNMQjdjNDZoY29WZE9IRjFnbjJVU1lQdElOUExLdmVJTElFSGNYNVBJanpLeFB0d01TeU52WmE1c1RhZDlldktDWW1Mbk85ckdtdDhTaWl2QkVNNllYZWs3OHBxaUFDa1RlZW4wRS10TkluRndjUjc3OWhJUGhXZ29IUnhMNFZKTVRFbEtIMHBPaUNUSEU0dGh1b2F5MnFMeGdxdEtpMDM4Mi10Zy1qXzFra1ZHSEY2MkZZVzhxaUJVMjNxV2JTWWZmLUJvY3pXMmNmaTZJc1Z2eEJsQk1kTVQyeFE?oc=5",
-          "source": "Upstox",
-          "date": "2026-11-21T08:42:31.000Z"
-        },
-        {
           "title": "Gold, silver prices near a bottom? JM Financial, Motilal Oswal flag key levels for a rebound - CNBC TV18",
           "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNSzQ1ZDM0enQ3NDU5QWRjV3lXVWZkS0tMemZscHkzbU9UM2MtbkktaWVUaWJzOEJUdFBnNlNTck1iRFdpOEVCa2ZmLUYwQ2pZWXNrTDRXVjJKYVk2VFdkZHVBZ1VuN1F3NXNtTHhldUpfU1pYX25aZkhlcmpzSGEtT1BpeFEzenJoNnl6QmVVcjl6bGlFOEpmTmNSV1otSnVTb3VER3JOTmIwYkNwS0J2VG9OMURLNGY2RVZyN2VxVm1uWmNWb3N5UXJDaW14QTdTb3F5amNTaWZDMmN3eWlFbFYtNDBPX2ZweUFnQnE2Mms3X05ROV9BSkZKZ1UwV2fSAYQCQVVfeXFMTTRDYnBrNWp3OFp3RjVWR3diOFNZdUI5STRscmZOcUt5MFNWanVxdXRRWkExcWc3ZUxobW1wTlZqVjFNZkZmNTJTclBJWkRyVXR6MHVHVlJvSmVVQ3BpbWVSWVdBU3pEeXZ2SDhlOGcwWUdaWG94Ymo3a3FKdGlkSUU4cERqbnBBLWdlZ05XbTdVUHhfeTQ3ci0yWTNTT2Y4NHM4RFkwR2pVNFByeU56MVM3UXJvUHh6TjZGYzB2MUZxcmpHZUhWMkd2UHJLaEx2OUhpMW9JRUVuRXlwc1JNMWc5emlOMkxydlBSWlJKRU9lRWI4Vy1Zd1VwMWIzT1UxWUtxZ1Q?oc=5",
           "source": "CNBC TV18",
           "date": "2026-11-20T09:55:43.000Z"
         },
         {
-          "title": "Oil, natural gas slip as gold jumps over 1.5% in Monday trade - Gulf News",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPY3VpUXB3R0lvQmNkYzVZZmFIbmZjMlVPZXUzZEVmaUtRcWtTX1hMTWpKM0hRQTVlYlVPNkF1c3dMQ3ZiMkpOVHp5M0lkVFBJZlVPRVRsVTRiZ2VsMlpjWk1IczZWN3NSblV4bVBzX1dGeGFjV3VnRmwxX2FsR0NJS244UmZCM0M3TTBXMnVMcGhjMFFTUDZpT3l4M0Q2R0ZYWEJQSGoxTjZYMVnSAb4BQVVfeXFMT21XQ0RpT1lrZkJ1TFVhd3UzUm5GbWZtMHZ4a2tGd2pFTU1YRDlFTk5vV0RSWFhhRzU5Vkh6aXFlSFBuYklrZ0hyaTh3SnAtYUp4UExiT0Y5OFZIZjdWWGwyXzFJaUJtYmY5bXlPLV9IdXRzLXpqRlVHYVhFcUVpb1BHNW9yU29EMUNDWGVTTmNFNjM0X1JNcTFpdGllMnhncjRLMGdxWUNkMl9HanltX1dsb1F1aElaVzNlZWxyUQ?oc=5",
-          "source": "Gulf News",
-          "date": "2026-11-23T03:23:54.000Z"
+          "title": "MCX Commodity Outlook: Why Gold, Silver and Crude Oil Could Stay Volatile Next Week - NiftyTrader",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9vTFJ5TlpNbWxwN1N5anlLdzVhbVZ2ZDlrcHdZVzNwVTVMNU1PNUx5eEUwWnlDanhHemVBSDQyazhHWDE4UDBCUE1mUGhrRUxJOUxxbTFHbUlmRzVTQXlady03ay1aNHlQblAyVFlwaVBhajhvamdlTzB4N01UZw?oc=5",
+          "source": "NiftyTrader",
+          "date": "2026-07-19T07:00:00.000Z"
+        },
+        {
+          "title": "Mid-Year 2026 Market Outlook: Oil, Gold, And Copper - Seeking Alpha",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUndwSXVMUVNzdzBDNExwWnRGZXVsN3lTcWtKTjFJUndYS19WZTJMTk0yLW5ncmhJNXdrMnFUdEJfY0RPMGVrY3JMSFV4TVNWOXdUN29oR3VkbzJvc0p3eEVhc1J0RDROS0w5OW1FcWgtNlk3a21XeEhPVllUM3FUcEs5bTJNYlZmQUQtU2gxQ3RTdkE?oc=5",
+          "source": "Seeking Alpha",
+          "date": "2026-07-05T07:00:00.000Z"
         }
       ]
     },
@@ -440,15 +440,58 @@
           "date": "2024-11-25T08:00:00.000Z"
         },
         {
+          "title": "India's economic pillars show 'no fragility', says Finance Minister Nirmala Sitharaman - The Economic Times",
+          "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPWGgyeElaVmhFXzF1M3pjNElSbVp3QTVfUHJHeWNKdGtNa3ZDem15d0VWT1hMdVZXLVNTWmFFNk5ydGN5akljbjVvT1pRVXZIaGs2Wk40RW5Sc3QyTW5TWDJqVjRIb3BuNUVxQkJ5WVFRc0w1WnZqQm9PZG43T0c3WlRnOGRKZktjUnNJN1hoX01KZFpkN0p5YjR0cHBGRHNKTWpsbUNLNDcyRXdHc01UNFBMeF83WUpYa1p2a1RlaUM1cUh2bHlRRlVmY3gxRjkxZHBjZ3l4U1prREdfMUttUnYwbHVwZnRhRWFVY1NYNWh1TllYUUkw0gH8AUFVX3lxTFBBM0pCdVRtZjBlcS1rY0FQa1BfQjhPYzBXcjFnQXEyUkQ4NkpTQVJfMGc2eFdXcUJoVVJpaE9nTE9JVUd2djdGdlc0WUZ5NTdkazN3OGdXNmhHel8waE5fNU5FRXc4MW9keXJydXJPY1FVejR5S0ZEU19BOTJTNkJFOEF5dU1vMUd6Tzg1MW1mRTQ3RFpBRTdINjZzQ2tQcHJkTk55dUhlbnV5X3JIR01mbWh0Y2JWZnEtU2c2ZG5ZSDFXbzJ0NFpoN183OVdYN3JiYUE5S3BjMldKczdubV9INHpOeFJiSnEzelVIZXgxclR5T1dQWlNlODB2NQ?oc=5",
+          "source": "The Economic Times",
+          "date": "2026-11-02T08:00:00.000Z"
+        },
+        {
           "title": "India shows 6 signs of growth momentum, but there are 2 big risks - The Financial Express",
           "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZzVHMDN5T1dVcng5dTRmN3JTTnpEYjR5OVhtYUVRMEh6aHVfT28tZmJHQUctSU9mLUJtUV80TXZLYTdZeW12XzZEeENZbmNTSXNwU2xNMEJBMmRIeWtwZ3libU41VlJzZzBtUVo3QzBiSzE3d0tlWnowbnVJQzRVTzd2ejdkSm8zMlN3aklxYzVvRUhXOU9qTmtveXN2T3Y4WV9VaUxzNHdiUEFFRmxRTFNHaFNJU3dPWWZCRjhR0gHEAUFVX3lxTE9aRDdPTHNkN0dkREtCWW9yOS10cXdZZm9DSzlOOFpHb3k4d2JHcVNVcm8zYTFrMDNrRmJpNHM4TlYwWW1Ga3FseUJWcngwdXcwaERtNlYwaEpmdlRmUEhRMkZ3WlpvbEJ5OXFLTzZVcFpkOHo0Nll5bkhjUzJodjRYT2NDTnJYMnBTdzJhNGpLbU91ZEdnTVFBNjJ0Z21Dcy1TLU9RdlJQNlVsZ1gyVkFPdGJ2NUhiR1NjOGF3VG1pN1FhbHA?oc=5",
           "source": "The Financial Express",
           "date": "2026-08-26T07:00:00.000Z"
+        },
+        {
+          "title": "India Budget 2026: From GDP to RBI policy moves, A-Z of Union Budget explained - The Economic Times",
+          "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPbE1RaER4Q01VMWZ3eDh4dHVjaHZIZUVtaVhRRTNQRlN6VG9kaFpLYjFIa0plWUpaZlhjOTZNVFNtOEswSW9WQV9ITlFHYTRlUlpWemZpS1pLa19QU19JOG5hRXhFNWVXMVpfdExfbE84cExrUjRjejBJVGpZVmhNRnpGV3B0R0ZwaDRZSy1IVTlUbFA5cG1kbnMzbWFzN0JLVGtNX1pHRXMxTE55TTF4OUx0RTZLVVR3VGVkbnZkYzlKU3pIVl9wWjl1bmJiZU9rQlZlRTRnVTJYWTMta2h2bV9Eb0JHV3ZkN1RWTWpvamNmbEpuWTEyd3lBMndKd2dmS2RBTEpXWDVEdkFjNTVJMm9TcjR1amxIdEZfM1dqWk5xS3pZc0x4N2ZrSdIBsAJBVV95cUxQaWgzSENsenZHNVBUQXpOenlYS2RkSTBzU1JYdzJJYW5DQkFVTVZSd0Qtc0Z0SDFmc2xYNURRTkVpSDFFS0NTWlI0RlNpVFhndmtJdGFoRVNrTlF6ZFQ0aFlmMnUzNXVBN3FoNThXWkJZMEdYQVZpa1lKSGs5QTdZZXpURC1KeWcwTmppSXZKNGZFalNZeTJRMWhlMXZXUzVTQmpySnloRWNFZ0MyU005Yi1MZzlpWFQ5WmlZUGZiRnBjS1Vfa3JVS1MxZ2NPczJ6T1VOckJxMnpCYXBZX2VteWppMktWX0ZtSU0yQ0RyUmZmenczU3k0cWljanY5M0l3MXYtcU9lNFRfSkRvSG1hbE9GVkR4NlgwVkRnbEhJWXN4ZFBYTGhsMXNNQWo2TDZi?oc=5",
+          "source": "The Economic Times",
+          "date": "2025-12-27T08:00:00.000Z"
         }
       ]
     }
   ],
   "stocks": {
+    "EICHERMOT": {
+      "headlines": [
+        {
+          "title": "EICHERMOT Stock Price and Chart — NSE:EICHERMOT - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9uTklEWlNBdDNoWWJmSVh2d2lvbXJ4OHE1Wl9pYW52VEc2cU4wOFJkR1YxQVBZQnZWbnZkUnVFQkFjeDlxLTVFcnVtVTN6S20tUmNYMU9lSGVTakJIMGlz?oc=5",
+          "source": "TradingView",
+          "date": "2026-11-20T09:08:17.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Earnings Miss: Eicher Motors Limited Missed EPS By 5.9% And Analysts Are Revising Their Forecasts - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQc2FVNXFpNkVFQlI4ZVgxOGd1RVJyMS1UT2ZRM1ZITVZBeVlWaVZjMjNYNDdwWjVqOEVaZFdyWmdCUWpKUlBsUUxxQUhER3FlaGVXLWFFZ3c4Tzdoc01WTy1wRm1pNGV6ckNmNjdCZXhyZmpDbUR1M1ZKLW1Za241NnE2S0V1dGo4SEVxYjVMdnBaSFlQNFl4cWhhWWlaN2xCWEtxbUNNRlBORjROaUktQk1YRmU1dGZSQ0hOQU5ZVVg3OFg1Y1ZHQklRQWV4anFRcGVYTTVFY1BqUjRB0gHiAUFVX3lxTE0xZVNRaHZRdjVCZG5Qb1hWRU5udF9MVGFTOEItRzNaWEFsbkJ1enlJV2RiRnFwdk11aVlwSnp3UldkOU5OVndjRUJfY1ZoNTZReGZOc3F4S1FQejR5MzRZMzdMSU5Ma1dHVkpJYlNWZ2llT0FtNUx3ZEUtdlVvcElGNlNGV1ZUMWdWZlMtYWcyVHdaWHVyT09wdTBGZ09NQ2hoT2gzbnVjS2V1R2lEYW5rbWFPTE1qSXRFNk1LeEtBa3lMdFpnTldYRmVodHR5ZGEycWhSR3djUEdQTGV1Ylh5TGc?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-11-17T00:03:08.000Z",
+          "sentiment": -100,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Q1 Results: Adani Enterprises, Asian Paints, Adani Ports, Eicher Motors, Waaree Energies, Dabur India, others to declare earnings on July 29 - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxPbnlDYTNGSFJHUkFkVE43TDBZNHJxVXg0VjFVaDRJSVJXODlIeGZJZG02QWxtYzNiTXRDdWZqcGJMY1VFLVVHMm1tZEhaRlN5bUNEUmdHTjlycC1wNHBUWmhpWDJXOU1Ddk5sVDZMYzFQTEx3d2x4aU9IYlUxUWdoLWNhRThMV2dyMDhxNTh3M3VXMDdjakFvVnJYOW9uMWpjdnhmQURKaW9HcmlUbW02ZlN4bnp2S1pFLXY0aEJxSkpjV2pwdGRxT3lmWTU5NGstNXpUd1FLUGJfN282V25rVzJwbWtkbTJRNGl6aHNsNExOOXJnNjlHVUdDY0U1ekZLbVlrS255RGZoZUN6enozT3JUWkt3dWFZRzB3MW9sTQ?oc=5",
+          "source": "Upstox",
+          "date": "2026-07-28T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        }
+      ]
+    },
     "INDHOTEL": {
       "headlines": [
         {
@@ -470,11 +513,11 @@
           "horizon": "Medium term"
         },
         {
-          "title": "IHCL ANNOUNCES FINANCIAL RESULTS FOR Q2 & H1 FY 2025-26 - The Indian Hotels Company Limited (IHCL)",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSjFXZHkzMEtxZW9LUnpFVlRremg5THFxV21kZG51V2FGdlFMZFB0UFFBR1N6ODR2RkpRMngzeTFwRHNfTHlkZkNPblM3U04tOUUzczZnbm5CcEhUWEZhVGlMNnRUWVNmR0lnRVZwWmxhNVNSTWwxZjA5Q1d1Qk92bVlxMWpPYVM4TlVFcjFJdDM2WmM?oc=5",
-          "source": "The Indian Hotels Company Limited (IHCL)",
-          "date": "2025-11-03T08:00:00.000Z",
-          "sentiment": 0,
+          "title": "Indian Hotels Q2FY27 Results: Net profit up 23% to ₹349 crore, guidance raised - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcUxfRzloTW1reFhod0hOZ0Iyc3ZVTDdhMlFRMG91RWNRZUxRMXdxMmpqNnV5ZjZ5U2t4RU95TUpmY09UeTF6a3Nad0VBN0FoWlNBOWlBcWNCVHhHdXljYmZ3S2lKblh3OE1UTTJwaUFEM25TQVBnSVE5ekV5Nmg3M0ZFSDA2TW9DQVkwQ1czTFJadjBxLXZFeGlqY1p2WTBpa2hNVXZn?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-10-21T12:29:09.000Z",
+          "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
         }
@@ -482,6 +525,15 @@
     },
     "GLENMARK": {
       "headlines": [
+        {
+          "title": "Glenmark Pharmaceuticals Q4 Results 2026 - Univest",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9wWTlocUx0aWVrblFPaXppRmZNWGh6Y0FxdVE3dm5sRXI5NEN0NnAwWGVOVnhGTGw2bjJDdC0zZEs0d0tkbndBQU10RlRWRV9PQjU0Tl9Obkx4bTY1MFlrTmpkM2ZDN3FUVHd4eDZEb20xVlE?oc=5",
+          "source": "Univest",
+          "date": "2026-11-22T08:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
         {
           "title": "Glenmark Pharmaceuticals closes trading window ahead of Q2FY27 results - scanx.trade",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZldCSnhRYUlFMVVZbnctSWZVMjVyeDFyTzNuZ3g5eUFSV3l4NkhmVF80ampEb3c1QlE2VWhVX2h2NjhnNy1vWXRkdUpENjZycmhtYkprdnVZS3dwc1VwU0NMQklpS0lRZHVFQWE3bVg5YUdNUXdCMi1KMzd6Tkx2bjZPT3JzTG5ITnZpVGRLV3lrM2pHLWxEZXVYZ21mc2dXMVp0WGFjQkExV3JSWVgtbGJWdHN3X2lOUHpuazJJVkZhZw?oc=5",
@@ -492,22 +544,13 @@
           "horizon": "Short term"
         },
         {
-          "title": "Analyst Estimates: Here's What Brokers Think Of Glenmark Pharmaceuticals Limited (NSE:GLENMARK) After Its Second-Quarter Report - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNNWJld1ZlSHdDY2FTQVltWkxhNzl6a3NOMnBzTDE4V0xuSVZOREhSSmxJdjB6a2Q0Q3JTaFY5b3JTMVBIY0Fob1NEUDZjSHhqcGxfZ0Fhd09HaHJTTTUyd3R4WTVRcWo2RzMwNDY5S0ZhTHlxeWFJcm5fa2FCRXc5SHdpX21URTBTZ085Ykc5aVEyVGNOUUg0TTBHcTBMN2FpaHAwdUVzZ2ZCcWNUSUxqbWVpeHI4X3ktNE9CNXV1SEtJdVlVNS10Z252aV96VHd2a3lwSHpjM0ZidElLQTZxVXlRcTQyaHV1d0JUc2VhUEpaeG5TOG1LSmpn0gH_AUFVX3lxTFA4OWMwMVZ3aldVRmhXNUY1V3hLUFBPOTVwaGdrR0NNM29oMFdJUmgwbVp3SHBYZUpPa0QzSEU2X3BlcXA4RUlDWV9pSHFvSi1LYWNZX1JZbjdLNkozNUIwOVhnbWFTQWgwQm5uOVFvQjNkZTNSZXRpSFJqbm9leWEwa0tfU0JMRllCOGFta1RoZGlKOXVRY1hONDNUV2taX2Q1M1NxbDFjZnl2ODJKclJ1RW9nbzE0RWk3Q2xnem5FRkl1LU1ZckRVc1VnUGlTMTBSMFRyTWpvWVJMU0FMQzNjdUZOZk5pNGtCOFA1MWVHdlNJbllpZThOTTFRTGhPMA?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-08T08:00:00.000Z",
+          "title": "Glenmark Pharmaceuticals Ltd. Share Price Today - Glenmark Pharmaceuticals Ltd. Stock Price Live NSE/BSE - CNBC TV18",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNb2hqRzF3cFFBa1AwaklmSTRTRVQ5RVdOZzJBT3hGdHBHa0RVRzdJbWlicldtR3ZOOG5xMUJ5OTJuYjA0ZF9DUGpHSTdodE5XUEJjZFhVMjNvQ2RuZEFlUWRfbjF1ZTJCUzMxc1FBeUg4ZWF3VDJGdm9EWjk5R2J3S1p5Y2hoSnpHaXdyRE1B?oc=5",
+          "source": "CNBC TV18",
+          "date": "2026-01-03T06:30:26.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
-        },
-        {
-          "title": "Glenmark Pharmaceuticals Q2 Results FY27: PAT Down 56.78% to Rs 263.83 Cr - Univest",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMDFSOHdCR1pRUC1ONEozN1ltUlJ3bW9Nb0xyMlA3dUFQek5TYkZKclRheHlpaGpUOE42T05vNGROS0ZqdG9FOVFBTUZyOUhYZVl6bFB3VDFoQm5WRkpzQVNBakRlRklTZnVybnRQa2czQV81ZWp2czRYZEJvMVpGVUg1S2hsZw?oc=5",
-          "source": "Univest",
-          "date": "2026-11-05T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 90,
-          "horizon": "Short term"
         }
       ]
     },
@@ -523,19 +566,19 @@
           "horizon": "Short term"
         },
         {
-          "title": "Multi Commodity Exchange of India Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvSUlPdnJESmROMGowVUhFWFdzY1JZbl9TclFuZ3FWdHlLWlE2bTZwMHBrbEdXcTc1X25HNkxpSVAweVg3dFQzdzdPUThITlJ0QWFMYXFNNlBaUHZhV3lCVkt6NDVNUUJicVNEM0pLMlZIVHJEd05JQnpoOUY4Rjg?oc=5",
-          "source": "Univest",
-          "date": "2026-04-17T07:00:00.000Z",
-          "sentiment": 100,
+          "title": "Q2 results, Nov 3: SBI, NSE, Bajaj Finserv, Solar Industries, Lupin, MCX, Graphite India, Gujarat Fluorochemicals, GSK, others to post earnings - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxPaEZZWXFHSWc4RU9TNjdONnJqREQyQndNREdNbU1BcFYzZl81M2ctYWFOa2FNTjQ2VjZaV2g0RjIzX0Y5djFmQmo0dzYzMVZZb1o4OTZEOW1FMmNKOVo0bDJwSWxVdU4wb2R5eXFnNmgzZ1lPWVRpM2xSazVFY2pLTXRlX2RKa2lBRmhVbFZ2SGY2MnprMS1iWDNNZUM5Z1BKUHRoazNHUjdsQUpIWmpsM2JvWFRzT1RQbHZrUldjSjRtMTNPaVp2Qnk5WDhFc3JhbWpKTk5CMVc0YU9hNG4zd2VxR3pCeVYzSF9BaG53b1RSWC1VUTA4ejhvdmpKVnhmSHlycElIWWV6MDBqNW5HNDVwQ3NSRmtST1VMbGNB?oc=5",
+          "source": "Upstox",
+          "date": "2026-11-02T08:00:00.000Z",
+          "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
         },
         {
-          "title": "MULTI COMMODITY EXCHANGE OF INDIA SHARE PRICE - ICICI Direct",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVUt0aDBQd2FFVUR3QnJDSVltNlRYYTdXYVRSa3BZbExIRlhndUhKSFFnMkhJV0FsZTQ2T1djM1FKcjRKcU1ua3FyTFAzWXBmYk11SUVVTUJ2Nlp5RGF5SDJFZ2VUYkZnQlU2aGNlRUtyN25zbnp6M0dFckdfVVFxa0w5X3lXWXZtcTNfNg?oc=5",
-          "source": "ICICI Direct",
-          "date": "2022-01-08T03:08:01.000Z",
+          "title": "Multi Commodity Exchange of India (NSEI:MCX) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNalZuWkNQVjhRMGtneGdsbWFteGhXbUh3MGpGMFNLQVN4b25QeVNMNWJPeDdCcGMxamJaa1ZpbDVKRm41UWNvSDV5enFJb3lHcXJ1ZGlDNUhvSDkyWUl6RDZPaHdkaHR5YU16TXloZVRmV2R1UDd5c25hTUEzaFJpNDBGa21XWFgyaktodnhyTDZiQk45SVc5RVRhLTdzUTlUYkNCS01nVUtIZFNDWE9N?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-11-18T08:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -544,6 +587,15 @@
     },
     "ICICIBANK": {
       "headlines": [
+        {
+          "title": "ICICIBANK Stock Price and Chart — NSE:ICICIBANK - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qRG1VTVJpTXZCa3RFZmtqTGlMVTdyb09RV2Q3RExXV2laUHNqRWZQVHg2cGM5WUVEM19iTjd5N0VMY0FxMXp6d3NFZDU5OUk0bzJpYWJXd2Y4QmdGSzE4?oc=5",
+          "source": "TradingView",
+          "date": "2026-11-20T16:40:39.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
         {
           "title": "ICICI Bank (NSEI:ICICIBANK) Stock Forecast & Analyst Predictions - Simply Wall St",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeHNnTVJKMndzb19YZUFPNlRKNTNUblBKUjEwUnhtQkJwRVZ3TE5Jd3Jwc3Mxd2Y5UURxNjd5R1pSdzR5Tzh1b0QwR0dNTUpUWk01ZHAxRXlLbHUxdjFfQnlTbjQyT2VGa2dmTjNKZkxOUlI3dXR6VVBWNTFhYW11WGJR?oc=5",
@@ -554,20 +606,11 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Zee Business. . Result Review 📌 ▶️HDFC Bank Futures: Strong results Decent deposit growth No reasons to worry It's a Buy on Dips Stock Support level 785, Higher level 816 ▶️ICICI Bank Futures: Strong results Strong loan growth after many quarters So - Facebook",
-          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPV0ZJQlo5SkZlSjltdERrUFlxeWc0eWU3Ul9CUXNmZzBxd2RoNUdDWDZsNU9aNXlRWEhxRWI4a1BKaFNxOTdzc1FGbnB6bllIUkxDdG00aC1CTk9HNmduOEF0MWtKSFR4NUlONzRmalB6dFpHd0I0RUJQQWZFUnZuUXFVUmJtazNJTkh1RGJNWnlJcl9OUnp3eU83YklqYXFzc2wyZFlKOXVtalk2SEZSRzhVZDlJaC1nZ3J5OXhTM1phNlExMUNaMmtDS3EzMm1fOVkxREZCTldvMEhFSVVlUmM3U2QtSVJobTFQSw?oc=5",
-          "source": "Facebook",
-          "date": "2026-04-19T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
-          "title": "ICICIBANK Share Price Today - ICICI Bank Stock Analysis - Equitypandit",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9XbVI2RGtMV3FGeE1jNXF2T3lmZUxXNTlxR3FrTFZYZHFjc1ZCMmNMdXp4VWlXR3NCclRvWXpfSE9MaWZDQW91bW9QdlROelJxaUJwMUVhMUNRb3huWmVN?oc=5",
-          "source": "Equitypandit",
-          "date": "2023-07-12T03:35:12.000Z",
-          "sentiment": 0,
+          "title": "Why Is ICICI Bank Share Price Falling? Key Reasons 2026 - Univest",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBGeDR4bFF5Tm1lSXd4dkR3TGRRQW1XaWl6bkVUNUMzbE01eHNwUGdkNUc0ME9iclZ4cXBMbHlWZ05nd0tiRWVEc01XOVVmcGRGSjNBQjR0RmZ3cTJnbVJadGVLejl2TEJlOU4tRUpjYw?oc=5",
+          "source": "Univest",
+          "date": "2026-04-25T07:00:00.000Z",
+          "sentiment": -100,
           "materiality": 45,
           "horizon": "Medium term"
         }
@@ -576,29 +619,29 @@
     "INDIANB": {
       "headlines": [
         {
-          "title": "INDIANB Share Price Today - Indian Bank on NSE/BSE - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qOWFSZnRUR29EVnEyYU52LWRCdFluNVA0NkdrdXYyendiRHJXaUFBSmU3VlFpb1BCT09aZVZVdnRQYXhlNU5YTkNFcmNYUU9jMzAzbzJn?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-11-22T07:12:50.000Z",
-          "sentiment": 0,
+          "title": "Small-, mid-cap banks shine: Jana Small, South Indian Bank surge up to 7% - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZmg1R0h2VEhfX0o4NS1Ta1RxWVEyTDNrY1BOTmxRMG5BaWdUMXVsTkwzLVBuZXJWX1FENHp3NmpLVnF1TWNIY2pVdTRZSUlXdEtWTUlkS1k0RUF0N3Y4Tkd6VWhQTFFEU1RvS3RYanMwaHRWbHE4YTBHX29pakl0Qlh0eERLZDdRbmZNY1R0WjZJTkotMUpyLXFwOVVhT2hERHMxRldWNnVLTV9iQlpPT01rS0d0dVVwSnd4SXNxVGhyOENQTTE4clE2Z0NUVkxY0gHWAUFVX3lxTE9xVTFyUDVpa1ZlQlNPcDdqSnBhTlB5YXhhVmZUdnB1Q2xSTUdlNzN3NHdRQTd0RzZjTV9aaXFCRUhaWFVVVFNjb283MDNlVUEtc0F4aEh6UHVOSUtwWkhwR0JEeENXczc0NVo3ZnVuWVctQXBvTHRHTXprbGlpUmk2RW5PYVdXLURFMVd0QmtsMExzUnY0RHJrNW85dk84QVEzTHZtV01kXzd0alhrc0sySmdlcXVDY1FHRFdqRUNzRko4YXNDVThRNnhPTTF3aWVhZkRGX1E?oc=5",
+          "source": "Business Standard",
+          "date": "2026-07-21T07:00:00.000Z",
+          "sentiment": 100,
           "materiality": 45,
           "horizon": "Medium term"
         },
         {
-          "title": "Zee Business. . Results Review 📌 ▶️Buy IDFC First Bank Futures: SL 80 Tgt 83, 84.25 -Strong results -Bank posted highest ever quarterly profit ▶️Buy AU Small Fin Futures: SL 990 Tgt 1020, 1030, 1038 -Results better than expectations -NIMs improved to 5 - Facebook",
-          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNclVWdF9uVUxzSk5adlNFM3dOeHNkc1RaT3htaDlOUXVkWDhQbDBtZUlTTG9ILXpsZWhlNXFHaTVleHhZVmRtT1ZGM1pKekhtRGMtcmlDTzdUc3VPSmlQdVJoMnRlaW1mN3Q1Q2k2TmNoRFh6a09PWTFESFJieU80Xy1LVWE3eEZtUkc1WjlCMTh1bzBjMDBhc1pfaG9WUS1mR3I1bVNnVnN1SV9qZ0ZjMFBMZ0dzNFB2WVF6UlQ0VlFBQ0dZSHRoMTVhQm05YTE1TlZ0clZ2VHBheDVLQW9RdVFMZ2FPVlhuZDVkXw?oc=5",
-          "source": "Facebook",
-          "date": "2026-07-26T07:00:00.000Z",
+          "title": "Nifty PSU bank index up nearly 4%: Indian Bank rises 10% to lead gains post-Q1 results - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRW9LbTZLZUtDMTRMVGppSnN4R3BFc19wV3BmTF9BR1ZCZWpjSVBNWGJGRGVhSUhEOEY2clhUOWVab1ZUazNidkxtSW0zV29SanozTVcySFZWSjA3RW5MVmhuTTI2SE1tdEdORUNGQTIyOHo3bDZmaWpzZ1NudmRQNGhTaXg3ZWZXWVRsNXJFMngza2s1SjlCV0RQb0NDZDdCSVN3VXoweVFvc0p4MkpRcVlDSldfTlk1M1Vqd0VhY3NybnhGTXU5dDVvV0VMaUNwSDFpZHd2UTRaWE81SXBv?oc=5",
+          "source": "TradingView",
+          "date": "2026-07-10T07:00:00.000Z",
           "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
         },
         {
-          "title": "Why Bandhan Bank Shares Crashed 18% Despite Good Q1 FY27 Results: RoA Guidance Cut Spooks Investors - India Infoline",
-          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWXRXNHFlNXdpS3FBajRuX0Jlc2xIWG90bHlvdlhJc2VOWmVRdUZodzJmRU9OR3Eydjh6MXdKaGNmM0E4UzQxYzJ5UEI4eGhyYzhQc3QtX2FDLWlzMEQwYTVQTm55RkxiUGF3MnE2WWI3SDl4TmdsU0xiZHU1RjBNc0hiODBPdjBGdDNqUWE5dmtaZkFaWW11d1NVZVpCSGlmdTNKMmp4dGxqdDg0SkdoWl9uRDJUbjEtR2pLOVdhOEpRdmNlUVNBODRWREhBdkE3SEZVdklpRXYwZw?oc=5",
-          "source": "India Infoline",
-          "date": "2026-07-22T07:00:00.000Z",
-          "sentiment": -100,
+          "title": "Indian Bank Q2FY27 Results: Net profit up 14.6% YoY to ₹3,462 crore - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdk95MTZrZTJSeDBHVHN3OFNzZENvdUstcFJxRUtPUUdjaXpzc1ByM3BKeGxDeDBsSk15ckZzcGVUS2xuOWtGVkhlNWg0VVA2WnhVX1p3UTlIVmt0RWFhZUlYaFF5bXFMem9pMW9NQ1l3R1p2VUNfbzlYQXRUaEV4N3hZaWtmYlFadEFsaGstOU5oRzl5Q3dLRXdpVjN0VEVITmJOWXQ5czlHNXJuLWotZGllVW5JOU81cVBxWlBB?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-10-12T17:20:02.000Z",
+          "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
         }
@@ -607,11 +650,11 @@
     "KALYANKJIL": {
       "headlines": [
         {
-          "title": "Kalyan Jewellers Q4 FY26 Concall: 66% Revenue Growth, 150 Showrooms Planned for FY27 - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOXy1GcW5TLWEyTzRHTXJkQnl4SFhybG1GVW1XbEpQUDJaSnV0aXJRZkEzVGhacGhEWFNCdlpPUkdWYUpnRFhXOVRsWkh4UkgwMnQwX1NvUmh6YXB3X1oyaXhpMGxCZzU3bFB6ZWtic3BHQVVzUFFlNEtxcW85THVyMG4wcWZlWHM4cUZZM1h2elprZ0lDZ1NKQnh6WnpTSUtfRjdGS1E2eXc4ZjVfbVI4dzVTTTZjQnNacm5yNWRpQXI2YlQ2V3BlcnAxTlM3YUV3NDFNZUMwYzFpTW5ZM1pWMXNmSlU0UGRqaHFtbzY3QnFpWnBNRWJRSlBR?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-11-21T01:59:37.000Z",
-          "sentiment": 100,
+          "title": "Kalyan Jewellers India (NSEI:KALYANKJIL) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdVRtRHBIWE5zU1JPeUpYcnlKNk5mVDZteGU1VjQ3MnpzSHRRT1RLd1EtWnBiT29sUnFhNkNsQVJoVVJJM29NQmRob2tyZjZNejl2Z1JLYllUaUEtNUNPNWUyamRJNUw3QWYwbHJ2M2p2U0dlbmItZVBoRE1RTlJJM1BhUUI0cGx6MTRtaFZVRlFPN29vNUFkNkFvTDFMM0VGWTRj?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-11-20T08:00:00.000Z",
+          "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
         },
@@ -625,11 +668,11 @@
           "horizon": "Short term"
         },
         {
-          "title": "Kalyan Jewellers India (NSEI:KALYANKJIL) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdVRtRHBIWE5zU1JPeUpYcnlKNk5mVDZteGU1VjQ3MnpzSHRRT1RLd1EtWnBiT29sUnFhNkNsQVJoVVJJM29NQmRob2tyZjZNejl2Z1JLYllUaUEtNUNPNWUyamRJNUw3QWYwbHJ2M2p2U0dlbmItZVBoRE1RTlJJM1BhUUI0cGx6MTRtaFZVRlFPN29vNUFkNkFvTDFMM0VGWTRj?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-20T08:00:00.000Z",
-          "sentiment": 0,
+          "title": "Kalyan Jewellers India Share Price Target 2026: Analyst Forecast, Growth Catalysts and Key Risks - Univest",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBGbUJKVHktWnFESVlSa3pzOF9rRkhsWHVHU3F5NkxNQUkzWVdiUGd5b0JRM3k2Wmx1WFZHX3AwWFBTR0NqOExON1lMU3U1eU4xcEpMeUV5YzFZS1dzMHlCZ1ZzSjI2UXBQcG1uNEVIV1lIaWh0YkNGd2ZVSQ?oc=5",
+          "source": "Univest",
+          "date": "2026-05-06T07:00:00.000Z",
+          "sentiment": 100,
           "materiality": 45,
           "horizon": "Medium term"
         }
@@ -647,15 +690,6 @@
           "horizon": "Short term"
         },
         {
-          "title": "DLF Limited Makes Q4 FY26 Earnings Call Recording Available Under SEBI Regulation 30 - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTUU3YlRrMF9Genp4b0R4S2lvQ09xLVpNV0hYSG9KQW5mODJzajhvX2lIVTFmT3Bxd241Yy1fWTBGZjRRVTFzazlIRTVPNEZOcVdBLUZfUkE2R2JvLWp0d3NCSDRVVkNxVzgwNC01TU05MnNsOFFYekhiaDc5dTlRWGd3T0RnRl9qXy1lS3kzb0RRZ1E4czRaaGRvRkV6T3VLN1pENkhCMHpyV0IyOEk4M1A1STZBTEl3aVY5ODh3eFJoeEdjYWQ3VTRFdjFRWnhJZXJxTU41Y0M?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-05-14T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 95,
-          "horizon": "Medium term"
-        },
-        {
           "title": "Q2 Results October 16, 2026: Federal Bank, PNB, DLF and More - Kalkine India",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSWpvaGd2SllZU2E0c2VPQkdvb0pGYzY5SlcyeEpuVHRWRnBBNGpfXzlLaUIwX09lZ0lnU0hNbWtuZk80MEhTaGpmb3FMMF9pclFOalA2OURRb2RTUnZNZkphUFVzUTVMa2lGTjNEZHBMZlNGOTRydU1yb1FocVJLLTZqYmxPdS13TG43ZlpzMmtOU1JMRTJ5QjZPSWNyNlc5S1ZPVno5NjBraHVlbzlyOFdn?oc=5",
           "source": "Kalkine India",
@@ -663,37 +697,15 @@
           "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
-        }
-      ]
-    },
-    "EICHERMOT": {
-      "headlines": [
+        },
         {
-          "title": "Eicher Motors Limited Estimates – NSE:EICHERMOT - TradingView",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBZSDlEb21uWUZOSEtfbkZCbGV6NzROU2lGWVVYenREeUNRa3JiQ3JfM0lCRWxSeEpXam5WejNudFY4U1N6TmtvUTRnUGZINnh0T0x3OG9hZjJSbUJ1OEdKajBMY2pWZ0UxRUgtSU9aMGV0YVJ1WXZ2UHZvaw?oc=5",
-          "source": "TradingView",
-          "date": "2026-10-23T19:59:17.000Z",
+          "title": "DLF Limited Makes Q4 FY26 Earnings Call Recording Available Under SEBI Regulation 30 - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTUU3YlRrMF9Genp4b0R4S2lvQ09xLVpNV0hYSG9KQW5mODJzajhvX2lIVTFmT3Bxd241Yy1fWTBGZjRRVTFzazlIRTVPNEZOcVdBLUZfUkE2R2JvLWp0d3NCSDRVVkNxVzgwNC01TU05MnNsOFFYekhiaDc5dTlRWGd3T0RnRl9qXy1lS3kzb0RRZ1E4czRaaGRvRkV6T3VLN1pENkhCMHpyV0IyOEk4M1A1STZBTEl3aVY5ODh3eFJoeEdjYWQ3VTRFdjFRWnhJZXJxTU41Y0M?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-05-14T07:00:00.000Z",
           "sentiment": 0,
-          "materiality": 45,
+          "materiality": 95,
           "horizon": "Medium term"
-        },
-        {
-          "title": "Earnings Miss: Eicher Motors Limited Missed EPS By 5.9% And Analysts Are Revising Their Forecasts - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQc2FVNXFpNkVFQlI4ZVgxOGd1RVJyMS1UT2ZRM1ZITVZBeVlWaVZjMjNYNDdwWjVqOEVaZFdyWmdCUWpKUlBsUUxxQUhER3FlaGVXLWFFZ3c4Tzdoc01WTy1wRm1pNGV6ckNmNjdCZXhyZmpDbUR1M1ZKLW1Za241NnE2S0V1dGo4SEVxYjVMdnBaSFlQNFl4cWhhWWlaN2xCWEtxbUNNRlBORjROaUktQk1YRmU1dGZSQ0hOQU5ZVVg3OFg1Y1ZHQklRQWV4anFRcGVYTTVFY1BqUjRB0gHiAUFVX3lxTE0xZVNRaHZRdjVCZG5Qb1hWRU5udF9MVGFTOEItRzNaWEFsbkJ1enlJV2RiRnFwdk11aVlwSnp3UldkOU5OVndjRUJfY1ZoNTZReGZOc3F4S1FQejR5MzRZMzdMSU5Ma1dHVkpJYlNWZ2llT0FtNUx3ZEUtdlVvcElGNlNGV1ZUMWdWZlMtYWcyVHdaWHVyT09wdTBGZ09NQ2hoT2gzbnVjS2V1R2lEYW5rbWFPTE1qSXRFNk1LeEtBa3lMdFpnTldYRmVodHR5ZGEycWhSR3djUEdQTGV1Ylh5TGc?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-17T00:03:08.000Z",
-          "sentiment": -100,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Eicher Motors shares trade 2% higher ahead of Q4 results despite cost pressures; what investors should know - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxORkZCY3JVWk96SkdYZU5PWms4MlZNNWlwRXdBZU5BcE5QMW5VVmNRbW4xS3FZc2E4cmdQZFF4RWMyQkUtOEJIVzZ2aEdNbFhDRGg2MmpRdVQwWVhrTWxrQzJiQ3Y4X3F1d0Vab19sNFlzc0xkLTU5ZVRIQktrNmpjX3Mtc09TbkM5NmdTQkFESmJkOTd0U2IwT3k4RDVIR0FHZW9RWmFBUC1PQXF6MUI3T1FsTGczcU1FY1BTWDRTZ2NkZWJjclY4ZUpLV2RabE1FNmQ3VjNTSUVwekdMeTBnSkpEQVRjcHotX0JMRDk2ZnJYS0J1MDBn?oc=5",
-          "source": "Upstox",
-          "date": "2026-05-22T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
         }
       ]
     },
@@ -731,15 +743,6 @@
     "MAHABANK": {
       "headlines": [
         {
-          "title": "Bank of Maharashtra Q1 FY27 slides: 27% profit surge, NPA at 1.45% - Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdXcyc3dnNElJblVSLUZnWm9mZmhvUkY0YlBRSUctNmNzNjRwMHh1QUx1T3FUVlduWWVxNlBOaG1zcW9hbEwycG1HN3hGQnJUZnhoWHY3LTd2TU9sNHRiX3FSUnZCSHdacXdXc0VxanVWZWNwUnBvek92T1UxNEZ0ejN6SXdzTGdZbmcyY192YjFTV3JZNDdTUGRyOVBueWJ1Q1FtQXA5VHJmRzFISlJBTUEzMkZCenpuVEE?oc=5",
-          "source": "Investing.com",
-          "date": "2026-07-10T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
           "title": "Bank of Maharashtra (NSEI:MAHABANK) Stock Forecast & Analyst Predictions - Simply Wall St",
           "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVFJlTHJTMmVZUWY3WGFRWGhlLTdWTW1DajFJaFV2a2g3MlpqRTZDVTlyN3pYbmJjUElaWHRpSm9OVnktLWUyWVBEUm9MMzA3MHI2WTNXOXEtUGFCbWowaGZJNWZJRHplM2pxWnFNeWRIR3U3RzNLM1U1YlFJRllGM0lNNzFhNWk0N3Azeg?oc=5",
           "source": "Simply Wall St",
@@ -749,13 +752,22 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Bank of Maharashtra Q2 FY27 results: profits, key drivers and outlook - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTjItZ2RCS2FDTjE4SFZwaE5fcVdVTjJNcmRSQkRZeUVURUNjVVRJX0wyT1dMVUhmVmZFUXhmVElkS2tJS1VlLURqbFVMWWtpSmlRVFRZZ0lTakdKYXFlUTk2THlpeVRyLVl4cDFvbHFBYlVtYW5uRTd6elo4VUo3dW4zY1JPOHh2WjNnTmtkSHhoREplOGxGdDA5RjRXT0Q2Mmh4Tk5iWWlOekU4dVFVVGpVUzB3TXVodk5ROS1JVHV2dTNJYzRXRU81WVNRVmdDWk5MOUR3?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-02T12:17:00.000Z",
-          "sentiment": 100,
+          "title": "Bank of Maharashtra Q1 FY27 Results: What to Expect - Univest",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41ejEwVW1QVWFLcklUVFJfbzFiZ0F6TnVZMW1FaWc0eHVKdHY2YVlRUS1PTHc1WWl6TVFNMnBQWmxOYXBVeHMxU0otSWE5Y2g4VWJWaHh5Qk91NVYzbmhBRnNxdl9jeENNdjZzcw?oc=5",
+          "source": "Univest",
+          "date": "2026-06-30T07:00:00.000Z",
+          "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
+        },
+        {
+          "title": "Bank of Maharashtra Q1 profit up 23.2% at ₹1,593 cr on healthy NII growth - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMGtlQ3RwcGxvM3laanhuTjRaTXIyby1WSzVFYjJzOG4tUUJFeTg2QTBzc2N6aEV2UmllWHVMLU5iZkoyYjBtNXRDaXI5OFg1YVd2Z2xNRWVYc2ZWMWQyNkNoakxvM2ZUTFdmazgyaDR5c2ZEcWVqU1BPdE9PQnVVS0FGbFFUY1VVTDduU2RTVW5Rbkp0RTFqT1ZLeS1Yak1XWEs4T0RMNWxRazBjS1dHaFhqQmRseDd2Q190UEdYLTJRRlZEb2g5VGdOVzZoLVc3czgzTEk3bmZWV3PSAeABQVVfeXFMTlg4VjB4N2FVa3JGMGVzZE50akVUQnFvWkxfc2o0aUhraWM5VUpha3FObG5YaURWNnhkeGxMMThGekJwQmJiaHdqM2daczVudnpIN1hYeGkzbDNjMmR5MWl6ZERxQzNqWWFRMmcyaHJ2RGFUbDNHNnJWVEVVVlJIMlZlX3pwaGt0R2I0T3FXSGhPY1ZNb29vNlhZVGxlY1RhYlNMMGpnZzRyQ1FHN2hsaUlWTEhNSjdOYW9UUTdybTJPaXVkdnIxRm01YURIZlFSOUtuTjJMQ1J1UmZ4MVp1U3o?oc=5",
+          "source": "Business Standard",
+          "date": "2025-07-15T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 45,
+          "horizon": "Medium term"
         }
       ]
     },
@@ -904,10 +916,10 @@
           "horizon": "Short term"
         },
         {
-          "title": "HDFC Asset Management Company Ltd. Share Price Live Today - CNBC TV18",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOREFJM05HaGljVFRqVzZFY3ZReWVFU0N4b2lic3pzTXZyRXdfVWxRRjJNLWlTcjBISzZIVld6Ni1RRDZXa1NjWThrNEp3SzRlSzh0bTVuUWJrSjZ5bGhjdlR0M1ZPQmRJTXo0b01jbHlnY05XT0lNc1AzajdnRjF6WGxrbUNwdDAtRDlONXl4Z21hVHJOT1E?oc=5",
-          "source": "CNBC TV18",
-          "date": "2026-01-03T06:46:31.000Z",
+          "title": "HDFC AMC Publishes Complete Q4FY26 Earnings Call Transcript with Management Commentary - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNREZ4dGo4ZDRjS0hjMUpqS1R4QWZGR3JBRkhDVlpqanNYMnFNWlIxZDdXcE0tTHZMcUtCT1ZLVkZyUWJVYVUtTnViZTdhbHlnUE5GMGtXeHhNS0tuZXlGdU9rMkQxMElTRUpNMzBXRzhDbUVMVUtxQ0V4TXczekdYbmFka2RDUDNhdGM0b1J5SXFVcE9zWmV4ZVNhM3JWU2FfTVdTT1AzUEpxUm1penF1N1VMX0lWdm5XdUd0Vl9hQzRDNnJlcGc?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-04-22T07:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -917,31 +929,31 @@
     "PNB": {
       "headlines": [
         {
-          "title": "Why Is Punjab National Bank Share Price Falling? Key Reasons - Univest",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9xb2RBeEtjbUxmSlZmR21oS3BITzRYSi1DbnRGbTFTYVF2bTRubE5VNk9LN2s1RmpaQkRpRW5kYUF4N2lxZkZzeU1MNmYtMkJYRjBoQlQwYkY1Zjh3U3VzY3VESlphTTVBUU9RcXYzbGFRYmtQbHZWMXBFaFk?oc=5",
+          "title": "Punjab National Bank Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5WZEdmX3lRUmNRZHpxd01reFVRcVB6SzVDUnlqMjJtRHl2ZExubmxRcWx1WHFWU25oZFhpZDZ4c0ZFSnFVTnVBVUdPNkpKRjVoWXNBTVVOeGhFU25ZVFRQc1pFR1d5bzhlYW93YldZRVJMdXU2cHBOUQ?oc=5",
           "source": "Univest",
-          "date": "2026-11-24T05:00:00.000Z",
+          "date": "2026-05-04T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Punjab National Bank (PNB) shares decline for second straight session; here is why - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQcF9OeVRwTmhBX2dVczRRMGR2ME1odEN4VG0xbEFuWU43LVFTVml2a3ViWl80M0Q4emF4QmJCd2N2YmJ4OGhFNVZuaHB3X2QyQ3BpUUZKMTlxTjR0ODhoV1lNaWFzNVdocnluU0xCenlHbXhwd0o2VFpBb0t3ZU9ZaV8yXzNmeVV5V3lqVXhudW9lN1lUM2N5TVVJTWxsZzNzUmEtc0FsZ2RWdmkzY1Vnelk1QUJKLXhva2VVakJfTWRjYnBmZ0J2ZVc2QlhLejBtcVZZRA?oc=5",
+          "source": "Upstox",
+          "date": "2026-01-19T08:00:00.000Z",
           "sentiment": -100,
           "materiality": 45,
           "horizon": "Medium term"
         },
         {
-          "title": "Punjab National Bank Q1 FY27 slides: profit surges 214%, NPAs fall - Investing.com",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVVZ1RkZDeERxYmpXUWVua0tadGNLY2tHSnYxWjh1SmxLZWF0OHctcUlJaXNsT1BGWXdMdjgwenVRQTl1WXFHbEt4X3k0QUNram1JNF83Ym5nRkxCbEVfdEpNUGROaDJnOVZVdlZCTFVvTnhsdXVxV2ZXVmtTUXAzWHZZQW4tS1hNRklIcmp2SXJYWkd2ZHhhdlVxZHJzcEJ6UGxoM0NTZXEzNlZnZXZUbHYxUnpDdDhTYW5FQQ?oc=5",
-          "source": "Investing.com",
-          "date": "2026-07-18T07:00:00.000Z",
-          "sentiment": 50,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Punjab National Bank (NSE:PNB) Discloses ₹1.25 Lakh Penalty on Currency Chest Norms - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRXAyaHA5LVo0WThublI1T3NGR1pZNDVLc0ZDdjJ1RnBrLWFrLTlFckpNZ1hqSV9Eb2loNEU0QUl1SGlDR25ZWkQ3bmNhRmZrQ0dYWS1EX1VfUFRlcGpaRmR6UVZzS05zOEswazh0aU02NUptc0VjaUVTNXJ5ZHozN2FUOExtM296YjI1Ymk5SjJacXh1bE9JbHFjRTVXalFfNTA3algxaUNteGQzajJId2xWekRJZXBMcnptSkdyWGFvdkxMM29RVG9MeGtGSXF1bTBQcw?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-11T13:31:00.000Z",
-          "sentiment": -100,
-          "materiality": 45,
-          "horizon": "Medium term"
+          "title": "Punjab National Bank Q1 Results FY27: Uniresearch Predictions, Analyst Views and Key Watchpoints - Univest",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ybEtWa1RLTVNDY2s5eFAtM2tNX1RtS3V5QmMxNWp2WE5LeGJrajJpMW9paVVxemM2eDdhbjB6MTUybGtWeTFFQk90N2U4eWhBZ1dvTzkxSkVWZ1I3YkFCMUc1dGZfdjlRUzVmY3ZB?oc=5",
+          "source": "Univest",
+          "date": "2026-07-03T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
         }
       ]
     },
@@ -957,52 +969,52 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Zydus Lifesciences Q2 FY27 Results: Key Figures Disclosed - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRFNQZG9icXNEeGFqTGNVNHJGYjhERGlQYkZHckVkSUx2ckJsNGpHRDhFVEY1eldjQm1Mckx3RHRrTVNVcEtsc0NlNkRoMHZkSTlfZXhfNk50QXBPcGl4SXg4WjNlUWgxMmQtQmZWY3BPUllHNHZRNkdkQmxHaktfaEFncUpBTkM1QUZPaVdSWmpXWHAzdHZsVHBraWJ1MmNPV2x3bWpSQWVZenowUXN5dQ?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-04T08:00:00.000Z",
+          "title": "Zydus Lifesciences Q1 Results FY27: Uniresearch Predictions and Analyst View - Univest",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVV1V3X0lNU3NCMWgwZ0kxaThWaVFEZ2M3QmQxZkFJamFRdUZJVjVVcDVUSm5vbzRuUWpEQzBwSDA1QlVjYXBVRE9jNkZVTUZPQkEzVGpla2Ytd1pmclJjelpHVjlaNlBXMGtj?oc=5",
+          "source": "Univest",
+          "date": "2026-07-03T07:00:00.000Z",
           "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
         },
         {
-          "title": "Zydus Lifesciences Q1 results: Net profit falls 36% YoY to ₹940 crore, revenue surges 22%; shares jump 5% - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNOGVGUjdpbUpOVzR3TG5NNWpHeURaTzFjTS1RT1dmXzhmTkpEWlNPTi1RNkRPcHVVT0owZm5wcDR2MS12d0NrdkM3WWFJYzliUHFYSWROWUo0UkFfWGtsYjNOblE4RkZCVGduYVlQZUVkTVJ6cE1kQ2lsWklJU0t3Um9nVkJySHprZlQ3MnNzYXRWQlRHdmVKUGx1VjQwVjc2SjVlY0lNWjNucGRWcFJUVFNXRDRkSmdiRG5udkFzSldMdk1uazc2ajRGVk9mU05pSTJXWE0wYkdOMHNBNGM4V2xzcVYwVkdubmljZURhZk16Zw?oc=5",
+          "title": "Zydus Lifesciences shares jump 2% to hit 52-week high as US FDA concludes inspection at New Jersey office - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOdWJKaWVKdEwwQUdlOXdaRFhmZHN3YnE3SGxWdEpkSUhFOEtVV1cwenJQVVVodFI3UFUzM0p3NjNFU2hXaWlhcXZac2tnQk1GcmpRTWpRX3RIQXVFUm16WFR1dWdST3NOZmkyQXUyMjVGUGQxUUJPWTF4R3dSUGw2YUtlWnFkX3ZSU0ppZFNJclhDUlJKU2xLOGFjNGd1VHdUc21Vbl9tUTJMZngxT2FhNXhLeXBfQU1ncGVhdUlOOGRtLTNlS2EyaGlJMmRTQVB6cTRhMklFRGpTX0g3YndfTnhhX0stcmZsQWE1Zk5xOGRfdlRvRlE?oc=5",
           "source": "Upstox",
-          "date": "2026-08-11T07:00:00.000Z",
-          "sentiment": 43,
-          "materiality": 90,
-          "horizon": "Short term"
+          "date": "2026-09-27T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 45,
+          "horizon": "Medium term"
         }
       ]
     },
     "BSE": {
       "headlines": [
         {
-          "title": "NSE or BSE: Which Is Better for Beginners & Traders in India? - Kotak Neo",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRDBua2RMS0dsSFFrNGdwRmZvMEhiOWppa0F2dURJel9VRllyY1hWMXpmTnFRZWNmal9LaDQtOUlFVEpGMGhuM3ZOZ214SHAzd3U2UlB1NWN5eGQySDVOQ0ZETHRZbUZtdkZrNEFnSmdWc3djSmhJSnVJbVU3ZlM3ZTZ3YndLaVdW?oc=5",
-          "source": "Kotak Neo",
-          "date": "2026-11-20T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
+          "title": "Wipro down 4% post Q4; muted Q1 guidance, delayed ramp-ups spook investors - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOUXhqa3pHQWV6ZU1OWXpZd1lxLXl5LVVsZDBGRnJWQTZiazBPc09GdkltVDlVYXVnMlU0Y2lYN2ZXb2lCdzBFQVJQX0tDUzBvRXR6WFBtdlN0dDdNR3VDZWd1NndUN1dzNU5uMzVnVXBZRml4VnBMamZzQUZmbE9jVkVoaTNYanRwQzMzWWlJbXJ2eDNsa0ZRdDI1cDk2VVZ4RzdzVkJfZW11Z2hxbFlFVExPNnJMZm9lN0JhR2NRa2RVc3czQzZMX2hTZXhldDZIaHFVZXZuVTZWWGNlcy1UeGx3Nl9zNkVCNnBwdTFn0gHzAUFVX3lxTFB1bkVEZDRCaU5tYjZHa1RadUMzNFBHQ2dPeE9LNXVuWVhOVWJ2X2F5NjYtb0U3U2NIZWV2V1B1SU1uT25yRUJhZlc3cHpaTWdFd2tXMXZTVXE4MGxfMEViMFoxTWlXTGdORVJpVmJqQ2NNOHFWZzYxSUI4WUJmMVZQM1VOXzh3WmkzRXVfWnBpU0FRMld0NkVOUERDQTV1RlZFcFQtSzZOdG5fMGJqZ2Zqc0xiM0d3Q2JQSkZzR2tBdzdVSVFWSU16VjhHZ1dtQk93MGZnV20yZF84Wm16S3d0TGctY3paWmZfbG9QR2U4NXdqVQ?oc=5",
+          "source": "Business Standard",
+          "date": "2026-04-17T07:00:00.000Z",
+          "sentiment": -100,
+          "materiality": 85,
           "horizon": "Medium term"
         },
         {
-          "title": "Cholamandalam Independent Director Bhama Krishnamurthy dies - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0x0ZXFqWVpnNTRBa0piVk0teHl3dUVOR08wWnZFSDVaSnZ6OFpBcjFVb0FNc0xBY1BnczcyWThZMGpOQUdNblZIbWpyUmdkai1McWxicEZvel84Sk11eXlSYkl2TllsM3RQRzN4WjRRRkkwcEtWWk5QX3pvX3lJcWlJcldJY0tad3RxcVdfa0liUU9hVDVGWVAtZzRDdHQ1cURXQXozS3BuemNzOUMxcVZONklBX0U?oc=5",
+          "title": "Ashoka Buildcon Q1 Results: Earnings Call Scheduled for Aug 12 - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQll6Vkp0UVBoOWpRTkRMR1hMemtQQUh0LWVKQ2FucDVieTRCTElrVC1nZWo5aUFENkZUbG9QM2pNOHEwb2dqRFh5eFkyRUVrQWtmMmFsYjBDM1FpVFJLSTFHX1I0NFdWVXhRMV9BV2paanAyNnpPYnk3b3NIOUlWWFhGSW9tLWpxRlV3cUxWYTJyZS1GWEUxZVBqd3RuVkZJOThIUTI3Y3dadmFrUWMtSVRtZ3p2YkIzb0E?oc=5",
           "source": "scanx.trade",
-          "date": "2026-11-24T07:44:23.000Z",
+          "date": "2026-08-04T07:00:00.000Z",
           "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
+          "materiality": 90,
+          "horizon": "Short term"
         },
         {
-          "title": "NSE and BSE to Remain Open 1st February 2026 for Union Budget Session - ICICI Direct",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPY1BjM1B2bkFockhSS2pQSzhEenBsMm5YNTMtaTh6dERNby1BM1NScy1tX1NESzBuU3FPNXhoSnpGdTJ3QVVtVkVIV1JmWkRaQVNqeXRJQnowT0dPYV85RUlFQmJSZWEwNU9ZYmtZT0J3M09XeHZfQThUTUszd1Jvb0pIbE5OMS1aZjZUS0x0ZGdPOURsbE1Tcw?oc=5",
-          "source": "ICICI Direct",
-          "date": "2026-01-18T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
+          "title": "Infosys slips 7% to 52-week low on weak FY27 guidance, AI deflation fears - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNRDlNNkx1T2xRamlseTAyZ01Fc0VyY3N2cEJpNzhCeG15SFl5d243V2J3dlRMbVFmSzdQQ2t4a0ZvZ1prX3c1aGVSOXJUc1BwR2c1TE9PWno5RVFUMzhJdjl0cjZ4Y0R3TXotRFlpdFNRQkc4azZCbkhiOHlXV19GcTBWRGVqNk81VXdVM3QwOGNTdzJaN25PbkpBYXc5LUxjZHFRS25MY3liQ1IzeFdVUjZzRExGT0M4ZkdERXlPOXNqazJNUy1ia2RZVDVTTEZfYmt0N3k1aGJZWDdoMUMyMy1JVHFaMGhrdVHSAe8BQVVfeXFMTU5HY0hxZFVMY2ZmN3djZ1lzLWw3VmVvUXBUb0Ewa3NVOHVsdG9jeHJrdVFROUJpcTNEX3piSFZTYUdvczFlYlpLWTFPcElXajM4LXBRUXY0VGs5YzVQcnh5MmhOMERldDBOM25aR2daV0pORTdiMW50Wk9ZWE5oMHNWWDkzcm12djhVdGNsNmY1NVBlZF85SVY0RGNJTnVoZUNXOUJheWdUQzg4dEVMNnotYmgzWUVWc25tX2lyR0Z3SWhqMkxKc1hHUHI0MnVQOGFXQzZ0aHdFdmpMNWtrdnVpRGlPcVZIYTN5eDJ5TVk?oc=5",
+          "source": "Business Standard",
+          "date": "2026-04-24T07:00:00.000Z",
+          "sentiment": -100,
+          "materiality": 85,
           "horizon": "Medium term"
         }
       ]
@@ -1050,19 +1062,19 @@
           "horizon": "Short term"
         },
         {
-          "title": "HDFC Bank (NSEI:HDFCBANK) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9QTzNSNHJVSnNxdlVudHBqRl9nQ0l3ZHNFdS1FaEtIZ3N2U2xWT3gzZHMxbi1aVmtzYS1ZUElmdXdfXzE2dE9OX3BVU1owQmhsUE5TLXZxWHF1MlNUYWk1bVF6dndxamE2Q3p4RDVBVF90NU9PZGRnSmc5eFgtQVE?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-18T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
+          "title": "Zee Business. . Result Review 📌 ▶️HDFC Bank Futures: Strong results Decent deposit growth No reasons to worry It's a Buy on Dips Stock Support level 785, Higher level 816 ▶️ICICI Bank Futures: Strong results Strong loan growth after many quarters So - Facebook",
+          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPV0ZJQlo5SkZlSjltdERrUFlxeWc0eWU3Ul9CUXNmZzBxd2RoNUdDWDZsNU9aNXlRWEhxRWI4a1BKaFNxOTdzc1FGbnB6bllIUkxDdG00aC1CTk9HNmduOEF0MWtKSFR4NUlONzRmalB6dFpHd0I0RUJQQWZFUnZuUXFVUmJtazNJTkh1RGJNWnlJcl9OUnp3eU83YklqYXFzc2wyZFlKOXVtalk2SEZSRzhVZDlJaC1nZ3J5OXhTM1phNlExMUNaMmtDS3EzMm1fOVkxREZCTldvMEhFSVVlUmM3U2QtSVJobTFQSw?oc=5",
+          "source": "Facebook",
+          "date": "2026-04-19T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
         },
         {
-          "title": "HDFC Bank Q4 Results Date and Time: Lender to announce earnings today; dividend, margins and guidance in... - Moneycontrol.com",
-          "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOSDdTd09aY1NzSWhLekVNblNkN2xNZHpYaWh0Rk9valYzby1vZUJEQ1JLVUVKcVVQZk41YUxOY1loTWdTSzlxOHlVTzdhSnZtMkNmX3ZoeTJrajhhRFphNXVoMHkyXzFiT2wzWllYeWt6anlMT1ZRVDROcF9pcV9qcjNUVExMUzRIWmV3Q1BMd2UxN3psUUE1MmtkTmllX1VwN3I3ZnZ4QWxXcGMwQVFaNFF6dzNSSGdzZXgxWHBZcTZ6NWFuTkl6ZzQ0UEZWNzVDd3pmRUl4ZHBGQW9qMTg2LUp4X0R1R2FIbjUySU9EM2dHRHlmTE9RdHJKVlNWdDBYaFFvNzk0QjkyRWRSaXRKWtIBlgJBVV95cUxOQnpDaFBIeGZGUmdfbDBxU2puZ0d0elBFQkxqTUxJMWpUS1hWNEpfckJ1WndHVWY4WmwxMWFCTmxqWVJsM1JPX0JubWJPNDNwSFNMaXRrSjBtR2VzaFFiMnZvLXM1Zm02WkVnR09WeW5oaHNRNXlqU1NfRjVyQjNEZ2pwOGtjQll4YVhfR21TRlhndzZkbTBMY21ZZWk3OGhla09SNm9ZUnpfMkZWZ3JVVW8yc1RCU3kyWkN4YUVkRXRIUU1neDY4YkViZmRlaG9YWl9mc2hmTkRXV2dEZWF3WWxIQXhmd2xiT05rLU5DRndYRkIxaGIxeEdoMGhFVGR6SDhVYUdFeVlyX2d0TmV6eWpwaVg5QQ?oc=5",
-          "source": "Moneycontrol.com",
-          "date": "2026-04-18T07:00:00.000Z",
+          "title": "HDFC Bank releases Q2 results schedule: check date and time; shares jump 1% - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVER3Zmo3dXItdnlxZ29waGktbjdUYTItWnptU002LUkwX0lGeGZsVGotT0g3eFZQUUNzTEp5dUpUMl92N2JKTlNuV2VPbDJGVzVlb0VsbTJwc2FINVh2Q1pZb29tV2xHbmJSZV85TFJUMGhEMjBlME4yNFl5SXBaNGVKZjdhSTI0RDZxMWRoV3Q0bW13OXBKWjN4eGg2al9BQmVmWlJhNUlYU1ZHcEdHaEt0NWhDSGVJOXFWSnBYVWcwcW9vOGdQdVJPSQ?oc=5",
+          "source": "Upstox",
+          "date": "2026-09-22T06:12:36.000Z",
           "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
@@ -1103,20 +1115,20 @@
     "DIVISLAB": {
       "headlines": [
         {
+          "title": "Divi's Laboratories Share Price Target - Univest",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5DWFhlM1hrbTlEdnFPQmNYMlV0dFB2c2ZiOGlYcTZaWU5CU21XdzdHWGNPdEIxWk5rTmVqUWdVNllDaGNRbWZVbnJCR2VfOEU1c055WWtna3RjV05ZeFhrd2NXZE9IbENEb091YnJzZnRCcllRaWc?oc=5",
+          "source": "Univest",
+          "date": "2026-11-23T20:47:43.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
           "title": "Divi’s Labs Q1 FY27 Results Aug 1: Profit, Revenue Growth Expected; Tariff Outlook - NiftyTrader",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBNZHBDcHQ5ZnlPeER2SUhLUm81QjM3WVhPalJMX2VhQndjTVE3Qk5XVXJ2Zlo2Z1FnZWlkbUlxSk5jclNpWFJLd0dLY0ZfR050MUtoMkJmWUR2a0tFaUJyR1B2V040dW9DblBwdmZHbms5Ri01YkJtS3Bn?oc=5",
           "source": "NiftyTrader",
           "date": "2026-08-01T07:00:00.000Z",
           "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
-          "title": "Results: Divi's Laboratories Limited Exceeded Expectations And The Consensus Has Updated Its Estimates - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOTUhfMDJDYnpUUFZ5TFl1SS01aXExaFppWnY5RXozZUpWcUpsZjFZOFdJQkxnZ2sySElyMTA0NUNOY3FzQURUYmpqejRZWEFfVlRMSF9aZERaOFIzYXo5aFNqckpqUGQ5SVk4bEpUN283YURHTTBMZ0RZS2l4QjZxOGlUTktwZXhyQ2J1RnBqWFdOdE5sN1llX0QxSXZ1cnlXa2p2OTNtSG1zbDZQOVBFVEtqdkZLbWdSb1h2NUhIVkVsZ3ZwT2Zyc09vLVBjU1NYWExPaEtVOEdPV1V0WUNoTHV2dUJNb3VHT0sxRTNMM3NlUdIB9wFBVV95cUxPcTNuYld2UHdlUExidHE4Q0xoT2NTLXhVOXFPYWZJdDA2aXd1a0NQanVKM3RiVmpfOW9lRmlTQU9OUzIyUm94aEl0VFM4S1dhMnM3LWVWVTFRa1ZPSEZiZE1iNV9USkJWeWc2SjZRblhfVElzeGtGWVhkd0tWeEpsUG5WQ3lhVndIcEc0YTl6c2dyQ0RXZlR2ZjFURW13LTFOVm1PV0l2SmlxYnVLQmhCLW1mS3RlN3ZWYmxzYzJOUXBFc1JJY05RUGFHekszbVVMa2ViYUhnVmxDR0NMeTlHcExxMXRhUmpnOTFnNWFzQXJLS0lybllv?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-10T08:00:00.000Z",
-          "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
         },
@@ -1143,6 +1155,15 @@
           "horizon": "Medium term"
         },
         {
+          "title": "Aurobindo Pharma Q1 Results FY27: Date, Revenue Estimates - Univest",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5BaHhrbHhOa1VhN1BPVVNxdjVOaVlXbEh3eE13SElwbUhlRW9OWUxKaU81RFBvbkRabEEwNFB4dllXUFBVU3dJT1FUTTJNa3NQeVVoQWY3TzFyaVVvTkotaU9SNm9VMmVJ?oc=5",
+          "source": "Univest",
+          "date": "2026-11-23T08:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
           "title": "Aurobindo Pharma (NSEI:AUROPHARMA) Stock Forecast & Analyst Predictions - Simply Wall St",
           "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeVpZQmNIU1gtZ084VzVKMThUZXdReEl3ZDBCTVJxbGNQWGpMcFU3SGgtNWQ1MDJ2TVdZTDMzRUhnYThBbHl5UTQ5VjdiaXhya28xYzZxY3N6S29lNk9WTHRqcmFWRDBaQ0psSDg5OXh0d01kMkhoVVd6dkp0eHFOYWRnalowYm51LTd1N2pETHkyOXcxLUZRX0UtMW0ySDljT2Ew?oc=5",
           "source": "Simply Wall St",
@@ -1150,15 +1171,6 @@
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
-        },
-        {
-          "title": "Aurobindo Pharma AUROPHARMA Q2FY27 Results Revenue Record - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOGJMSkZHdUNDVGlwSWwtNTUzendoSVNiN0FXVk1xOUJhbll4ZWNEWHpoRkE1bGNUT25ZZ3lNYjB0RGpsUGx1MFFpRHVZSVY4enZYNDkzUWlTSV9NcDAtUF9XN3llekRmSUJwUEpWR185NG1Za1J0Z09RSDlNd1BoT0ZvdFpWRHZqeFdWOXk5UndaeUNYTGIxeEt1R2N2VldEeHZzVVplY0FvY295bVZGdQ?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-04T14:39:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
         }
       ]
     },
@@ -1193,6 +1205,37 @@
         }
       ]
     },
+    "BAJAJHLDNG": {
+      "headlines": [
+        {
+          "title": "Bajaj Holdings & Investment Shares: Volume, Earnings and Technical Readings - Kalkine India",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNUGJzejZmTVBTZnQ0UWdSeHVoRUZmcVJVdWYybm9FNFgzcGlMM3hSSjNia1lCU01IT21pWm5DUmJ6TV9oU0lxZW1DTjh2bkd4MzdRbjZnSGl3RWlmRmtmaHY2TUJZMHAyRmtXenp6cE5HeXZKbUlGNGx2a0pvZ1RpVlBpSWFhZVJWeDRJZmI0WU9oalF4MHdqb3h0bXltS0FhX0lrQ0I2VVU0OVNfSjY2ZkZTU0Z1MHFmMmdTU2dsdTdhMXVTQkF1VnRhMW5Dd2c5R3FHMldIYmdqT0pwMGRIT3pfYmZpRHBHanBCcTExSmlSODFiSXc?oc=5",
+          "source": "Kalkine India",
+          "date": "2026-11-24T12:49:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Bajaj Holdings & Investment Ltd. Share Price Today - Bajaj Holdings & Investment Ltd. Stock Price Live NSE/BSE - CNBC TV18",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdGhQbUV0amVoclB3OWw5M19KQ2NLWVRCRlZ1b08wVUFKbXlRQWlGd3hZUndhc0hrOU9oazdxZWJScW1XSUtEdkROakVMRjBtSnY3dlVqdGtNZ1RnZlJvd1lNQlg2TmcxZjdlYjd3MURvWGkwc0tNVFVXWmYxbTJPcjhadzlUXzVOSmNBZW5n?oc=5",
+          "source": "CNBC TV18",
+          "date": "2026-01-20T17:47:43.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Bajaj Holdings Q2 FY27 Results: Date and Outlook - Univest",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUWZJLUI0M0ExZ3c5cFZ3Ui1OVXgyV1ZPT3RaUmdaMXM1UUdLRXJKd0JuOFVzUVpvU296NV9uM1ZDRFBhY3BvV3VQXzNWNjd4QUNDSkFRVEFQbEp3Z0s2M05CTHlMU1ZoQV9XTzVGYlRSTEVTREhLNEJMYlJJbndTekE4Q2ZTZjJoanRVLXp3WDg2azlrdFFJUGhlYVZFM3c?oc=5",
+          "source": "Univest",
+          "date": "2026-09-09T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
+        }
+      ]
+    },
     "MARICO": {
       "headlines": [
         {
@@ -1205,22 +1248,22 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Marico shares jump 8% as company raises FY27 growth guidance; analysts highlight strong Q2 results - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQWU1pV2NablFWa1VZcmZwd0JhU2JzN1VaYUZxSWVONlNISEkyU1NyM05GYXpJRV9LZ1JRN2xNX2s5T1ZteWxmSFJmNW1tTmRKUXpDMnprX0FZZGRlbHhjM1dYRmlvMDlhbXBJTVctSFZrV2hCNXB0V05YMFZDaFpqMDFwcHNNR21QZEtOdF9OeTJqT1dvcEEya0lIQlFoTVhhcU83eFlvdEFPZTZfQ09mWnc2ZFVxYk5MVUl5aGlmaFY5RjZiQjlZbmR4Qk1GLXB1LUM4eklQUzRWT2xfS3FpLU9lRTdVaTZlbFhnYw?oc=5",
-          "source": "Upstox",
-          "date": "2026-11-02T08:00:00.000Z",
+          "title": "Marico Q2FY27 Results: Operating profit up in the mid-twenties, co likely to beat guidance - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTVFrbkNHUk15Z19XNld5OXc1VU9uVGhETFFtSmowNG5BNG5MWHp6akFqZFR2VlRIUnFua2JKOS04TTd6QTA2VmVfc2QzWWZERWpXUzU5SXI3WFNVUE9CX0ZGZmRBaWE5eEhpWjBvUDIzeEZhYzdCZE40cW1CNmVrZ0RaYU1lZTVPQmdHa01ZS3l1MDl1RDY3S2IyNVRzUktnUTJ3enA1eUV3cWs5cDRKMWotWlNVT3J1dTByX2ln?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-10-05T03:22:13.000Z",
           "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
         },
         {
-          "title": "Marico Q1 Results FY27: Uniresearch Predictions, Analyst Views and Key Watchpoints - Univest",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1jOFh4YW9NWlFxZ045bUpTWHd0SDBRQ3luNHJJSXU5WVp6T3REUUxIZ20xZWp4T3hId3IwMlk2SGYwbHhoQVdrNUdQbkp5MEZqLS0tSTdnSC1za3c?oc=5",
-          "source": "Univest",
-          "date": "2026-07-03T07:00:00.000Z",
+          "title": "News by CNBC TV18 on TradingView, 2026-11-03 — cnbctv:a264eeaa3094b:0 - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54bVlDbk1NVXdmUDdpZ3N6WkNMQ0dvUFJQVVdSajdaRVEtV3pTM1FjaWNKdklvSWJlWUxqTzRoQkVEbV9UaHlicHBEazJRcnNhdmZYWnVRdFRGUHlDSTdCYUo1S0VFN0k?oc=5",
+          "source": "TradingView",
+          "date": "2026-11-03T08:00:00.000Z",
           "sentiment": 0,
-          "materiality": 90,
-          "horizon": "Short term"
+          "materiality": 45,
+          "horizon": "Medium term"
         }
       ]
     },
@@ -1245,10 +1288,10 @@
           "horizon": "Short term"
         },
         {
-          "title": "Polycab India, KEI Industries, Havells: Cable & wire stocks slide over 6%; here is the likely trigger - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYl9sdkRDSElJWkZwSTJyUkZzYVd1WXFuT3BFc1ZoVTJpUXNoVkRoWndYaHVSYzkzM3VNSzBXVHVWOElmdENRWUZyZ1ZGcS1QdVNrY3ZIcVpsZ2ZNWkNiSklvTHZWa3N5NkJQekl1MGZKdzlEVmhzNGVSQ0VKVmRfNEdac2RDZzdCZW5UMWxFaHJQTUpnTjQ3SnFwWXFqQmw4T2V2TUdPNkJGa1lTZkJkd0hVLUs3Wlh1MlcxaWJ1SWljM0dnWWFpYkJEOGs0cy12eFBteHU5OEpyNzluZDhONQ?oc=5",
-          "source": "Upstox",
-          "date": "2026-09-01T07:00:00.000Z",
+          "title": "Analysts Have Made A Financial Statement On UltraTech Cement Limited's (NSE:ULTRACEMCO) First-Quarter Report - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQkM4cXA3UFRxNC1EbFh2LU9PU0tvZmNVRFNfY2hFeWdJT2xmamtXZVI1OXZ2VmIyZ3AwcXllb2V5bXdPaTRMSWtjODFTVE5nbUtoRncycXVTNjMzTjM1dnFTbkMwTXRIY1UycXVjYUxzSGhhZS1rS3NOVlhfR282S1J6Qnc1ekhMVGtjQVE2OG1wMFZjNkNrSTFiRVhMcWk5VzBzV1VySy1LcG9IZ19LXzdISjEtY3JkZ2dsSms3R2I1aUhIZFptY19SQ1pwTkpiNjkwQmhGbG5wT3Y3bFpWNldB?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-07-24T07:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -1258,6 +1301,15 @@
     "TRENT": {
       "headlines": [
         {
+          "title": "Trent Ltd Q4FY26 Results: Strong Quarter, Store Expansion to Drive Growth - ICICI Direct",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPc2V1ZkNQS1dGelIwZzdRME9NQnE3T1BFd0RGcXRkZU1HSmRnYW9hMUdnaGpvd0N2a1Q5SFJfMS1sRFhfa0s5VlRrdng4VGNVVGVIX2ctZFpFalF3MWgzaWNKdkQ4WDg4dU00RTdTNVp3RXpkaHZCZzNkT1ZGaVh6eEpjeTVEdnVNdlU2R3JpbXZORHFCY1VfSmY4Ui1BalRhSE4zVy16cG5NbEdWNWhlNF9laE9DUjNuTTJVQXlPSQ?oc=5",
+          "source": "ICICI Direct",
+          "date": "2026-04-23T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Long term"
+        },
+        {
           "title": "Trent Q1 FY27 Results Today: Can Zudio's Growth Offset the Margin Squeeze After a 19% Revenue Miss? - NiftyTrader",
           "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBianNQbVZzNXFHYlRfSUNkWVJOZTd4MzhpVjZzUTNfQ0Fha21rMTQxQUFDVFBGalFGdkF2YzFUM0pRUjNraWxHWUdkQURONHdQbXlfQUhYdFNkVUxIbzdxNjd3Mm5nbHA0aHdaMko4dGM?oc=5",
           "source": "NiftyTrader",
@@ -1265,15 +1317,6 @@
           "sentiment": 50,
           "materiality": 90,
           "horizon": "Short term"
-        },
-        {
-          "title": "Trent Limited schedules analyst meet for August 12, 2026 - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSjM2dVNOTGhvelUzR0hUTHRMQjhETTlhWWxWRXZqX0RzdFBsUjA0d3VMaTZkTmxLNDRrcHVfdTlFR2hYZ1kwTWhJdWpxQ1Y5Qms2THpVTWN3NWRFX1VtNk9MS01HN2tFVnRrRXl3YVR3U3RVRzAxLXVlMnAwWEFHSmI3TDBvdUZOeEZidzNpRnBhbHQ3N3FsUS1MNVBFWUxnR1poV3dfalpNM1pUaHRDMXdn?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-08-07T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
         },
         {
           "title": "Trent (NSEI:TRENT) Stock Forecast & Analyst Predictions - Simply Wall St",
@@ -1298,13 +1341,13 @@
           "horizon": "Short term"
         },
         {
-          "title": "Bank of India Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lenJ5ajJzdFpYRnVXUWFIUXFHYVllTDhhX2ZaZEN1NU9xYnhuenFPX25NVVZybU9OUkg5WFI5bFpGdnJ5MmQ3QVBDRVhfcTFEa0FqNE11dFI5Q1h1UG5IS3I3dTc?oc=5",
-          "source": "Univest",
-          "date": "2026-04-14T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
+          "title": "State Bank of India Q2 FY27: NII Seen Rising 11-13% - Multibagg AI",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOeWxOWUFhQWtCWTVDb2FrQmVKdzl6d256WFQ5Z3dXcFhiZXlNb01NVGNIZ0JVdmdtcGs1aHQwN2l2aHIzc3d0Umw1dXREb2FpcENleDNGcVYxMFZmSENvMWpYaTFiWlVCVlc1VTZ1NlM1bklWZXUzTVBIQmtUZE1Tbm1rNDBGc3hDWTBYWWtKckRiQ0xiVkliU0tkYXpseDhERXc?oc=5",
+          "source": "Multibagg AI",
+          "date": "2026-11-03T08:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
         },
         {
           "title": "Top Small Finance Bank Stocks in India 2026 - Groww",
@@ -1360,22 +1403,22 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Lodha Developers jumps 5% after Q1 earnings; Nomura retains 'Buy' with Rs 1,250 target - Moneycontrol.com",
-          "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWjFoWmhZa3JYd1hXODBSUnhiRXlHc0l1ZzBUc3pyWUJvQUR1VUk5b1JjWHdJWFRwS3NUbXhxNEVYTWx0bTlScmh6R3NadzJrek9GT0UyYTBkak1ZOGQzTXBEdHhRY0g0Q0lqZ211WmpuR0ZEemczWnVIX2lyUjhsSUNfaVBnbFd4Q2ZBWjkzalUyVHVxN2xWNHR5cUd0ejJ2Ym81NDFtYll2ZGVvTi1fajdOTzZLdVppZ3Ffc203S0FfSFlQNC1Fano0eUZVdDNCVEpKbEZfUVduM0pOOEJz0gHkAUFVX3lxTE5CbnY3ckxrOHJMekhsMzZCYjZkZTdqdmZRSWdvMnhIVUNnVm1iWldla3dXeGlSR0U4cmZkMGF1TXlHTmtBOEpueWpsbXBPX21QbEdrTVB6dWc0WUlJZU5fajJhM3I3ZTFtZ3NIbGxzOVFZZzdKMEprajNWa3Zlck1EN2hIbmdVVGZHNER5WEl2UVNFTzlKaVBCajZZWERDVnhjVEdId2ZVU0x4YXVfcEtXZFczT0hERDY0c2pBZXY1elVWcVRSanBSQXZmVTNMaThQVHpPTk56OHFMUjlPX0dlRkQ2SA?oc=5",
-          "source": "Moneycontrol.com",
-          "date": "2026-07-27T07:00:00.000Z",
+          "title": "Lodha reports strong H1 results, anticipates surpassing full-year profit guidance - TaxGuru",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVHROTkU2VDd0ZHVWLU9NV0VnVVVQbE03OUZDanBveEZLT2gtRzk0a1V1LVplcU5JWlNualR2cXZIbG9rZDUteU41YXcyNjdzVGNuVzdVcE1wR2dXVFlua0ozM25IcW9zQVktbFBLMlRIemxSMDYxWDItWjFPaTJ3OEMyRTZ5QTNaRTZCeUlPZXlncWlkb3FuVFR1eTNrVC0xRlNQUEhOQmtNb2JDTXJxNVVpdTFyMUprWWFaQnd3?oc=5",
+          "source": "TaxGuru",
+          "date": "2026-10-30T07:00:00.000Z",
           "sentiment": 100,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Lodha Developers Q1 Results: Board approves unaudited financials - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZU55cFFtSG16ZS16d183MnUxdkZEMlV1S1ZScy1PV2pxUHpTdnIycTBxZDBSZkhHLWtodUFhXzFUTWp1VXVZcWRWeW1BZ29FNmVfQzFmS0Y2MXpmMFNxdW5OQ2phbmJheEh2NEJRWDY5Rkl0STBiZzJ2R1plM2dqTGRnZFlpWmtXR1UyXzVMU3JIU0VIOXAxN0tGRzJxWk52SjBLa29JZTBRLVdoYWZ0cXpSR1Zxdm1tVlpIMw?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-07-24T07:00:00.000Z",
-          "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
+        },
+        {
+          "title": "Record Profit, Lower Debt and Delhi-NCR Expansion: Why Lodha Developers Is Back in Focus - NiftyTrader",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTE5aLUVQZFp0a3oyY0w4cWVieFI5dm4tTW12WU1xYWt6TEJoQm9NbEpEWHRBcGtNQ28yQjkyQ1h0SXJlV0dKY2RvbHFJN1U1ZDJLdzNJTnlzSG9TeVBjMU5oWm92dEdVVE5PdVpzOXRQRXlBbFRFN21RSVFSYW4zaGV2SlVuT0c2OThF?oc=5",
+          "source": "NiftyTrader",
+          "date": "2026-07-25T07:00:00.000Z",
+          "sentiment": 50,
+          "materiality": 70,
+          "horizon": "Long term"
         }
       ]
     },
@@ -1394,7 +1437,7 @@
           "title": "Adani Ports shares gain 2% after Q2 profit rises 18%; Emkay, Jefferies raise targets, what brokerages say - TradingView",
           "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQa1dvUGFXeUFkbmxCNDQxMTd5eEN4Nm5Sd0hkT2hRSEFBXzhjQ0Y3LTVhV1Jxb3Z1dXNWWGg0VHBnTERRYkN5XzdDcTRUcUl5N3Z2SzVDbnIyZWU3c1RqLW9Ddl9JM0xadWNYVmU1S2N6ZlV0bldXbFFvaXhxVll0dV9GYlplZ2pLN1FaRWNQVm5CRkNNT25XX1g1elQweWN0RjJHVGF1MXFOSEJ1cGJTUmhUaTNaVG50TDFlazFfcFVuOHpRT1dOT1F2bXRxOTd4ZS16SWVWUXpVSnE4TV9ZYkJhek5rd3RfTnYyQTVEZS1wa3lSM3c?oc=5",
           "source": "TradingView",
-          "date": "2026-10-29T07:00:00.000Z",
+          "date": "2026-10-28T07:00:00.000Z",
           "sentiment": 100,
           "materiality": 45,
           "horizon": "Medium term"
@@ -1422,27 +1465,36 @@
           "horizon": "Short term"
         },
         {
-          "title": "Canara Bank Q4 Results 2026: Date, Revenue Estimates, Key Catalysts & Share Price Target - Univest",
-          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5EQnhlNHVTTlVlLXlnaVRudlVCUTBPTTNwclVYMlRDZnA0SnE2MUJiOVhCeUN1WUE2UVQ0ZXJTZTk1YmNPQ3ItRnVDUmVRZDdkZnZ3YnFybmRJcXpSRWd3c0tR?oc=5",
+          "title": "Canara Bank Share Price Target 2026 Forecast - Univest",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZZTFlN1VTM3VkY1cwZTRqakZHcWNyR3NzRlNmUXplSzY5SFRxWUswOHA5ajVJU1ZsNVVjWnNZdXQydjg4OFNsOU9keG9DNW5xd0w0U0NzczRUSGpwdWk3QVhjdWFJQXp3UmNvNA?oc=5",
           "source": "Univest",
-          "date": "2026-04-02T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
+          "date": "2026-11-22T08:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
         },
         {
-          "title": "Q4 results: Canara Bank, JSW Energy, Indian Hotels Company, UPL, Abbott India, PVR Inox, others to post earnings on May 11 - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOV0RkUGtQczNwby1ibjVZQVZYOXEtYjNRSnNrdEF4cXdISVAwU04yakJGTURmdzRUeVlKOXRoQi1jSnlJVmdiaFhfaXVTODdVZjNsR21ST1Z4c0ZBdHdVWklCSVRDLTB4WC01eGNfNlRvX0JpOWtUakN0V1MzekdmN3FBd25XdXQzWEFPV3p5VmU0Y1lWdlhHNmdxVDVCR3oxQTV0RFZzeFVhVEdxdnZWR2ZqRE5jVVQ3dV9WbnB1MGxSNm96blZRV0E1QmFHS0hGUWFNc1VhTWRUMnUzSjZ5NjZaQXdMQVdWSFA4UHlodkhkRWNSaUdRNGFhTkpEWTl0NmFmMkw3RQ?oc=5",
-          "source": "Upstox",
-          "date": "2026-05-10T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 90,
-          "horizon": "Short term"
+          "title": "Canara Bank Q2 FY27 slides: record profit, crosses INR 30 lakh crore - Investing.com",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQVQtVnNfaFByVFhkNHA3S1Z6aTdMdlhSUWF3ZEEzeFpfT0o5ZmZyeEVUQjByMFZadm9jSWU0NGFCMFJIelhEQXJOVy0tNzV1NFJKWnBjcUdsTmw5bjBBVjVPbEVDX05DZUlNSW42eXI2Uk1RckR6bGdnc3UzR0F4MlJCa3Y0ZU8tQ0pVbThCR3lQbUV3REtmSWFJbU00QlVWWkdXVkRKalpFa3NFcThhQlAxSE9oTTZfbnJvclFsWXQ?oc=5",
+          "source": "Investing.com",
+          "date": "2026-10-14T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 45,
+          "horizon": "Medium term"
         }
       ]
     },
     "PHOENIXLTD": {
       "headlines": [
+        {
+          "title": "Phoenix Mills Q2 FY27 Earnings Call Scheduled 31 Oct 2026 - Kalkine India",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMkJCS0g4b0QtbVlrWl94a2MycjZVbGJTNmVtcnd4Y3U2aEZPNGN1eHhxWVpqWmUtTWRiZGNFNXdvMUJOTC1kak1MajhtZGpLTkFhX1AycFpwTlFxLUxoVDQyXzZBZjFUS3kzVnZiWEFKeS01WEM0Q1h0ZEpGZEpRWEFRb1hPNDZmb3Q4X3NoaUZNejZnbDNZdUdmdXZMMDFIX21WbkpRWExoWFVkaUJxem5xY050c0pkZzJj?oc=5",
+          "source": "Kalkine India",
+          "date": "2026-10-26T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
         {
           "title": "PHOENIXLTD Share Price Today - Phoenix Mills on NSE/BSE - scanx.trade",
           "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE56UHFHNnh1MHdRRmVueWd3Vy14ZFVRcGtTRWttUlZZM2dQNHQ5ZFBvS2d4UHJmamFaUlM2UEFaaEg1TjU4anVDOGkya0twQ0V3aGh3TGQ4Vm8?oc=5",
@@ -1460,29 +1512,11 @@
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
-        },
-        {
-          "title": "Phoenix Mills Q2 FY27 Earnings Call Scheduled 31 Oct 2026 - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMkJCS0g4b0QtbVlrWl94a2MycjZVbGJTNmVtcnd4Y3U2aEZPNGN1eHhxWVpqWmUtTWRiZGNFNXdvMUJOTC1kak1MajhtZGpLTkFhX1AycFpwTlFxLUxoVDQyXzZBZjFUS3kzVnZiWEFKeS01WEM0Q1h0ZEpGZEpRWEFRb1hPNDZmb3Q4X3NoaUZNejZnbDNZdUdmdXZMMDFIX21WbkpRWExoWFVkaUJxem5xY050c0pkZzJj?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-10-26T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
         }
       ]
     },
     "M&M": {
       "headlines": [
-        {
-          "title": "M&M Q4 results: Revenue and net profit could see double-digit growth; focus on sales volume and dividend - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNR1dZeHVDaTY2TlRvRGV2enBUNUh3TFFyZUI2dzI1dHZxQkVOQ01xVEZuLVZPRFRDRnNTOHdibGh2TDE5UlptUm5vSGJfVVZuTDdlckNIelNkX2Z4RlZKenplQmhzUEF3dUxONDlIRG5TalNaajc3X0R5Z3d0c1BQU2pXWlZ1cnRBQl9McnZYU1MzN3ZrOVY5dkdwRHZteGtLTzRoeU5jNzNtd0dGSmtvcl9mamlWejdsZ3N5Zm9lZlVpN2Z4TU5GU2NjdmFZc25YOGc1VS1vYVZVRmh6dE1Xb1NzTzhKMkMzbjRKZzdma0FINlBqYzV3MWh6NA?oc=5",
-          "source": "Upstox",
-          "date": "2026-05-04T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
         {
           "title": "Brokerages remain cautiously optimistic on M&M post Q3; stock down 2% - Business Standard",
           "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZlNjR3AwMGlEY1hIclpNSkNjVzlOeGtIeXZDN1RYUnNGOEFVQmhkU091RmZIUHFqMTQ2WFE0ZG5teFBNZHltdHJwRjdpNlZIUXBwdW1ib1BudFJQam16UXJWSnp3bWhkX2ZvSWlJZHZYeVdLazZaVExhekdpTlVyR2JYSTFDQVlXT0MwSnpKV21ITGpmeDJndFppRGJqaU9hWF9yQXByd3FPcXp3Z1NRc0JaZ19TLVpnOWMtQ0JtM0c1bkZyU1N5Q2s2ZGQ1Zi1ZMnNaZDlSRdIB3AFBVV95cUxOa1ZibS1ZbEstM0F0SE9pdHluelE2TmJpZENiRjByb040MUE1WDJsaklrdHR2MzJ3TUIwQk9fUHlSZkpFOEtZajBuVUI1ek9UUWQ3TEMxV1E1a1ZoOVcyQVI2WGFlYzE4dVVuWHhwcWxYdkJLVm1wX05hWDI4MEFHRGxXM0JnWnM3Z1lmQXVmRzNpQjg4eGpJVzBHVldzaHlEaHpxZnN1d2U4TkFWdXQxcnZRbWVwT3pEaloyd29XVU1pOG94RElCT1daTFFKT0lIMGFWSGhFbmlpVUhJ?oc=5",
@@ -1500,20 +1534,20 @@
           "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
+        },
+        {
+          "title": "M&M Stock Price and Chart — NSE:M&M - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5jUm04NW9UVi1QellVMkZBZ094ejhZMTZ4d1FaYmhSRUtJM1ZQa3k0c0FzOWZnaW8wNDNXd2NsMzlubUF4UXZTdHExSFNEQVYxMVUtMmR3bw?oc=5",
+          "source": "TradingView",
+          "date": "2024-12-19T14:53:17.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
         }
       ]
     },
     "OBEROIRLTY": {
       "headlines": [
-        {
-          "title": "Oberoi Realty Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9iQnRrcVh5RnhaN2EycjFwZG1rQkNHRVdibHA0M1o5ZllEUXh1VXk0YkJkdktMMG5ZWjlKU2tOYkduNk1jdWpOV2JBMjlfYWRHQ3RlRDY0QktvUWlnbkFXV3V3elM?oc=5",
-          "source": "Univest",
-          "date": "2026-04-09T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
         {
           "title": "Oberoi Realty Limited Estimates – NSE:OBEROIRLTY - TradingView",
           "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1rRHVtWWtoYkNJczkzZnFQSFZnV3pUaHJQWmRSZ0dWV2tNbGx1Ykw1TUYzeEZqeFc1OGhTY3cybUt6dThWTTFsUm9NUndrZFAyWkJKbnB0a0VQaFNsQlcyc2NyNnVybnVNN1l5ak11ZXlWb2RiZ3ZMZzVIQVQ?oc=5",
@@ -1524,13 +1558,22 @@
           "horizon": "Medium term"
         },
         {
-          "title": "OBEROIRLTY Share Price Today - Oberoi Realty on NSE/BSE - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBGMjNCQ09laUVQZVhkSWJ0Zkw1UjRNcGU5OEFhV25Vb05qXzVINE1NYUFHX3dDVmxDQUUwazBlQ1Utd1c0eU5jcjBaWWtFZ2cwb3duVmtsU3U?oc=5",
-          "source": "scanx.trade",
-          "date": "2024-10-16T20:35:00.000Z",
+          "title": "Oberoi Realty (NSEI:OBEROIRLTY) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWkEyRjVfRDYzOEduc1I0QUcydHYxZzV0T2pHaXV0bmNMZDltUkdlMTB4MGV0VFI2THhFN2pRVExxTllvVktCemY0WnBuWGh6djFQTW1Bc1ZVRWpuR3R0eE9hLWY0d2hxRTR3cEQzbzFhWFo2X21iUFBZaXB2UmNMRC1vd3M1dWIwelY2ODBJQ1F1U01ObXBHZU5PN1EyOU1QY2lRRjU3UlVQeUlQMlBMcDNrTQ?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-10-21T07:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
+        },
+        {
+          "title": "Oberoi Realty Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9iQnRrcVh5RnhaN2EycjFwZG1rQkNHRVdibHA0M1o5ZllEUXh1VXk0YkJkdktMMG5ZWjlKU2tOYkduNk1jdWpOV2JBMjlfYWRHQ3RlRDY0QktvUWlnbkFXV3V3elM?oc=5",
+          "source": "Univest",
+          "date": "2026-04-09T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
         }
       ]
     },
@@ -1577,11 +1620,11 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Hero MotoCorp shares gain 3% post Q1; Motilal bullish, Nomura cautious on growth - TradingView",
-          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSkRzWmZTU2dPYkl0M2FKRm92bC1DTl9KOXFBRTRYN2VJdm9Eb2x5NThzTVBud1RmcXplYjN4NEVSUDJHSExxd0E5T250SUFvMnlmYzE0X2RDc01ISVRqd1A0V1Vxc2ZLOXU5SU1PalVxQmhUTkdabmRqSllNQ0xCN2dyOG84NF9NTnhMc3ZGSzF0WElKM1V3SC1mbTNWTC1USUVKUkdhQ0stVUVRbGNPeGRMZjBOSjA0SUF6NUpPRnY0a29EeVV2cC1DV25GWEZfTEZLem91Zw?oc=5",
-          "source": "TradingView",
-          "date": "2026-08-09T07:00:00.000Z",
-          "sentiment": 100,
+          "title": "Hero MotoCorp Share Price Target 2026: Analyst Forecast - Univest",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5QTmlHb09UbkUzZHhOSGgyMjFvOGVtQU8tY09YYnRvTzNQNkhSUjFzN3ZQY0lDczNuWUdINTB6TDhjZ21FTk9fWEM3SXR2dWl0MEVuRDl6S3c1YU00Vk4tWHFtcy1kYm1BbjQwUmhDNA?oc=5",
+          "source": "Univest",
+          "date": "2026-11-23T08:00:00.000Z",
+          "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
         },
@@ -1599,6 +1642,15 @@
     "MANKIND": {
       "headlines": [
         {
+          "title": "AUROPHARMA Share Price Today - Aurobindo Pharma on NSE/BSE - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiQnJ4d2RVNERQTFY5NU9XS2dVZkkzQnl4SzFoNmQ0d2dXTUJDZHpPU2VNQWNEbHVUeFBQcUJsZktLQWxnQjdvZ1g5MVBCbWp6cnZlb2RtR2JQUkRv?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-11-22T17:54:21.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
           "title": "Mankind Pharma Q2 results: Profit rises 39% YoY to ₹711 crore as operating margins improve 300 basis points - Upstox",
           "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxONTJnVmlaeEVhRE5SUmRjbW9oQ19zdWd6QzdVbjFqZTZ6MnpzaTBWUldtU1czN01nZENFdWZxOXVGSFRaaUpVYWxtNDRISnU1eXBQMVppNzhyUzdRQmVxVHkwSFlLdGR1VG5rdXZZemxzM3dqam1nOGVKb3JDV3hUSWtuQTJ2WDU3Tm9aYlRGVUlYZEotb09zVEp6ZVJJRmRFSFZYODIxeGowbmlERWU3YnU5c0F6V1c0WlpVbzE3NlYxMVVieTBfdElZbzhvcUhqM05RN1NGaTZsRHZkcVVkOGF1SEVoLUtkbFJWem40QWNNX0t2dU9YSVZB?oc=5",
           "source": "Upstox",
@@ -1608,19 +1660,41 @@
           "horizon": "Short term"
         },
         {
-          "title": "Mankind Pharma shares fall 6% despite 30% Q1 PAT growth; here's why - Business Standard",
-          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVUk5M3pQZkFrbEJ4WmFYVGVVTjA1R1ZGVlBmYlI5VWtQOFRwVzFiaWctVzRNN2ZKdkd0d1dndUhTeHZHdk0tcXctQmV4b25NSm4yaFFvYWE0SjhVNk1RNHZYd2txSV9ucHYxS1owcWlLZGZOeVB3LUE2WlBvNUNVSmxTYTZUWWc4TUpVZVJsSkxSdjdsSFk4blJJM3BOaVZJMjFlenF3RzNsaUdzXzJvT04yb1c4QWdtZXQzdWRkbTdPTE5zeW5NSW4wZ9IB0AFBVV95cUxQN19DYzhXdGcyVG9DcmxDZ1RFb2txbzdteDlOX3l4dW0yMzZzRUc5TlFwOG5CSVZuX250SWVEUjNiempsaE9WcE03V2N0X1c4bDNkajJ2NVUyVUFUclRlN3V0VVNrZGFmYUhTRW9JTkowblZWTUNPR09UZXJwb2N3NG9yRThvWWFJYjhnMUd1LXM5ellQdHBFZ0EtMy0wekZoM0gxamN2dlpOWkd4enJ3eDRCbkF4Z2J2LXZ0WDZ4LUxZa2lSSGxGOVBUaGwtazl5?oc=5",
-          "source": "Business Standard",
-          "date": "2026-07-31T07:00:00.000Z",
-          "sentiment": 33,
+          "title": "Nifty Pharma Hits 52-Week High at 25,043; Mankind, Zydus Lead - NiftyTrader",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc2lVZldxUGVsaG1fMEVBbGFkNVRid0U4cko4OUpBSWtHWkxHaVRsUDBfOUMwZkRPb2lTYWVQRVNrNVZLa2JMYkFWaEZrUHFmNTdkLW1JNENJY092N095UHNLV1AxbG52T0JSRXlsZnRnNUVyRGNwcTdGYW1GRDJfQg?oc=5",
+          "source": "NiftyTrader",
+          "date": "2026-05-20T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 45,
+          "horizon": "Medium term"
+        }
+      ]
+    },
+    "MARUTI": {
+      "headlines": [
+        {
+          "title": "Q1 Results This Week: BEL, L&T, Bajaj Finance, Sun Pharma, Maruti Suzuki Earnings Calendar - Kotak Neo",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdm1HSHRfcVBHVkJNQWN2TFU1QzR1cXU4TnpXcXZ2Ylc0em5RS3M5YnlmSFNlVmtrMXFqY1FOUjZ1TkxkQXdhZzRXdUlMdWNBLVlqWE9ic2Y3OGpPMzNVY1RWX0x5MURBSUVFTW1ZeWExNEoyeXJpaWw3R3daVXh4YnVUMTNXRG93WEpFQ3p2UmUxMkRPNVBKMU9tUWItaDF6dkROMXNWYllRZDVpZmRQN1JWTEJZaGR5M1AxZ2QxZw?oc=5",
+          "source": "Kotak Neo",
+          "date": "2026-07-27T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Maruti Suzuki shares fall 2% despite robust July sales; here's what weighed on the stock - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUjNTak4yLVphTGVxMExsakNsd1cxWTZ2MHhDYnk4NzVnazhkTXZGNlJkaHZOYXNtLW85VUcyZVU4enNXY1JkVDAzakNjZ2E0TWt3YkV3WUhPSjhkcm85QnhiSUdNR1JTaVNjYm5oTnc3OE1PYmloV0QtVXNPa3VpSi1rblJtY0toZ3pwVFR4X0dnN1BPZXVJcGd6Y3R1bVhOUHdod1JvMGRYY1NzTEtSTlcyLVB2Q0ZCSWhySjZNenZVckN1eVAyQWEwX0tBYmlERkYtaGU5RUZVREdvbVhzdkFsMno3dw?oc=5",
+          "source": "Upstox",
+          "date": "2026-08-02T07:00:00.000Z",
+          "sentiment": -100,
           "materiality": 45,
           "horizon": "Medium term"
         },
         {
-          "title": "Mankind Pharma (NSEI:MANKIND) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdmZPSjBacUpGTjF4NURiY1pHWGpkNXNWVHJoVWozdW1NUVNuTjhXTjdYWTdpZ0w0WHBjbHFDQVVkNElOQVBBVnVUSlJyODFUVllHbGNTMGFlS2Z1ajFWZWJTa1hvWVRmNnR4aTdlZkNXdllib0NnSGFVSzhVaHlMa0RHd0VJVGF6bWVvaDlJbDZ3MTNLUVI1RTNxSzg?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-10-29T07:00:00.000Z",
+          "title": "Maruti Suzuki India Share Price Target 2026 - Univest",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFByY2hfQmNHZ0h2Um9EOXY1dnhmQ3A2eDhkSEZJMXNfY1NKWV8wbGllTFRja0hLRXBzT2hyYVVPbWlBdExPdXEtNkhxUjRmYjliLTJiNmdOWTdod0pCVFBzaE4xWkVETXF3VTkzUVNEVHlMX0FkUllr?oc=5",
+          "source": "Univest",
+          "date": "2026-11-22T08:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -1630,13 +1704,13 @@
     "RADICO": {
       "headlines": [
         {
-          "title": "Radico Khaitan Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
-          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5SblhWYTZkVkpINWZuYlQwWlZXTEJfNUd5LUNNbkk0RlBiVGJSWlBkTjBYb0VDMFpyLWdPYzVFeWMweThPcWw2YUZjTVBGaW5rR2RHQkF3cTdNV21pbFhOWmNPd1NudDFuTm02V0pRVVA?oc=5",
-          "source": "Univest",
-          "date": "2026-04-29T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
+          "title": "Radico Khaitan Limited Releases Q2 FY2027 Earnings Presentation - Multibagg AI",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS1ZvNFdJSWRrYWNWN0xfQU1ZOFZ0YzAyS1VHdWx6dVZnMHJQZnU0dTBreTBtcFNUNXBud2JMVVR6WlJqNHdnU01jSHlDMXBWOFFhR2duaG9tQ2VXbGg1YWdGQ0p3d19jcWMyQVpoeVprem41bDBva25neVQtT1poTTJuaWdwM2NwNnE4SmFqVjc3aV9CclduSlZ3eXZHMlNfWjI5a2NudWF2SnV0UjBn?oc=5",
+          "source": "Multibagg AI",
+          "date": "2026-11-14T11:46:08.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
         },
         {
           "title": "Radico Khaitan Q2 FY27 result: Net profit grows 66% YoY; firm upgrades premium segment volume growth guidance - Upstox",
@@ -1648,13 +1722,13 @@
           "horizon": "Short term"
         },
         {
-          "title": "Radico Khaitan Q1 FY 2026-27 Results: Net Profit Jumps 76% To ₹229.6 Crore, Revenue Up 10.4% - Kotak Neo",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTTBBZzVLYURoRWxnaUdhYW4xMzFZOUNmNTBmdnFOSDkwV1VkcEFaSTBTWXhOTWk0MTVUZE9kdFVuUUdtMm5hbXJGWDBQMmI4UXpFV1dfcFZnTzZkQjNfV1pjWWo3U05mdFZkNEx3ZzVOZWtjYTd1cy1pNG9sYXhXQXJHQmlXTWE5VV8wbWo1OHBqdWd4WUNyUw?oc=5",
-          "source": "Kotak Neo",
-          "date": "2026-07-28T07:00:00.000Z",
+          "title": "Radico Khaitan upgrades FY27 P&A volume growth to 30%, sustains 20% EBITDA margin - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYTYxQkRiNWVNYkRQZ1hwSXJvX2V4MGdmZ2N4UTluTjZ2eERlRUZEMHBtY01oOUF5RGdBOXd0NnJ2bHRweXhNZ3RFR0tLSG9RbFBQRTJOTE5COGJxUThfejlmc1NUbFctYmdUdXdpemRGdGVvUUxTS0JZaFYzZnRVVTNaY2FpY2ZDbnY0MmdlTjJlZmVJYWFpZDQyeVhoVGtycUlHSTg5ODNWNXNycmRkRDUyeDRyVXM?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-11-03T08:00:00.000Z",
           "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
+          "materiality": 80,
+          "horizon": "Medium term"
         }
       ]
     },
@@ -1692,15 +1766,6 @@
     "UNITDSPR": {
       "headlines": [
         {
-          "title": "United Spirits FY26 Net Profit Rises to ₹1,830 Crore; Dividend of ₹11 Per Share Declared - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPR0ZiOUVqSEc4a0JDenp5S2QxSkxudFl2bVAzcmtaOFR3MkcyZDVuc3FFR3BzaHlQLW9YdTRBQTZXbFJRUDlFU2RuTTBZRmxfc0plUWlJYWlfQ0Q1VmJUQVBRR1FLeGhLYzJRa1lMbjdGc21tS29mVWZfOW5ic2hwdDlXSURTdVB2dGRjb2pzbFl4Rmp2eWVGMHR4TFU3Zkk2Zm1oR0JKdDQ5UzM1V0hNNmpJM3Jhd2lqQmtkblBCb1hHenQ1NGowVmZnRGNxMjVCRUhpd0xUNUE3aW05Ykxpc1RYMWJfNXh3M1h4S3BDUWw4X0RjdDJkeQ?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-05-14T19:43:52.000Z",
-          "sentiment": 100,
-          "materiality": 60,
-          "horizon": "Medium term"
-        },
-        {
           "title": "United Spirits Limited Estimates – NSE:UNITDSPR - TradingView",
           "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5kTmdQMThWa3R6SnRyejR1TzNaclFPalVUU3FPZUxIc2hiOFlQVVBCRTNkSDJBVktLdE1tY3hnem9HUFFkTHpxZGN1NmlmOEZKSUhRb2xSSksxSlBoRE9qZkN4YjVOeUI4Mzg4b013NHkzNjhEWFZxdEhR?oc=5",
           "source": "TradingView",
@@ -1710,44 +1775,53 @@
           "horizon": "Medium term"
         },
         {
-          "title": "UNITDSPR Share Price Today - United Spirits on NSE/BSE - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VUDdGOWdTUnhUd2R2T2VTOVUwU0VUbFI2WWR1Z0xOeEJzNl9SZTRhb2RuSTg5cHVsMW1iTlFBVHFSSFk2ajJJUElYX3ZrNnd6Nzg2bjlJQ1FRUQ?oc=5",
+          "title": "United Spirits FY26 Net Profit Rises to ₹1,830 Crore; Dividend of ₹11 Per Share Declared - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPR0ZiOUVqSEc4a0JDenp5S2QxSkxudFl2bVAzcmtaOFR3MkcyZDVuc3FFR3BzaHlQLW9YdTRBQTZXbFJRUDlFU2RuTTBZRmxfc0plUWlJYWlfQ0Q1VmJUQVBRR1FLeGhLYzJRa1lMbjdGc21tS29mVWZfOW5ic2hwdDlXSURTdVB2dGRjb2pzbFl4Rmp2eWVGMHR4TFU3Zkk2Zm1oR0JKdDQ5UzM1V0hNNmpJM3Jhd2lqQmtkblBCb1hHenQ1NGowVmZnRGNxMjVCRUhpd0xUNUE3aW05Ykxpc1RYMWJfNXh3M1h4S3BDUWw4X0RjdDJkeQ?oc=5",
           "source": "scanx.trade",
-          "date": "2024-10-16T18:33:04.000Z",
-          "sentiment": 0,
-          "materiality": 45,
+          "date": "2026-05-14T19:43:52.000Z",
+          "sentiment": 100,
+          "materiality": 60,
           "horizon": "Medium term"
+        },
+        {
+          "title": "United Spirits UNITDSPR Q2 FY27 Unaudited Results - Kalkine India",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSUkyWjFJcTZQdWtxVWFnVTF4d0NpU1VSN3Z0c0VpV0pOSVVqeTdOQXBub3pYLVN6UWZLR0hXdXBMSzV0bEV0Q0N5V2RfWE9Xb25vV3E3QlpnQ2JGVFl6VjF5WG10YnhDc3hQQ2hwQlhSV2lBUkpfMkk0OUh6RDVMWkQ4NDlqa0ZPUmRrWk84eWZrWVBmckp1S3AyQ1dDNURMdFI3eDlJdXNDRXJPQk9JVzJESQ?oc=5",
+          "source": "Kalkine India",
+          "date": "2026-10-29T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
         }
       ]
     },
     "SUNPHARMA": {
       "headlines": [
         {
-          "title": "Sun Pharma Q4 Results 2026: Date, Revenue and US Specialty Preview - Univest",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1jOVQ1aklOQ1RvaXlFeEg5dnZCUkhVTU02OU1aNUJNZG10a2VsUjFEUTNUWm9QQWZMM01OSnMyTVNadkVyY21mUzZlN1JCWTJlZUxPa1NINXVscVdUbWwya3hMbHYyRmIzckNzSGFCOVJsUG0xOUxwbGt3?oc=5",
-          "source": "Univest",
-          "date": "2026-04-06T07:00:00.000Z",
+          "title": "Sun Pharma gets NSE, BSE nod to reclassify Valia family as public shareholders - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdDdKSGk3Umd4NDczVWhOZzRMNkJ0UHA1czhzeWtBZ29TMnlZcnNYNngwd2NLZVlQaHAxVGM1cU1ac190NnhaQ2JfdkV0dUwzbnloeVg3OHFQeXYtVmMzWW4xTk1GZE5YSkFIeXpWQkZYN0MtaDNJQ19rbHBFQ0huX3hKaWpMU3V2Uk9zZGtYckVDQ3Nqd2c0SnNVQ3d3Sm9GM0pJLUhYdk1sSFlVYmZlcmx4Q1BwRmtLRmNmWHpkUlhiaFZuRzFrVlMxd3VPdmc?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-11-21T02:00:45.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Sun Pharmaceutical Industries (NSEI:SUNPHARMA) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRWFJSkFuWEt6TUZRRXh5YnF3d3Nna2Y5c1pqY3NJQ0gtdzhaaS1ucFI4M2o0VjNiQWNmbU82WVdMelVtcW1JWHNjbmlpcHAyZUdJTTkyU0hPOXJrcnotMl9RV0h5bkpJMU9UOXZ3cU5vbU44VjQyQTVUZk5PV2d3V2g5TGtVMjl6eDdKcTJMWGwxR3R3QWlzTzh1TzZUWTc1b25yWkJEMkdGVk1PUGdMQzRmTQ?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-11-21T08:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Sun Pharma Q2 FY27 Results Oct 30: Will Profit Cross Rs 3,100 Crore? - NiftyTrader",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9JMlROOHI4dFo5bTc0SVp5TEhPc2ZSdHlzX2tFVUllOHpiY0hzZ0YtZEhoZmZtMnFtR3lubzZxUUVUR1hXbHVfNHp3bFB6NXFsaFFzOG9Wa1pvNnhuT21oeThIcEZpX1FBVjgyZ3AybktOTW01c3RsTg?oc=5",
+          "source": "NiftyTrader",
+          "date": "2026-10-30T07:00:00.000Z",
           "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
-        },
-        {
-          "title": "Q1 Results This Week: BEL, L&T, Bajaj Finance, Sun Pharma, Maruti Suzuki Earnings Calendar - Kotak Neo",
-          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdm1HSHRfcVBHVkJNQWN2TFU1QzR1cXU4TnpXcXZ2Ylc0em5RS3M5YnlmSFNlVmtrMXFqY1FOUjZ1TkxkQXdhZzRXdUlMdWNBLVlqWE9ic2Y3OGpPMzNVY1RWX0x5MURBSUVFTW1ZeWExNEoyeXJpaWw3R3daVXh4YnVUMTNXRG93WEpFQ3p2UmUxMkRPNVBKMU9tUWItaDF6dkROMXNWYllRZDVpZmRQN1JWTEJZaGR5M1AxZ2QxZw?oc=5",
-          "source": "Kotak Neo",
-          "date": "2026-07-27T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
-          "title": "Sun Pharma slides nearly 2% as Ilumya concerns weigh on analyst estimates - TradingView",
-          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV3dTYUo5WFpoaE00eHVaV19kNDNNYnY2d25URFpoTVBWWDBvUXE1Xy1kd1ZEck1VUU9LUGJkWDRJenZudGg0aXAtNWlDVXRaMVVyd2pwNEZrRmthVldfVlFqZWExRWVkUmtJOVl3R3BSaGplMXV6a3pBZ25Vb3dRSGFNbFpjNVpvSFdvTnFOam9TTnJLNlVOTExJWmtzV25uOUpkR2VaRmVEeU9WTGN2ZDVXcTZibVpxRWwxMXREWEwya25HRU82aA?oc=5",
-          "source": "TradingView",
-          "date": "2026-11-02T08:00:00.000Z",
-          "sentiment": -100,
-          "materiality": 45,
-          "horizon": "Medium term"
         }
       ]
     },
@@ -1785,15 +1859,6 @@
     "DRREDDY": {
       "headlines": [
         {
-          "title": "Dr. Reddy's Q2 Results: EBITDA Falls 24% To ₹1,783 Crore And Net Profit Drops 36% Despite Lower Revenue - Kotak Neo",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbkNiQUZ2ZmtGOXg0NllFVmttTElvelltSldLQ0w3WUxTRkxYc1dPNFBFbzJfajN6aXN2MklIdHZwRHJ1dVg1WHhxNF9zbW4tMjJKMW00d01TQ3RGVTh0TGc1T3NvWmpkNk9VVGVYV1ZIMV9RWHV6dDVlQjQ5VVhhWDBVbURla2Fpc0tyejJB?oc=5",
-          "source": "Kotak Neo",
-          "date": "2026-10-23T07:00:00.000Z",
-          "sentiment": -20,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
           "title": "Dr. Reddy's Laboratories (NSEI:DRREDDY) Stock Forecast & Analyst Predictions - Simply Wall St",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaFdVdGI1Y0hLX1ZmZXZZRld3SW9nYmVNQkNVZVVjOHE2NTRVMThkTFpFeElaVmROWkgzaGFJUFVZYTBkRU5JaURKeEprV2J6bzVObWFWRkFsOHJjQl9uYk5VWS1jMWF6LVk0Q0VtMDlKMEtZdEZiUXpVX05zcWFHT3Q5M2U5aDR5Qjd6V1hIeEhJbDNBNnBkOGpVbmplcnhGczhqRDV2MA?oc=5",
           "source": "Simply Wall St",
@@ -1810,20 +1875,20 @@
           "sentiment": -100,
           "materiality": 85,
           "horizon": "Medium term"
+        },
+        {
+          "title": "Dr Reddy’s expects double-digit US growth, semaglutide relaunch in Canada by November - CNBC TV18",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOSFBIYWxMUm02MGxhMGpNLVg4SlY1OUdzelpuZjktTWxBeHphdDZ4aDF1MDdqUkZsNktYaTBtLWVSbmVwbGhLVU5YUF9RZjNHR0Zya1RoTW55ZEJCZ2JpQ0hXU1hTVnFqRGpLd1BwdWlUOEU4NXV1R2l1ek5fNkFUQWxwMHNhQmE2ZUR4SWZFYjdtbmlrOWdSbW5qZng5YjBhMnlkeXVwYjFwNHdJU1BKS1FOUHlNVTNBNUV3MGtjbEs4TDZrbVpESGpNd0thOXl2ZjMybkJFd2tvdDQzM1JYcmN30gHnAUFVX3lxTE1mRUhNUUhvTHRTdGI4UlN2bWJ1cnRBLWVROGpWR0Z4Uk9nd0dwOVRoTkRwcDFSbnhfSEpESm9JUncyc2NqRDZyQWxWdjd4U1dpaDhLc1lkTzV2ZXNvQW1UQ3VTSVRxek5jYWpxeGpaTDh3dnZ0aHVSVTB3WDVITGdwU2JFVTdSNF9pVVE1bzAxZjJaM1paWmVxc3ZzWmUxTzhCbWtkQmpIQ2tsWFAtVWpzN2tjOTllUllaNTZpbkxLbkJFUmhWcmJRWVBTVE02V25TRXZlWWlzMlNCZktKb3hHUWxVZmluNA?oc=5",
+          "source": "CNBC TV18",
+          "date": "2026-10-26T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 60,
+          "horizon": "Medium term"
         }
       ]
     },
     "PIDILITIND": {
       "headlines": [
-        {
-          "title": "Pidilite Industries (NSEI:PIDILITIND) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWQtR1BiT0N6UEhQN1JSMkdRMFZ4RzFfMnJLbE1SVV9EZXlhWHpVcTY4VlZ3ekFJWVVZb2p5T0dyWm5POEJBTEpzMWxIaTlnM2ItcXdfYUNFZnloWm5lVGd2c205amlDWXozNEpkcF8yOGxORnpqS1dYREhCbkJqYTZFWGMzMTY0Ymhzb3dPSGJqVGYw?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-14T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
         {
           "title": "Pidilite Industries Q1 Results FY27: Uniresearch Predictions - Univest",
           "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xU3pfYXZCWGdEYmpUUFZ1SkJ3UVcxOUhrbjByRnJDVjhpR0VzNkZleWg4ODJ0YXM3NGJUUkZRWmVLRnY2Yy16cTF1NW95QVRZR0tVZGlUcER0TXMyanpQanRvTUJULWxVeUFuRw?oc=5",
@@ -1834,10 +1899,19 @@
           "horizon": "Short term"
         },
         {
-          "title": "Indigo Paints (NSEI:INDIGOPNTS) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbE44ajNkTFY4ZXZvZGVZbmpxbXJaZko3ZzNtaUc3RTRJSXI5YnMtaWVKNm1iVTI4SF8zTkhaMnd4R1k1RGpFQkczVnRIUUlYeXdiblNqOW5tYXgzdkVmNGVLZDc5ZUFJSXluS2dlaHlNNFZRS01BSno1NUFxcFVSSE5mZS0yU01Ga2txag?oc=5",
+          "title": "Pidilite Industries Q4 Results 2026: Date, Revenue Estimates, Key Catalysts & Share Price Target - Univest",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPRDllUWhPM2lRazVpYUZMbFppMjFwQ2U4YW1HaEhyb3ZSNm9Zdm1YaHFYaUkzUmpOako5Z3p1R1Z2a1lZd3gzNGZLV1NwdHhkT0VTa2gxWUpGN0ZpUlVMMDI3QkllVWRVZ29UNVUyYzhPb05iTkpKSEE0MWktcFlLaHlCWXVOY3p0NjBWRkJybWFVU3NiWm84a0FpQncwOTlYbm5mTnE0RXQ2cHgwdXl1TDZYT2E4RllwYS1qdg?oc=5",
+          "source": "Univest",
+          "date": "2026-04-04T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Pidilite Industries (NSEI:PIDILITIND) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOWQtR1BiT0N6UEhQN1JSMkdRMFZ4RzFfMnJLbE1SVV9EZXlhWHpVcTY4VlZ3ekFJWVVZb2p5T0dyWm5POEJBTEpzMWxIaTlnM2ItcXdfYUNFZnloWm5lVGd2c205amlDWXozNEpkcF8yOGxORnpqS1dYREhCbkJqYTZFWGMzMTY0Ymhzb3dPSGJqVGYw?oc=5",
           "source": "Simply Wall St",
-          "date": "2026-11-03T08:00:00.000Z",
+          "date": "2026-11-14T08:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -1847,13 +1921,22 @@
     "BANKBARODA": {
       "headlines": [
         {
-          "title": "Bank of Baroda shares jump nearly 3% as analysts upgrade on Q2 beat - TradingView",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaUVrWmoyQ1JxRlZMejE0dXBKTTR0SnZvSkdybVZPYXRlNDJiQnJxUE82bTA4VnlBa0VMWjk2OGdBS0J6UUlqVlVId2d3LWpMbmh5RlZFQzVtb1JuUXJUbFc4ZHZuYUpsS2lzbkdKdngtZ2h1RmJWX1dQdl9ZX05xa2NwUEV4UFhQWnYxRHFDS0RNQW1pRll4d3I1N0Rodl9SeWM2N0w3YzRiUGl1djM3N0R5RkpURzY1cUtFX2l5Y2U?oc=5",
-          "source": "TradingView",
-          "date": "2026-11-01T07:00:00.000Z",
+          "title": "Bank of Baroda upsizes FY27 credit growth guidance to 13-15% after Q2 results - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT2x0NklhMXZBaTBWdDFETU94b0FvSmdwYUphVzJVdE1qSTRUNHA1VFlMRmJXRXhJS3ZxRFZiWGRrWW8xT1JwcFIzd3dUdjlwR212M2ZsQU5sUVltQkpvMDc1RnlCUmdqU0hzWjRGRDkyVHphaTNQSGtwNDA3UGhrd1RZOVFNMnlSQ2V5b1FvSEI5S3FXQWJkTFBZNTBJeGtfVkNsMmpURHExMjh1ejBRTmpWNA?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-10-26T12:39:57.000Z",
           "sentiment": 100,
-          "materiality": 80,
-          "horizon": "Medium term"
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Bank of Baroda shares surge 5% after strong Q2 results; brokerages bullish, check target prices - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNbmxkWVN3NE91YjItZFVlWkZUNEM4Y0NReFRMeWdUcVQzYWQ2c09COFhRX3pDeVhuaXp0MkR2alZCZ0VOTFB3amNSWGs4Sk41VFRBYi1YNW5FODk2R003X2RzUEdJQnp2ZHhGZ0dVSEJyM1V1VlBFdjRLRzJxWDNYRDlOUTJlZWVROEdhVDVyUG5JTi0zLXloeVpraWZGYjZlOGZla0Fla25aencyQVFQbGRSaThDR0c2X3VzOFRIVGJ6QThKaGNxcDlfUmlkNmpzaGNKV0NjRVVENWc0RjRUN2s1ZVo1cGxZYno0?oc=5",
+          "source": "TradingView",
+          "date": "2026-11-02T08:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
         },
         {
           "title": "BoB reports highest-ever quarterly profit of ₹6,532 crore in Q2FY27 - Business Standard",
@@ -1863,44 +1946,35 @@
           "sentiment": 100,
           "materiality": 45,
           "horizon": "Medium term"
-        },
-        {
-          "title": "Bank of Baroda upsizes FY27 credit growth guidance to 13-15% after Q2 results - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNT2x0NklhMXZBaTBWdDFETU94b0FvSmdwYUphVzJVdE1qSTRUNHA1VFlMRmJXRXhJS3ZxRFZiWGRrWW8xT1JwcFIzd3dUdjlwR212M2ZsQU5sUVltQkpvMDc1RnlCUmdqU0hzWjRGRDkyVHphaTNQSGtwNDA3UGhrd1RZOVFNMnlSQ2V5b1FvSEI5S3FXQWJkTFBZNTBJeGtfVkNsMmpURHExMjh1ejBRTmpWNA?oc=5",
-          "source": "scanx.trade",
-          "date": "2026-10-26T12:39:57.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
         }
       ]
     },
     "FEDERALBNK": {
       "headlines": [
         {
-          "title": "Federal Bank (NSEI:FEDERALBNK) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPR21TUUo5WjdOZEZscFVtbWh4S2JaellPdnczSzJfY0dPdGtxSlNrMllCMFdTTWFWNUo2cTVwZGV1aWs1OFpmcmc2QklWa0RMYnZGZ2gzS3hNX2RZWXU1MjNqM3RkS01JaHd3bXBJWmZJazlkS3o3VVlFc2VRSDJYekx2dTNkQQ?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-10-27T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Federal Bank FEDERALBNK Q2 FY27 Earnings Call Details - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRGw0UTBUdHFYZWFzWlpLQXlPcmNQblpHOWpTVzl6ZDNMMXY0VjN1UjhlaXJ4WE1CeXVLTFZCNnlsZHpQcU1GeElHempvMENSS3hKTndKZ3pjcl9WQjRjNkI2SjQ3NzdKaTlBOTJBXzJZMlhWdDVGLWJGMlBmVXBhMDliajdpTUZFUllCM194bXBhTmN2N0NpTjg1RzRXMmk0a1p6c2FjSi02UDh2NDl5eW9aeHo?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-10-08T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
           "title": "Federal Bank (FEDERALBNK.NS) Holds Firm at ₹347.75, Edging Higher While Key Support Stays Intact - Cup and Handle - https://www.siam.in/",
           "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPT3J3dTlmOGdmc2NHWldEZFhiY3NGYlNtT3JTczBnRkdCMlhUSXdvWThFb0hhWHVMaHNKcmlLSFk1aFRWVGx2QzZ1UUFnRTZCSTVWUGExeTA4YU5mYzY1N0ltUzVSSl92UjFoZUhEUjlHeHpjaUluQ2xuUlkwZDFkLWVUQ0wzZGk0Y2l1bE9xVFJqZFJkUnJDbFpWNUY4VXBINlEzRl93X1Y4RzdsMFNyTmpibE9sMklLS0hhQkdhWk52akItMjRrSHhGRy1TZw?oc=5",
           "source": "https://www.siam.in/",
           "date": "2026-10-29T07:00:00.000Z",
           "sentiment": 100,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Federal Bank NSE:FEDERALBNK Postal Ballot Notice November 2026 - Kalkine India",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOUjdOZjVFOTloZTJqTHRlMjhJV2owajhTRDRoeDl1Q0xIMmdwdzBFcGFJbVNJazA3OFNsUVJpRzB6ajhnRnEyNHBCZXJVM1BhcVluMUdhU2hfT0Q1amZxVXhGcmJjVzJKNXFSTWs5VlF1b2NtTk9sVDVDYktQbHdtLVJXazBpR1NNa0M4YjIzUUNicUJ3MzZmM1FoS1VLUmJyTkE1S2FwYV8ybTJlcElUYVpPclZGWVVlLTRkLXJvWWtMc3JPYWRXSVBVbVd6Zw?oc=5",
+          "source": "Kalkine India",
+          "date": "2026-11-18T08:18:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Federal Bank (NSEI:FEDERALBNK) Stock Forecast & Analyst Predictions - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPR21TUUo5WjdOZEZscFVtbWh4S2JaellPdnczSzJfY0dPdGtxSlNrMllCMFdTTWFWNUo2cTVwZGV1aWs1OFpmcmc2QklWa0RMYnZGZ2gzS3hNX2RZWXU1MjNqM3RkS01JaHd3bXBJWmZJazlkS3o3VVlFc2VRSDJYekx2dTNkQQ?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-10-27T07:00:00.000Z",
+          "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
         }
@@ -1918,50 +1992,19 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Hyundai Motor India holds full year view, banking on new launches, demand recovery - Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2VEQlhqU3hob0wyd3k3NWxPMGlFMjVuVFdGY2lhS0tVRU8yeWpLdTcxdDN2YWstZTFJbGUyUGZaNTR0TldlblpXMmpTdnNlR3c2cC1Vcm1LRGN0WFpVcXhZUU9KN1NSU3laMnBLdjdRWjR3WWdTVGJvcHhVRmFRUmZuTElDMVowUm91OE1FRDlVdm1yUHhobmktd1F2NHlXdDNla1RJY2xyY1B0ajdEa2xuVQ?oc=5",
-          "source": "Reuters",
-          "date": "2026-07-30T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 60,
+          "title": "Hyundai Motor India Share Price After Q2: Targets and Margins - Univest",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPaFNJcUQtcmlmUTlRUWtrRkNTdXVsXzBFbWVOMHY3dlQycjVCYkgzNjQ5b2dCcXVtNGpsY19CSGNNMmxXVHFJX1VsWnVXUEk5ZjZTdTJneHYwaXUyMTMwU19fX19ISFcyN0RMYmVzWUk1Qy03X2c3RWxxY0hqX2RBbVZSek1ndndQZ1kwMFYwZFdmZ1hPdDdYV3dUa2YxU1M5WkY1Nm9tR3I4MWFja25vRmtLeEI4QzRNNVZTWWxQTm8yYVZxNGNSZzVqaklfRV9SY0tj?oc=5",
+          "source": "Univest",
+          "date": "2026-10-29T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 45,
           "horizon": "Medium term"
         },
         {
-          "title": "Hyundai Motor defies 35% profit slump to surge 9%; what do analysts say? - Business Standard",
-          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMktSUG9nWVBaUGZPcGtENWp2SkVHaHEyWFlQUy1lUnlYSmg0eXJiUVhEc2huZjgyTmtDdXFaY2U1UTM5Z0NqeWZyYkJPRHFBc3BBXzJqckliWlZWTklfNnBaWENsakNEM0VtNVFENUloNDM4MXVwNVQyR3pjZTAtSFVhUTFPNDlOYm1ZME1yQnVmZ0otQXl1SDFPWlZIZnVaWEVjTGpHYXVqRGJvV1ZRQVl0c24wOVdjUkdIaE8yTWFTSWNTQUk1R1haWjF5TWQw0gHWAUFVX3lxTFA2TFF3dXF1dXFDbmxySmlSTGczRmdYd1lLdC1XeXU4NlJKelF2UFBxTi0teHY3ZkR0cUZ3Y0RIZ2NkeTZkNHJGNzlLZTRabE11U0JCQi1xSlhCai1RQ040Z0F1WXJadWNCeUl0dnhFWElYdnZ3cURELVcwbGV1SUZmVVJMaUZpMW9qVTBlX2cxcnVlb18ybXRfeENrbmZLcUR4MkNhTHU0alpmT0dSSlpNZkNqMGhpT1FraFJVMEdhbVozOWdsMWdhMENYRzBRekg5TXdBMEE?oc=5",
+          "title": "NSE IPO allotment expected today: Here's your guide to check status - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNUElHX3d5aFF4NEdFS1A2czFzaVN2OTZaN2lrZDhXN3FXbGNVNDJuNDNxNHgzYlYzOTlkcTNETUpNY3c5U0twQjRNMEg5SU10TjVCdXQ1bk9yem5tbkpBaU03a21ObjlOOGdlY2R3X2xVZWExRWNtMzVXeVpKMnpWdUh4UnRZeTBZdm92cUdqQmJzUzBIcURaQlhlbXlQQWh4clFRMHNfVVB0eXdEZ0JCVjJYRk9aZkgxSHhrOW5aclUtQW53STBNdnVOUlDSAdIBQVVfeXFMT3ZuTjNLbXN5Mk9FTm05bVlVOVAyY0EyOTNscnlpVno0NjdlTG1yWFZURXRtbkRLZWtiamRpblU1SEk4YVgtN2c5bklfOGVwbzg5SGhqc2FyMkJNeUtRdW5VWG9wQlc3TmpZcWpubERONDkxU0h0c2d3N2poWU9yLURMeXJFMzFnYzNwYmc2enF0QmNncTRvYXo5VWJYbS1YSmV4akF5MzVoTWZCbDJURDBaZUV1X1ZpVlhUZmlIN19VZE5uOXNwb0VTdjRiczBtRWZR?oc=5",
           "source": "Business Standard",
-          "date": "2026-07-31T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 45,
-          "horizon": "Medium term"
-        }
-      ]
-    },
-    "BAJAJHLDNG": {
-      "headlines": [
-        {
-          "title": "BAJAJHLDNG Share Price Today - Bajaj Holdings & Investments on NSE/BSE - scanx.trade",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE01M0M2UDQzM2szUVowb3BTbXNfNzUwMjdEc2RRSDVhMEpyUHpEMFVQakxoaEtheFRHb0xXZTM1aDFHTGNhcUVSN0JicXJ0OC1GNld2MUkzOTZ6WjlTR08tMzFPQjZ6SzVESWJ2alpTaw?oc=5",
-          "source": "scanx.trade",
-          "date": "2024-10-20T12:29:08.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Bajaj Holdings & Investment Ltd. Share Price Today - Bajaj Holdings & Investment Ltd. Stock Price Live NSE/BSE - CNBC TV18",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdGhQbUV0amVoclB3OWw5M19KQ2NLWVRCRlZ1b08wVUFKbXlRQWlGd3hZUndhc0hrOU9oazdxZWJScW1XSUtEdkROakVMRjBtSnY3dlVqdGtNZ1RnZlJvd1lNQlg2TmcxZjdlYjd3MURvWGkwc0tNVFVXWmYxbTJPcjhadzlUXzVOSmNBZW5n?oc=5",
-          "source": "CNBC TV18",
-          "date": "2026-01-20T17:47:43.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Bajaj Holdings & Invs Share Price - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95S1FlUElRd2s0ZXh0ZkRkLURxT011NGEwRGR3RmJYVDd1MzNEWG1NenhDUTROSHQzUEo5dGJuZXNlQW1qbXlOT0FaVk5QeVRrQktEVGJidkE3cXcybUt3YVZvNC1tc2ZqaUpmbWlKZw?oc=5",
-          "source": "Upstox",
-          "date": "2024-05-07T11:36:30.000Z",
+          "date": "2026-09-22T07:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -1970,15 +2013,6 @@
     },
     "MEESHO": {
       "headlines": [
-        {
-          "title": "Meesho (NSEI:MEESHO) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBtMDFsV18ySEpmS1dKMW15V08wb1RVR2hHM2QxNDdnNTQtWFpNX3NwV2VXOWVzYTlvYXMxZC1fZDhTdGVnSkR0U2ZjUE9PZERuM3NDYTVSdWhQeC05a1BOckFDX2htQUVYOEY1dkdZZDlwWktEbklpeVVR?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-19T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
         {
           "title": "63 Moons Tech shares surge 12% after subsidiary raises FY27 guidance - Business Standard",
           "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQU1oyTXI2UF9GVGt2bDFzR0NuZkM3Q2FJR0JWdXhwNEdTbzdZTTNHYjM1TzdlVjBJcElqVnFwUnBINkE5Q0pXaXJQOFE3aTRleGU1cW1lSjA0UHo3ZWZNemFBUzVZU3lVRjg4U04tWDlnTW1fSUtyNjd5T3NMRkFXWWxxLUFmMV9NMVd6dTZvRUpxeGtIbUZBS3NZV0U0ZkRTNEdOcnRCN0hsbmtnNHBxOVJ1bVB2bUJERkFoRmlpWThGNHhwbW1hYTd5dm9WbE1TMW82VG9B0gHbAUFVX3lxTFBOdVVFeC1pN25ZQTJNcmtVVHd1YXdtZlJyMVhKS0pXQ0ZzdjZvQXdXOEx3ZHVWOW13a083eVlmaUU5OW9qazNCSGRLaGdkaTJSLUFvcGNRdmFWZnhucGRkeGRoM2hra0lud0ZDTUlZRWhVQVZrRnJJR1ZkRGdUbEdqLWxKYlJXN053bHBBaUM0clkzN3ZLOWVtRFNRWTdLbmpBbDJzd1J4bTdhOXh0WVFnWWp0LTVOT3dCcGVvRHluTmpwV3BLMHBzX2UyVmFFd0RyaU9BRUlSREVFYw?oc=5",
@@ -1996,11 +2030,29 @@
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
+        },
+        {
+          "title": "Meesho (NSEI:MEESHO) - Stock Analysis - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9lMWxWWUZtY0h5cEVmTVlhMEs0azV4ZXFhbXVySVVkSFdma3lEM0lnTng0NnFsekRuMUJGa1REWTBXTWs2LVNienJFaWo4Z2t6ZmoxSXJQdDVBSTVyZnFueGhLSktTSHNZVmpDc2pDWEE?oc=5",
+          "source": "Simply Wall St",
+          "date": "2025-12-14T01:44:21.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
         }
       ]
     },
     "ETERNAL": {
       "headlines": [
+        {
+          "title": "Eternal Q3 preview: Revenue may rise 194% YoY; Blinkit store addition eyed - Business Standard",
+          "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPNzRjbEhYLTFkYmQyYlZZLXVuOWN0a3lCQ1dNVHZSbjNNVV9uUExwdjhhdGpBd0twMC1VSEo4VkdwYWdVMVZCSkR4MElzcFBZdWJ6VnRMODNRVkstQmhzM0ZzdjQ5NHBaSG9FTHVEdTlRaEJkSFRtRHBUUXktV1o3bWo0d1BpeWN5cVFaaEptT184QXpTcTN3dWNUbzllUHF5VTFDWU1XV2R1djA4SUVjY3N3dTdFX3ZkRFFVc0VDQXJXTEsyM3V4OUFkNVdMRVhNRDJ5cmljbjFlcTVZXzdzTXZfSHgzT0ZyQzJYMG9QTmZXaHluMlA1VzRyYXduWFU2WnfSAYcCQVVfeXFMTUVQbzh1d2VRamRNcWxiNDAxcXMtdWlNNE1XYTE5MlR3UGo2TTRUdmV1c2lmblM3TmRFdlZmTWNvRXdVTTBYZUhOTHlyWGtnZ1pYYjg3cU5sZUVib2otZTZabmlmUmt4ZldyenNYZy11V0h1d1RuRURtLWFHVTBTUmRMTmY2WE5Jbng0Q1dZN0hMQkxtRFJsTk1Qd0JlZDg3eHB2U0FtanZlVGRTSzhSd0t5RV9aRWFJSzAyNXdEdkI5T1BEaVlxbzhpVWZpTVUtWFo5VkFndnpvWUc1d0JTc0hEU2xWZ0xERlRGUWdISy1sWDlSVE9nRjdZSUo4ay1IcldLSlJ0eXM?oc=5",
+          "source": "Business Standard",
+          "date": "2026-01-19T08:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
         {
           "title": "Eternal shares trade flat ahead of Q1 earnings; key focus on Blinkit revenues, other metrics - Upstox",
           "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOd0kyY0F4cHpmd1llYURpVkRZbkRoUVYwWDFuVGktakZoVnJ0Q3M2U3pPUnA4OEY2MGJVdUVKeGZKUXFuRXJEOGdPRFJEYlhnLTZlVy12NzJVTXQ2b1dTZGl5eWlGclRZYk5aUWF0OHplRGVLUHR3ckVOTTRoLWE5WEtQUEFpTGo0NmxfY1BhWHRfMERKblZOYmx4bzdmblBZV1YtY3BiNDJ3UGZNTTlyX1kxOTFjWDVwWnpsbzBHUHJFcGwyY19ybXEtaWVEbU9rd0k1dS1HcW9ibXNmeDZINjJVZw?oc=5",
@@ -2024,28 +2076,28 @@
     "BOSCHLTD": {
       "headlines": [
         {
-          "title": "Bosch NSE:BOSCHLTD Q2 FY27 Results Resubmission Explained - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOW82RW1NaXFSeEN5blZ1elVlemtaYzhvMW9GSnhCRm5QRGM4Y3N2VVZiM1FselVVX2dITVpUMmhYX2RZM1dnRlhpbGhyZGx6bnNTYk5pVlBTdXRKOXhJcXYwODJlS0xVblJ1MHh0YmFPRGhKYWc3dGlULTJaQjhCSHl4elNJVDJqZGdxaHpkYjBfZjdELU1vWlRSaG5DTDNMdzVFdE9KREdXN0ctQ2JwTjlrcFcyZw?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-20T07:00:00.000Z",
-          "sentiment": -100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
-          "title": "Bosch Limited (NSE:BOSCHLTD) Resubmits Q2 FY27 Financial Results to Correct Formatting Issues - Kalkine Media",
-          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSHlja1AzYjVwOEtJbjEtR080WEVZb3FPYy1kRFZsU2R6RnliUXVoZVNiakdXRWdxd3dSMlVOM2JWczVyaHQ4d0lkN0Y0aVp5LUxETF96MlpRMWVSWnZHa2NBd19pV0xHMDF5aFNTejZHWXpKVU9tQzRPWUMyTHJqcUNPSWRvbUw0Y0pCNFVfM0xETmRwcG9rNURfTXo4QkFOTEh6dDJiWnd2d09BNTkzVVpPb1p4UVRnbTY4Zno5SUFlWU5nYVAtY2xzWmZLU3poVy1J?oc=5",
-          "source": "Kalkine Media",
-          "date": "2026-11-20T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
           "title": "Bosch Q1 FY27 Results Aug 10, Call Aug 11: Revenue at ₹5,047-5,685 Cr, Margins Watched - NiftyTrader",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVWU3Q2EyM0xPX25JalBRUno4bWI4aXJxNlBfdzlXTHpfSEdqbmZ3WHBYYWVTN1EtelB0djlrR25xVHVyTE9JQ01DWGxvOE5TNGRqb01NWjFMd0ltZ0pnVDRfblI3UFpMZTNZeDNiR28tN2lmVEpWajZOdHdKbVFaTmpR?oc=5",
           "source": "NiftyTrader",
           "date": "2026-08-08T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Bosch India Q4 Results 2026: Date, Revenue Estimates and Share Price Target - Univest",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ZVnE3Zmc0cWQtTXZKMGQ2NFdjdnViYWNpbUZyTDBRLWEwVGJ3WkFQOVRDOXQxcnVkVWRVUWREd05xRHhMV0lzSjdMUWdPcXM4QXFoeUQzTDUyeUdUM0x2YWlR?oc=5",
+          "source": "Univest",
+          "date": "2026-04-02T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Bosch Q1 Results: Investor Concall Audio Recording Now Available Online - scanx.trade",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTFpnbzRYSFd6WVFhTjVQXzJEQWZZdWJjRmRsN0tSM3BFcjI4S05MVE1lQXFzQy05NkNsZ0FLWkVJNzFzN3AyQ1BhdnhKbGw0NlJnOFBLUVlfTUo4WDVmWUk0SHVmSGpTaWlfOWpyOHlhNE9IcTBWdElUalNGQjJwT2RLaDB0VVBfN3hfeUhrZVV3dlFGM0I4R1NRdmZEYm5DTGE1NkpldFkyU0laakdrYzhCM3JDb2ZsQ2VSLU95SkZkRUQzYlE?oc=5",
+          "source": "scanx.trade",
+          "date": "2026-08-11T07:00:00.000Z",
           "sentiment": 100,
           "materiality": 90,
           "horizon": "Short term"
@@ -2117,13 +2169,13 @@
     "TVSMOTOR": {
       "headlines": [
         {
-          "title": "TVS Motor Company Limited Estimates – NSE:TVSMOTOR - TradingView",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40VHVsaXpnTHZFa2hNRmkzMzNoMWlzRU5GU3BBajdzS3Q2a0pYejA1Tm4zV1NmSW5xNzNVa1ZKWFI2V1lTN2xNaWpxaVB0VWFLbXFwOTRPZkRrTGMwSlY2Rk4xUXh0alZTV0gtekpRMHV0U1JJLXRfV2JR?oc=5",
-          "source": "TradingView",
-          "date": "2026-10-25T12:07:37.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
+          "title": "TVS Motor Company Q4 Results 2026: Date, Revenue Estimates and Share Price Target - Univest",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10amg5LXE3OWtLX2VBWU1PRmRTclNYSHRzajhEamNOMXNKaWRvWHRQdEhnM1VuVGlyYWFQM1ZQNXV1ZjM1bWt2TkpZQkFyY0tMdHRpNjhvT3h0NmFzQUxlVDgxcXJFSHBidVE?oc=5",
+          "source": "Univest",
+          "date": "2026-04-02T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
         },
         {
           "title": "TVS Motor Company Q1: Revenue surges 38% YoY to a record ₹13,896 crore, PAT jumps 51%; stock soars 6% - Upstox",
@@ -2135,10 +2187,10 @@
           "horizon": "Medium term"
         },
         {
-          "title": "TVS Motor Company Ltd. Share Price Live Today - CNBC TV18",
-          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNZGdYVFczcDBDTFc2N1FJd1V4Nkdjakp2S194d2ZwWHI0T19TM2k3NnBjS3Jnc1NMYnVUelR0NXdlVUhZRE1uZ1luVGFhSWVJbmdIQ2VxUG9xOTBFbG1kek9BQUpaTjMwZngzTWlUQUVLX0g4WWZLcUNrc05YelFsbE9mRQ?oc=5",
-          "source": "CNBC TV18",
-          "date": "2026-01-03T09:34:32.000Z",
+          "title": "TVS Motor Company Limited Estimates – NSE:TVSMOTOR - TradingView",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40VHVsaXpnTHZFa2hNRmkzMzNoMWlzRU5GU3BBajdzS3Q2a0pYejA1Tm4zV1NmSW5xNzNVa1ZKWFI2V1lTN2xNaWpxaVB0VWFLbXFwOTRPZkRrTGMwSlY2Rk4xUXh0alZTV0gtekpRMHV0U1JJLXRfV2JR?oc=5",
+          "source": "TradingView",
+          "date": "2026-10-25T12:07:37.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
@@ -2148,6 +2200,24 @@
     "PRESTIGE": {
       "headlines": [
         {
+          "title": "Prestige Estates Projects Q1 Results FY27: Uniresearch Predictions, Analyst Views and Key Watchpoints - Univest",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA4bG9Rb0xxLU9OSDdQaUNSamJWMkw2MUk2RGJ0Y1dnZ3NKeDhsSFhBX3ctVVpfcFFSVE1xVEhHNXVFRHVHWTZGdnRkNjNXY0sxb0VpZnl0Y3VucVhaNnZFQTY4VTZFMTg4RVU5X0JuVmt4WHdW?oc=5",
+          "source": "Univest",
+          "date": "2026-07-03T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Prestige Estates Projects Q4 Results 2026: Date, Revenue, PAT and Analyst Outlook - Univest",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE12c3RjSlRzUFItVlNIOTZ6UUkybVYxREE0RGJnenBVUFpsOV8tSzY3OGgwS3lpNzA5UDlQMG5haDgxUUlJVUQ3LTdVSlhKUmR6c01RR2RZUlg0TzJtZDZzOTBOSlBpak5FN3BWaGNCX2FPS0gw?oc=5",
+          "source": "Univest",
+          "date": "2026-04-09T07:00:00.000Z",
+          "sentiment": 100,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
           "title": "Q1 Results This Week: BEL, L&T, Bajaj Finance, Sun Pharma, Maruti Suzuki Earnings Calendar - Kotak Neo",
           "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdm1HSHRfcVBHVkJNQWN2TFU1QzR1cXU4TnpXcXZ2Ylc0em5RS3M5YnlmSFNlVmtrMXFqY1FOUjZ1TkxkQXdhZzRXdUlMdWNBLVlqWE9ic2Y3OGpPMzNVY1RWX0x5MURBSUVFTW1ZeWExNEoyeXJpaWw3R3daVXh4YnVUMTNXRG93WEpFQ3p2UmUxMkRPNVBKMU9tUWItaDF6dkROMXNWYllRZDVpZmRQN1JWTEJZaGR5M1AxZ2QxZw?oc=5",
           "source": "Kotak Neo",
@@ -2155,24 +2225,6 @@
           "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
-        },
-        {
-          "title": "Prestige Estates expects over ₹20,000 crore collections in FY27 as launch pipeline gathers pace - CNBC TV18",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVy15X0l6Z2VYOEpWVTA1VWtFUDZvMXFjMkJPVXRlT1p2eFFOR2oyaVh3azdjbjhneWlhNFJCWGRGSnBNMGxUWHlwMkJza1VWN3AwNHBIcDlXMDNmTUJRaDlEWkoxeXBEajVsMkFjTkNOLXBKMFk2aktvLURKSU84N1B2bS1CMHlZOEtsbkh3akhMblFyeDlnX1ViOGw4ZG43OG0yZXVmZ1l0TVZqQWhybDZDX1J0Mko1TFkxQXAzeUpESHVQ0gHKAUFVX3lxTE1KZWJOYXBEOVR5bm5MNnRzNjQyUDZ4NGF3dDV4RnBaeXFxSzUwR0EzbTJ1VDRrVGNsdGEwbnJmUFIteFpUMXJkMERBSVI4Zm9yWGVBVXZUVmZfTHFmTzc2TXpqRG8zYzJVVGdSeTFJZjZya3NjRmxBd2RWRXhZRkpTb3FaaUpQNko5aEl1aFNJMk9fN0pTY0lZTDhKWlowbDNOZHRqekFnSko3ZWxCRE9FSnRuMk1wSUVfU2FnYUV1TXpxRG5YamQ0Y3c?oc=5",
-          "source": "CNBC TV18",
-          "date": "2026-07-30T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 60,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Prestige Estates Q2 FY27 Investor Call Audio Recording Filed - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVXdZOFpqMnNXbUNCOEZ5RzY0VVN2ODZiWFZQSldjYTlnTmp0ejVFbnQ0SExMSU1pMW9tMzUtYVZZZHlWYUwwaXc4c3lqenBqc1VYQUdtSkQyaW5GSEo4V1ZaZlpyNEktWmxFaElWblJ5Q0dYckp0U3V5Mi00M01rMVEwTGJsV25YUDdIeFZXX3BHUVpWWTNUOHNlRWM4NGhiUWZjMmJkeXl1bzNZWG9oS2dzd3ltMXA2NHQ1NTR6UzJhZw?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-06T13:58:00.000Z",
-          "sentiment": 100,
-          "materiality": 45,
-          "horizon": "Medium term"
         }
       ]
     },
@@ -2197,11 +2249,11 @@
           "horizon": "Medium term"
         },
         {
-          "title": "Indian Oil records loss of ₹2,661 crore, revenue advances 18% QoQ in June quarter; check Q1 results - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNSlhBWmV6NEg2UGVnMFNYenYyNGUzSDRMZXRRYlk0b1pqaDhIeXpoOVBDdTJ5WE9teDdtSWFpczZzNUxqZTdTSmpYNDJzWU1fSjNUOVRLTkM2QXExQ1FDRzctcnQyY3lQTU5MUjBwX1gwS0pheVFwek5PWk1hUy1MTGtOcXJOWXFKX1BPZThNckFSRDJWZHg0TXAtTEl5U2VteDAxMjUzYjRMYmMzNTBHQUhqU09uYU42anRzYk9qVktYWEEzOEcya3Ewa0JrbDVzU3JHV3FQbTVVREZtc19jNzI1UU8wMEdEb1pj?oc=5",
-          "source": "Upstox",
-          "date": "2026-07-31T07:00:00.000Z",
-          "sentiment": 33,
+          "title": "Analysts Are Upgrading Indian Oil Corporation Limited (NSE:IOC) After Its Latest Results - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQXJUYmgwUGxXRWRkbEdPNUphd1dRNm8waDdvQ0xaTUtkTjcyTEJxTF8yZ0g2T2ExTnVWbG85Mzc4cE1DR242S1V5T1JnRXVTZ2tfeG1ZcDlzQUN3YmE2Nm1JTFZacm42OHNpNEtJckw1TGdDb05ZVnRKSmtoektFZmZNZ0lRN3ljWUdUaG5QX2FmS2Y5dFl6MHpYaThFaWo0SnM4NTY0YWR5S2U0bHZUU1N5ajhyTkZmeDBmV3RxVGpmNnRSMzM1S3d30gHPAUFVX3lxTE9TeXEtSDlJOHg4czdZUjJlTWpmSUtmcXJ2Z0pQYnVwS2cyaEVnUklJcmRDa1FPM1pTZUlPeGpzcGR6NzR5ZnYzdkVVOGF1aml1OW5rMzVLekZJeFd6b2FCMnpISGI4RGotVWszbkwzWjB6d1NhWi0xWl84QWYzZ2ZtenprNzdvVjN6Z3ZhRmZXVHhidW56eWtQRWRYX0JnQVMtMEFjQllOd3llQzF0SlpOVjdMeVBqcmNFbkhGaGRnWng4Ql9pN2hnSi1fdkZPaw?oc=5",
+          "source": "Simply Wall St",
+          "date": "2026-11-03T08:00:00.000Z",
+          "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
         }
@@ -2210,29 +2262,29 @@
     "ADANIPOWER": {
       "headlines": [
         {
-          "title": "Adani Power (NSEI:ADANIPOWER) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaHVnU0hxcEhjcHlmTkxoR3R0ZXlmU2NyRDdLRUI4cG5faS1FU3dac0FqRER2dFk0RWlPREtEYlVaTXROQ24tZ2hFQ09PWVBUc1NCNnlOMG1OT2Z0WXRvT0hKcS1pSWFDUFBWMUxrUS1TRlVYVmVDT3BEc2dXakNZNl91Tzl4cS1MMUE?oc=5",
+          "title": "Adani Power Ltd. Share Price Today - Adani Power Ltd. Stock Price Live NSE/BSE - CNBC TV18",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1jd2NGazJoQnlWd3o4T0F4RDF1YmYxTTY1TVpnTEdBM3J1bnAtMjA0VWM1dVh5REZfaWE5NWZmNHVselVrNU1meDIwQ0pTS1ZoSW53WGlCLWJEN2FudFdUajJCUDNvU1Jfckw1SUN3R1ZhOFA4REdkVGRkRUQ?oc=5",
+          "source": "CNBC TV18",
+          "date": "2026-01-03T08:43:31.000Z",
+          "sentiment": 0,
+          "materiality": 45,
+          "horizon": "Medium term"
+        },
+        {
+          "title": "Adani Power Q4 Results: Check date, time, past performance and share price trend - Upstox",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQblJqTFNpOXExRFcwYzd4RTNPUVpacHBxYkZNc05ldnJlOWVTTF9JSmpxUGFXaTJwaTlEZ3BnUmxrVndSckNwOXFVdlI5RmFKdkFESGJ3RTdSRW9YYmRaQkp6aWdXd0xFS3ZLeFNGSzF4TUxBaVhVdkh5Z2gxd1lyZnpQVXdCUnRDS1IwYWJIaVRwclZEOUlJWERfSXJtNU1RYWFMTHFieHNGQWRUTGlQTW5aTDBVQkgxRndvc0VaUHRWNEhTM0tpN0c0TjBwc1N4YThrTA?oc=5",
+          "source": "Upstox",
+          "date": "2026-04-07T07:00:00.000Z",
+          "sentiment": 0,
+          "materiality": 90,
+          "horizon": "Short term"
+        },
+        {
+          "title": "Adani Power Limited Beat Analyst Estimates: See What The Consensus Is Forecasting For This Year - Simply Wall St",
+          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxObHAyV1VraUoyaTc3N2dROFh5UkZLbnN2OGwwMnluYVZtcXdLaUdMcHlZVjF1QTd3ZlJYS0hnZDlBRUVIZUJHS2s3TTlpN1BmWGQ4aXA3S1VqN3F6aEt3MEJfMVRaQ1l0V0YtY2lDX09BLXZqSHFqUEpKM0VndFNCajlyekoydWF6UzQ0VUNUbkl2QXJDUWludHZzdnhPTDZFUER5Yzc4R2J5NTZyRXN3WmZJdnRHa0tnRmpOX1V2QjRtVXhlMG9OTjRjRW9MY3Z4b25LY21SN3nSAd4BQVVfeXFMTloycTEyM0JFUThvQWRHQUttb0xSZnZJT094NTg3aVl4bkZwRW85SUcxUnotYjRQUzNfRzJuSW9tcEIzZ1J2LVJxNUVuN296QWNhUkVRS20yWHVQeG1iTUdRQTRkQVNHbk1nVE9Mc015aVZtSG55dU1fZzZOTmprUklwXzQwLXkzMnBENnNXQmJHQWdnUVNGaVhqZU16bTRkTC1DWWtfajk3bFJJYmhNR1FrSDAyaUNiZXo0WEdiV2RhdkVmQS04Mk9YbnZNOVFPTzlDaV9Fei1jTlVJZTlR?oc=5",
           "source": "Simply Wall St",
-          "date": "2026-11-19T08:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Stocks to Watch Today, Oct 23: Jio IPO, Infosys, Swiggy, HPCL in focus - NiftyTrader",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaUloRU9leWVkcG5WcjRPNm1NR3ZXdzRQblZ0eGdiVVpQYlByXzY2ZDV3ZG9HM0lqZm5yUXNrQW45NEJUV2ZrVUlUTTdJc0VNZ0RnOTFQYlFXYWpiUFZ0WUFzbFNpTHQxd0VDSURpaVVXS0VUQ2VfWmxxWkZtdDlGd1hmajc?oc=5",
-          "source": "NiftyTrader",
-          "date": "2026-10-23T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 45,
-          "horizon": "Medium term"
-        },
-        {
-          "title": "Adani Power (NSE:ADANIPOWER): What Is Its Plan for JM Financial India Xchange 2026? - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNDJwRTZETHhCSFVrSG1fWnJQeDIzN2JFX21fMWdDdER5UjNkNnNhNWtackhrTWpUNHVxMGdoT01vbnkxYzNXZFdNSVFWMmxlTEZqMFFSWmtfUm5sVWxBODVOTXJZR0ZtZzFjczdROG1CQUJtWXQ0TzJfX1lSVDU5R3FkdEVLbjE3M01uSUxiVFpRcjhnOTlwckoyZUpGX0tsQk9ORWhyNFV1dnZZLVdqWUhWZDJXMzlHM003UmU3NWtBMURW?oc=5",
-          "source": "Kalkine India",
-          "date": "2026-11-10T08:00:00.000Z",
-          "sentiment": 0,
+          "date": "2026-10-28T07:00:00.000Z",
+          "sentiment": 100,
           "materiality": 45,
           "horizon": "Medium term"
         }
@@ -2241,24 +2293,6 @@
     "GAIL": {
       "headlines": [
         {
-          "title": "GAIL (India) (NSE:GAIL) Releases Q2 FY2027 Unaudited Financial Results: Key Insights - Kalkine Media",
-          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQmY2eXJaNkhqeXJ1bk54dE9aemliUTVqOVIzTEY1elFBNmVPS25JNVdSTlZDaC1wS0xKTklic3UwNTJldmV3LTJyQ0NNZk9VSUlYTVNSX1ZBenlnN2ZoYS1BZmdGT0pJV0YtbVdSYUJfTDd6NHA4NjVzQVhNbkVRRU5jZ0I2Z3BmZ3JOS01FSmNzSUgwQ29tN1ljbnFZQURQZks0WXV6eEtkT0tsSnFPNFhaWDRRZlZBRU04QXl6dGlyazA?oc=5",
-          "source": "Kalkine Media",
-          "date": "2026-10-31T07:00:00.000Z",
-          "sentiment": 0,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
-          "title": "GAIL (India) Q4 Results 2026: Date, Revenue, PAT & Analyst Outlook - Univest",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPV1A1Qzdrbk9LTkNYRm5yYkluOHVGaVBfdDJvTjFHcWR1UHI3NkNBU1RWUjdWa3dsNDhJVU1adVN6WkZtdVJqUVl4T3ZhazFYN2ItVXZhZTRhbUlodkJtVTNTY2l6S053UTNJY191UkxMbUdBM2JCTWFPcHVHT3ZfaUVpajF6Tk5ROUhNV2pzWVRndw?oc=5",
-          "source": "Univest",
-          "date": "2026-04-16T07:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
           "title": "GAIL shares fall 5% despite Q1 profit doubling; is it a buying opportunity? - Business Standard",
           "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUHhIV1hzcm81U1MyejBzUnNvdUctYnZUd1JPLWVNNTdybXZIMVhfR09OSV9nbkRWdmdpWjVBMzV2Tkx2c1ZVMmNjVDB4QXhWSWtyS29EZkxGTGZ1dTBMN0RsOUZmcTI5NXB3dEllNjVXZWtQQWZLLXJ3S21aMTdhNXpKUmV3bUozQVFWSHAwck9NUXkxdXhEbzNhRGpJXzZvLXR0UTBfNmdXN1hpLUFXeUhaTWx0ZEhVS09TNjRlT2VSaS1vRUpsZWRYRDhISGfSAdQBQVVfeXFMTnZ2NUFDeExVUk1wUFFCRFRMcHRGa1U4eXVRSHpTQnl0SE5vVVp3dWFSQVp4OXNjdURfaVNXbVFfYjJNbFRSbUdLQlk0WkpLUFMwS3NoYzVPWnNldGFRTE1ua3FNN0d6anBtbVJ4Nm5HY0E0U3ZUWFlZNFpNT0dXckgyak9zdU94YktZNHlTT3oweFdiajdxMDRMemxaLTNDS2ZKXzJDNjY1U2lTTk1pM2FoS3FtYnR2c0dBd2hEYlJrT0VuLXdsZi1iMVJNNVp5MFN2LXU?oc=5",
           "source": "Business Standard",
@@ -2266,34 +2300,21 @@
           "sentiment": 33,
           "materiality": 45,
           "horizon": "Medium term"
-        }
-      ]
-    },
-    "INDIGO": {
-      "headlines": [
+        },
         {
-          "title": "InterGlobe Aviation (NSEI:INDIGO) Stock Forecast & Analyst Predictions - Simply Wall St",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSlp5OWctbUh3YjRUTVR2R3I5ZG5tb1NBdG1BNzkyZTB2Vy1JT2kzbWlnMzh6SzI4VGhHVGRKYmNtLUx6WDRSS0d2aTdLMFFHNFFOa0I4OEtfNDB5YUZUWGRsOUdLREFXb1VjTEkzNXNwcXVxRFVSVFFGUzRWcm1XVl95TlhCLVVoc3MtaXlMUFdoVjlrVXc?oc=5",
-          "source": "Simply Wall St",
-          "date": "2026-11-17T08:00:00.000Z",
+          "title": "GAIL India Share Price Target 2026 and Share Price Today - Univest",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5FcFpnTEQ3Sk5vOHdqeFZzMktXbFRWMV9MQnJHVnhxRG1GVkNaZUpBYWVUeWZfOFlqZnVwVWQyYTZ5RVRDdFdRT3kteFFLVjhteV9aUTUta3dJVVFibFpMUFRWV3J4c0pBLUdR?oc=5",
+          "source": "Univest",
+          "date": "2026-11-20T08:00:00.000Z",
           "sentiment": 0,
           "materiality": 45,
           "horizon": "Medium term"
         },
         {
-          "title": "Solar Industries Q2 results: Net profit grows 79% YoY; firm expects to surpass annual guidance for FY27 - Upstox",
-          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPNTFZUFpQZzZKSjE2UzJxajJ3Mm5ENDE1amQyQWdOQ3o2SUdCbzhGLTF4R293d3NRNGIwZWthY29wQkoxcTRTTUdIOUJuYVRXUnFSMWtwblVxbnNWT2RYZ3FzZTBkNXVZakw2RTBrYmNjdlVJNXE4dG5BRFJ4aXNPYktuYld5ZnpQby1wS3k0cWZPT1YwSHIzNWVTMWh0OVdhZUlfR05SQXB5eTBRdS1vb0ZVVEFHREk5Y0ktOHpibVEydmQ0SjNIUmplU1owdU5iQnJ5ZTg3VWZmWDBaMW9jRHFPeW1NZ09zdWN6alhUa3U3WC1DOVE?oc=5",
-          "source": "Upstox",
-          "date": "2026-11-03T08:00:00.000Z",
-          "sentiment": 100,
-          "materiality": 90,
-          "horizon": "Short term"
-        },
-        {
-          "title": "InterGlobe Aviation INDIGO Q2 FY27 Results: Key Figures - Kalkine India",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSjZ3b2JZUXhXUmdIZkozR25sLVZObFo4bThrOV84d3o5cGRXaWY5YV9sMTF0Q3ByeU1qbDlaYUMtVDhrYnd2X20xSjI4UUg3YWk3SUlXbUUxZGE4OFVFM3N3YUxNejNXZk9GZzl1SWptekJ4SXVsY0twNEdjV0k0VkVRdHJ3eklpUktCRklpemJYaW83NVNFd1ZGS0N1UVlES2I0YnNCMDc3SnNf?oc=5",
+          "title": "GAIL India NSE:GAIL Q2 FY2027 Unaudited Financial Results - Kalkine India",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQblphYmxmMUhNSU9OMmRLZmc5SGVkWmpsUC1YdG1YTHpYNmNyY0JwWFYydmlJd3dycmxSOXpmUGJmb0F2Qmh3OWVNb0R5SDc5WXplQTZvUzN6LUlka0hmNXMzeU14ZHF5aGdfc0dhQzR0ZGF3bTdKQjU2blNnQmo3b3ZGcXVYWjhPYnpwdEw2Yk9DLUo5NENhemFLdFNiRldPcEJTamlpdXhTLXd0cm1yS3R0WQ?oc=5",
           "source": "Kalkine India",
-          "date": "2026-10-29T07:00:00.000Z",
+          "date": "2026-10-31T07:00:00.000Z",
           "sentiment": 0,
           "materiality": 90,
           "horizon": "Short term"
